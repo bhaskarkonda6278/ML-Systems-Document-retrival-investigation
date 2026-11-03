@@ -1,0 +1,11 @@
+{
+  "archived_date": "2026-11-03",
+  "source_commit": "0762a4dda0bf4ce16e9250fdd92c72057ae8c030",
+  "source_directory": "/home/s3021085/DIY/edin-mls-26-autumn",
+  "sha256": {
+    "baseline_first5.jsonl": "512bc0d50069a4564f723991227c87f6b8ee7bca78fbb65fc55487ce007720a0",
+    "answer_judge_per_query.jsonl": "52d97126d8baeba329f05d6457189aec83726138d2ac8c5d49d284c740ceb6eb",
+    "answer_judge_summary.json": "28c510e70af476afb29abd4d47d7e9ed7fc179efbd258358e05396b40ce01b80",
+    "judge_cache.jsonl": "1dd2a8f887b951232f004cffb8b23fddd28c2ff41564665e83c3ff1aa2afea1d"
+  }
+}
