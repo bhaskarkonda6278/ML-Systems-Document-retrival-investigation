@@ -1,0 +1,50 @@
+{
+  "version": "combined-v1",
+  "split": "practice",
+  "queries": [
+    "q_12314f242e48a795",
+    "q_44a875cacb654901"
+  ],
+  "repeats": 1,
+  "systems": {
+    "B0": [
+      "baseline",
+      "fixed5"
+    ],
+    "A": [
+      "kv_trim",
+      "fixed5"
+    ],
+    "B": [
+      "baseline",
+      "gap0"
+    ],
+    "C": [
+      "kv_trim",
+      "gap0"
+    ]
+  },
+  "seed": 20261109,
+  "source_hashes": {
+    "rag/extensions/combined_study/run.py": "5f60c31e9f48c965e04974789fe6d284377c7775a2cf8ca2a8b6b6984c4e31f0",
+    "rag/extensions/combined_study/asr_worker.py": "ac52d458f885cfa0921b497e2a29d4f530fee160ce7d6535e5c0687bf944c66e",
+    "rag/extensions/combined_study/partner_asr/kv_cache.py": "61c9107ec03a62ddca58b32ee022ed07f38bef096f2496a90eca8b6e112c651c",
+    "rag/extensions/combined_study/partner_asr/encoder_trim.py": "5be2020c530b366f3b019aa1e9795af30209cecdf207f53a004a792006fe28c2",
+    "rag/extensions/adaptive_depth_study/policies.py": "4276219f83512332f2f7b651a7488bb576ca9f1a93988c581d66abe4d7dd06db",
+    "hw1-asr/glm_asr_cuda/model.py": "c690ed8dbfcb6e9b775d1b2f6da72b0b055fbeb965fd838afaaa0f49bf008379",
+    "hw1-asr/glm_asr_cuda/ops.py": "de224fee6464b5d3288297a7d0ea2eb66e9206d95bea59586349d2979290e906"
+  },
+  "generator_model": "utter-project/EuroLLM-22B-Instruct-2512",
+  "judge_model": "utter-project/EuroLLM-22B-Instruct-2512",
+  "endpoint": "https://elm.edina.ac.uk/api/v1/",
+  "rubric": "rag-answer-rubric-v0.1",
+  "question_mode": "fixed baseline full-audio transcript, prepared before generation",
+  "no_api": false,
+  "timing": "live warm persistent pipeline; model loading and judging excluded; IPC and retries included in wall time",
+  "retrieval": "fixed5 uses supplied top5; gap0 retrieves top100 then frozen B=0 largest-gap policy",
+  "generation_temperature": 0.1,
+  "judge_temperature": 0,
+  "max_asr_tokens": 100,
+  "prior_dev_exposure": "50 dev questions previously inspected; remaining75 reported separately",
+  "max_successful_generations": 8
+}

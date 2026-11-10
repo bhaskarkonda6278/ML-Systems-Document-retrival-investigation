@@ -1,0 +1,18 @@
+{
+  "archive_sha256": "2f4988afc1d34cc5d4f8b183eecfd38eb6b7b82ad38efe8cc32b68348bd80ad1",
+  "files": {
+    "kv_cache.py": "61c9107ec03a62ddca58b32ee022ed07f38bef096f2496a90eca8b6e112c651c",
+    "encoder_trim.py": "5be2020c530b366f3b019aa1e9795af30209cecdf207f53a004a792006fe28c2"
+  },
+  "shared_comparison": {
+    "glm_asr_cuda/model.py": {
+      "identical_normalised": true
+    },
+    "glm_asr_cuda/ops.py": {
+      "identical_normalised": true
+    },
+    "benchmark.py": {
+      "identical_normalised": true
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.8.0-139-generic-x86_64-with-glibc2.39",
+  "slurm_job_id": "3700503",
+  "hostname": "saxa.inf.ed.ac.uk",
+  "packages": {
+    "torch": "2.14.1",
+    "numpy": "2.5.4",
+    "sentence-transformers": "6.2.0",
+    "transformers": "5.20.2",
+    "openai": "3.37.0"
+  },
+  "gpu": "GPU 0: NVIDIA H200 (UUID: GPU-64bf44ed-edf3-c925-97e0-3474609252bb)\n  MIG 3g.71gb     Device  0: (UUID: MIG-d9c64ca6-814d-506b-b744-c0202cc45a09)"
+}

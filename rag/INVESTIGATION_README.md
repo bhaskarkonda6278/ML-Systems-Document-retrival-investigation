@@ -1,6 +1,6 @@
 # Query-adaptive retrieval depth: investigation and results
 
-Bhaskar Konda — s3021085. Results from the completed November 2026 study.
+Bhaskar Konda â€” s3021085. Results from the completed November 2026 study.
 
 ## Research question
 
@@ -36,7 +36,7 @@ Sampling seed: 20261105. The 100-question scope was an API/runtime budget choice
 
 Policies share transcripts, embeddings, corpus, ranked candidates, prompt construction and generation settings. ASR preparation used `ASR_CUDA=none` on an H200 MIG 3g.71gb allocation. Generation and judging use hosted `utter-project/EuroLLM-22B-Instruct-2512`, at temperatures 0.1 and 0 respectively, with JSON-mode judgments. Each distinct prompt has one generation and one judgment; identical contexts reuse cached outputs.
 
-Answer quality is the sum of correctness, grounding and completeness (each 0–4), divided by 12. It is not classification accuracy or a coursework mark. Input/output tokens come from API usage.
+Answer quality is the sum of correctness, grounding and completeness (each 0â€“4), divided by 12. It is not classification accuracy or a coursework mark. Input/output tokens come from API usage.
 
 Downstream time combines warm retrieval median (10 repeats), policy-selection median (100 repeats), context construction and a single observed generation API time. It excludes ASR, embedding, model loading and judging. The generation measurement includes remote-service/network effects; it is not server GPU time.
 
@@ -82,7 +82,7 @@ Intervals include zero but also allow meaningful losses; absence of a clear diff
 
 A separate audit of 10 randomly sampled dev questions rejudged 40 saved answers three times. Ten answers had varying scores. The audit is saved separately and paused; primary results retain their original scores. Repeated consistency would not by itself establish judging accuracy.
 
-**Conclusion:** fixed k=5 is an attractive practical default in the observed quality–token comparison. Zero-buffer selection offers stronger efficiency savings with an unresolved quality trade-off. Buffered Adaptive-k does not improve the observed trade-off against k=5 in this setting. No tested adaptive policy has demonstrated preserved answer quality, and no combined audio-to-answer speedup is claimed.
+**Conclusion:** fixed k=5 is an attractive practical default in the observed qualityâ€“token comparison. Zero-buffer selection offers stronger efficiency savings with an unresolved quality trade-off. Buffered Adaptive-k does not improve the observed trade-off against k=5 in this setting. No tested adaptive policy has demonstrated preserved answer quality, and no combined audio-to-answer speedup is claimed.
 
 ## Code and saved outputs
 
@@ -104,3 +104,13 @@ The original suite lives in `rag/extensions/adaptive_depth_study/`; the fixed-k 
 Cluster outputs are under `/home/s3021085/DIY/edin-mls-26-autumn/rag/results/adaptive_depth_study/`: protocol, frozen configuration, transcripts, candidates, answers, judgments, per-policy metrics, `analysis.json`, `STUDY_RESULTS.md`, comparison CSV, cutoff diagnostics, buffer effects and figures. Audit files are under `judge_audit/`, with a separate archive. Ordinary generated results are ignored by Git and are not all included merely by cloning this code repository. Never commit `.env`, API keys, passwords, model weights or downloaded course assets.
 
 Remaining work includes fuller dev coverage if resources permit, more robust timing, systematic per-query analyses and combined evaluation with optimised ASR. Policies must remain frozen during final evaluation; do not tune on already inspected dev outcomes.
+
+## Combined evaluation update — 10 November 2026
+
+The separate full-pipeline comparison has now completed all 1,500 trials
+(125 dev questions, four configurations, three repetitions). Its protocol,
+metrics and results are in [combined_gpu_dev125_v3](experiments/combined_gpu_dev125_v3/README.md).
+That comparison uses GPU embedding and fixed judging questions; it must not be
+merged into the historical 50-dev downstream-only results above. Expansion to
+all fixed-depth and buffered methods across both ASR variants is planned, not
+completed. The earlier standalone results and limitations remain unchanged.

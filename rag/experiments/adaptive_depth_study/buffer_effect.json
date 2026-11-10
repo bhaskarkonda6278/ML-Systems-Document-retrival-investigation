@@ -1,0 +1,88 @@
+{
+  "summary": {
+    "questions": 50,
+    "buffer_adds_known_relevant_evidence": 15,
+    "buffer_rescues_zero_hit_context": 7,
+    "buffer_score_higher": 10,
+    "buffer_score_equal": 28,
+    "buffer_score_lower": 12
+  },
+  "rescued_queries": [
+    {
+      "query_id": "q_33095b63b15b0fa1",
+      "bare_k": 1,
+      "buffered_k": 6,
+      "relevant_ranks_top100": [
+        4
+      ],
+      "score_difference": 0.0
+    },
+    {
+      "query_id": "q_d33bf150239366a3",
+      "bare_k": 1,
+      "buffered_k": 6,
+      "relevant_ranks_top100": [
+        3,
+        14
+      ],
+      "score_difference": 1.0
+    },
+    {
+      "query_id": "q_b3ba420b3fd4247e",
+      "bare_k": 2,
+      "buffered_k": 7,
+      "relevant_ranks_top100": [
+        3,
+        10
+      ],
+      "score_difference": 0.4166666666666667
+    },
+    {
+      "query_id": "q_4e26a72bfdd314a3",
+      "bare_k": 1,
+      "buffered_k": 6,
+      "relevant_ranks_top100": [
+        5,
+        7,
+        9,
+        27,
+        32,
+        40,
+        43,
+        61,
+        72
+      ],
+      "score_difference": 0.0
+    },
+    {
+      "query_id": "q_3df64fbcb882bbee",
+      "bare_k": 1,
+      "buffered_k": 6,
+      "relevant_ranks_top100": [
+        2,
+        6,
+        41
+      ],
+      "score_difference": 0.0
+    },
+    {
+      "query_id": "q_6f43afaa5e92dbbb",
+      "bare_k": 1,
+      "buffered_k": 6,
+      "relevant_ranks_top100": [
+        5,
+        82
+      ],
+      "score_difference": 0.4166666666666667
+    },
+    {
+      "query_id": "q_dc0daa63c6ad372c",
+      "bare_k": 2,
+      "buffered_k": 7,
+      "relevant_ranks_top100": [
+        6
+      ],
+      "score_difference": 0.0
+    }
+  ]
+}

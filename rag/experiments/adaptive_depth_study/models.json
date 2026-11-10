@@ -1,0 +1,6 @@
+{
+  "generator": "utter-project/EuroLLM-22B-Instruct-2512",
+  "judge": "utter-project/EuroLLM-22B-Instruct-2512",
+  "endpoint": "https://elm.edina.ac.uk/api/v1/",
+  "json_mode": true
+}

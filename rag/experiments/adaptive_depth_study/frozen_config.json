@@ -1,0 +1,85 @@
+{
+  "best_fixed_k": 10,
+  "threshold": 0.3,
+  "quality_tolerance": 0.02,
+  "fixed_tuning": {
+    "1": {
+      "score": 0.3194444444444444,
+      "tokens": 275.8333333333333
+    },
+    "3": {
+      "score": 0.3138888888888889,
+      "tokens": 774.9333333333333
+    },
+    "5": {
+      "score": 0.3666666666666667,
+      "tokens": 1268.1333333333334
+    },
+    "10": {
+      "score": 0.3888888888888889,
+      "tokens": 2449.1
+    },
+    "20": {
+      "score": 0.2833333333333333,
+      "tokens": 4899.933333333333
+    }
+  },
+  "guard_grid": [
+    {
+      "threshold": 0.0,
+      "quality": 0.3666666666666667,
+      "tokens": 540.9333333333333,
+      "adaptive_choices": 29
+    },
+    {
+      "threshold": 0.1,
+      "quality": 0.3666666666666667,
+      "tokens": 540.9333333333333,
+      "adaptive_choices": 29
+    },
+    {
+      "threshold": 0.2,
+      "quality": 0.3666666666666667,
+      "tokens": 540.9333333333333,
+      "adaptive_choices": 29
+    },
+    {
+      "threshold": 0.3,
+      "quality": 0.4027777777777778,
+      "tokens": 1135.1,
+      "adaptive_choices": 18
+    },
+    {
+      "threshold": 0.4,
+      "quality": 0.4,
+      "tokens": 1682.3333333333333,
+      "adaptive_choices": 9
+    },
+    {
+      "threshold": 0.5,
+      "quality": 0.39722222222222225,
+      "tokens": 2214.0666666666666,
+      "adaptive_choices": 3
+    },
+    {
+      "threshold": 0.7,
+      "quality": 0.39444444444444443,
+      "tokens": 2326.4666666666667,
+      "adaptive_choices": 2
+    },
+    {
+      "threshold": 1.0,
+      "quality": 0.3888888888888889,
+      "tokens": 2449.1,
+      "adaptive_choices": 0
+    },
+    {
+      "threshold": 1000000000.0,
+      "quality": 0.3888888888888889,
+      "tokens": 2449.1,
+      "adaptive_choices": 0
+    }
+  ],
+  "selection_uses": "30 practice-tuning queries only",
+  "protocol_hash": "ed1a9ba25ebc436cafc4ceb55a6d70988124a0bc74cc2f584759a1cda45a3524"
+}

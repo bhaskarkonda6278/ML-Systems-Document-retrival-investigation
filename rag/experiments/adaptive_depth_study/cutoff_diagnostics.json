@@ -1,0 +1,26 @@
+{
+  "fixed_5": {
+    "questions": 50,
+    "mean_k": 5,
+    "zero_known_relevant_in_context": 21,
+    "known_relevant_between_cutoff_and_rank20": 15
+  },
+  "fixed_10": {
+    "questions": 50,
+    "mean_k": 10,
+    "zero_known_relevant_in_context": 20,
+    "known_relevant_between_cutoff_and_rank20": 8
+  },
+  "adaptive": {
+    "questions": 50,
+    "mean_k": 7.3,
+    "zero_known_relevant_in_context": 20,
+    "known_relevant_between_cutoff_and_rank20": 10
+  },
+  "gap_only": {
+    "questions": 50,
+    "mean_k": 2.3,
+    "zero_known_relevant_in_context": 27,
+    "known_relevant_between_cutoff_and_rank20": 22
+  }
+}

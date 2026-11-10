@@ -1,0 +1,6 @@
+{
+  "phase": "complete",
+  "trials": 1500,
+  "queries": 125,
+  "no_api": false
+}
