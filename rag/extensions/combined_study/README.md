@@ -81,3 +81,10 @@ are not needed for reproduction.
 Protocols and compact review outputs are committed under
 `rag/experiments/combined_gpu_dev125_v3/`. Original full prompts, answer bodies,
 judgments and logs remain under `rag/results/` on the cluster.
+
+## Expanded seven-policy runner
+
+`run_all_methods.py` and `run_all_methods.sbatch` implement the 14-configuration
+comparison. See [expanded-study status](../../experiments/EXPANDED_STUDY_STATUS.md)
+for scope, offline tests and the distinction between prepared code and unverified
+cluster results. `test_all_methods.py` covers the matrix and policy dispatch.
