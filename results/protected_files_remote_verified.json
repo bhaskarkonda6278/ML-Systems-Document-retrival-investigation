@@ -1,0 +1,72 @@
+[
+  {
+    "path": "hw1-asr/benchmark.py",
+    "normalized_sha256": "be6516f1c626eb50761c260788ee0561a73043d3775fb983bea5c803089cbecb",
+    "unchanged": true
+  },
+  {
+    "path": "hw1-asr/csrc/provided.cu",
+    "normalized_sha256": "d9084f2898b953dedaede136b77d4b32f45b609b7e84eb07cb78946b9cd060d2",
+    "unchanged": true
+  },
+  {
+    "path": "hw1-asr/glm_asr_cuda/__init__.py",
+    "normalized_sha256": "608b62885afb583e58bcca58901fdff22179f3d9d5caf928f9658cd2d8fd5eeb",
+    "unchanged": true
+  },
+  {
+    "path": "hw1-asr/glm_asr_cuda/model.py",
+    "normalized_sha256": "c690ed8dbfcb6e9b775d1b2f6da72b0b055fbeb965fd838afaaa0f49bf008379",
+    "unchanged": true
+  },
+  {
+    "path": "hw1-asr/glm_asr_cuda/ops.py",
+    "normalized_sha256": "de224fee6464b5d3288297a7d0ea2eb66e9206d95bea59586349d2979290e906",
+    "unchanged": true
+  },
+  {
+    "path": "hw1-asr/tests/test_task1_rope.cu",
+    "normalized_sha256": "4b7f27bdc0a07e3224c386a826b23107defbc4565ea84b9d3e753cbae1adc3d6",
+    "unchanged": true
+  },
+  {
+    "path": "hw1-asr/tests/test_task2_reduce.cu",
+    "normalized_sha256": "1f097da841747c6c5af9b56e7e69a3e1db0f3accfef1c5b98700091497295729",
+    "unchanged": true
+  },
+  {
+    "path": "hw1-asr/tests/test_task3_gemm.cu",
+    "normalized_sha256": "b5300ef2d7b4b086e75ab63942c7b06269677ca85d84f58c5484def83fe92588",
+    "unchanged": true
+  },
+  {
+    "path": "hw1-asr/tests/test_task4_attention.cu",
+    "normalized_sha256": "b215e914035ffbca5b3b539beee2568a1fbffe0a39e8861f758c5879ad345be9",
+    "unchanged": true
+  },
+  {
+    "path": "hw1-asr/tests/test_util.h",
+    "normalized_sha256": "10cf89a54d2762db6c9b251b280edc2839f2ec4eb3f9d728f6a5cc9ab71b9204",
+    "unchanged": true
+  },
+  {
+    "path": "report/latex_template/fancyhdr.sty",
+    "normalized_sha256": "b56ec4434b9f4607529a4b23dc68ad8d4b94f1f631c8cddaf7da78140d53a5ea",
+    "unchanged": true
+  },
+  {
+    "path": "report/latex_template/iclr2027_conference.bst",
+    "normalized_sha256": "2d67552db7ed38ccfccb5957b52f95656e25c249724761d3cf5f7922ad1844c5",
+    "unchanged": true
+  },
+  {
+    "path": "report/latex_template/iclr2027_conference.sty",
+    "normalized_sha256": "797deef41724e93761426ac0cbcca46279a91cc650dd1f0ce76a4f08d2098ea6",
+    "unchanged": true
+  },
+  {
+    "path": "report/latex_template/natbib.sty",
+    "normalized_sha256": "88bc70c0e48461934cab5b2accef06b74a8b3ac45ad03ccd3f2a6b7e0d6d530d",
+    "unchanged": true
+  }
+]

@@ -1,0 +1,96 @@
+START: importing torch
+Timeout (0:01:00)!
+Thread 0x0000775e60645600 (most recent call first):
+  File "/home/s3021085/miniconda3/envs/mls-asr/lib/python3.11/ctypes/__init__.py", line 376 in __init__
+  File "/home/s3021085/miniconda3/envs/mls-asr/lib/python3.11/site-packages/torch/__init__.py", line 318 in _preload_cuda_lib
+  File "/home/s3021085/miniconda3/envs/mls-asr/lib/python3.11/site-packages/torch/__init__.py", line 348 in _preload_cuda_deps
+  File "/home/s3021085/miniconda3/envs/mls-asr/lib/python3.11/site-packages/torch/__init__.py", line 381 in _load_global_deps
+  File "/home/s3021085/miniconda3/envs/mls-asr/lib/python3.11/site-packages/torch/__init__.py", line 430 in <module>
+  File "<frozen importlib._bootstrap>", line 241 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 940 in exec_module
+  File "<frozen importlib._bootstrap>", line 690 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1147 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1176 in _find_and_load
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/asr_worker.py", line 23 in main
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/asr_worker.py", line 89 in <module>
+Timeout (0:01:00)!
+Thread 0x0000775e60645600 (most recent call first):
+  File "/home/s3021085/miniconda3/envs/mls-asr/lib/python3.11/ctypes/__init__.py", line 376 in __init__
+  File "/home/s3021085/miniconda3/envs/mls-asr/lib/python3.11/site-packages/torch/__init__.py", line 318 in _preload_cuda_lib
+  File "/home/s3021085/miniconda3/envs/mls-asr/lib/python3.11/site-packages/torch/__init__.py", line 348 in _preload_cuda_deps
+  File "/home/s3021085/miniconda3/envs/mls-asr/lib/python3.11/site-packages/torch/__init__.py", line 381 in _load_global_deps
+  File "/home/s3021085/miniconda3/envs/mls-asr/lib/python3.11/site-packages/torch/__init__.py", line 430 in <module>
+  File "<frozen importlib._bootstrap>", line 241 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 940 in exec_module
+  File "<frozen importlib._bootstrap>", line 690 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1147 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1176 in _find_and_load
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/asr_worker.py", line 23 in main
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/asr_worker.py", line 89 in <module>
+Timeout (0:01:00)!
+Thread 0x0000775e60645600 (most recent call first):
+  File "<frozen importlib._bootstrap>", line 241 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 1233 in create_module
+  File "<frozen importlib._bootstrap>", line 573 in module_from_spec
+  File "<frozen importlib._bootstrap>", line 676 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1147 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1176 in _find_and_load
+  File "/home/s3021085/miniconda3/envs/mls-asr/lib/python3.11/site-packages/torch/__init__.py", line 431 in <module>
+  File "<frozen importlib._bootstrap>", line 241 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 940 in exec_module
+  File "<frozen importlib._bootstrap>", line 690 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1147 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1176 in _find_and_load
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/asr_worker.py", line 23 in main
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/asr_worker.py", line 89 in <module>
+Timeout (0:01:00)!
+Thread 0x0000775e60645600 (most recent call first):
+  File "<frozen importlib._bootstrap_external>", line 1130 in get_data
+  File "<frozen importlib._bootstrap_external>", line 1032 in get_code
+  File "<frozen importlib._bootstrap_external>", line 936 in exec_module
+  File "<frozen importlib._bootstrap>", line 690 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1147 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1176 in _find_and_load
+  File "/home/s3021085/miniconda3/envs/mls-asr/lib/python3.11/site-packages/torch/distributions/__init__.py", line 103 in <module>
+  File "<frozen importlib._bootstrap>", line 241 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 940 in exec_module
+  File "<frozen importlib._bootstrap>", line 690 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1147 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1176 in _find_and_load
+  File "<frozen importlib._bootstrap>", line 241 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1232 in _handle_fromlist
+  File "/home/s3021085/miniconda3/envs/mls-asr/lib/python3.11/site-packages/torch/__init__.py", line 2247 in <module>
+  File "<frozen importlib._bootstrap>", line 241 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 940 in exec_module
+  File "<frozen importlib._bootstrap>", line 690 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1147 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1176 in _find_and_load
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/asr_worker.py", line 23 in main
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/asr_worker.py", line 89 in <module>
+DONE: importing torch
+START: checking CUDA
+DONE: checking CUDA
+START: checking model cache
+DONE: checking model cache
+START: loading model
+Timeout (0:01:00)!
+Thread 0x0000775e60645600 (most recent call first):
+  File "/home/s3021085/miniconda3/envs/mls-asr/lib/python3.11/site-packages/transformers/utils/import_utils.py", line 2522 in create_import_structure_from_path
+  File "/home/s3021085/miniconda3/envs/mls-asr/lib/python3.11/site-packages/transformers/utils/import_utils.py", line 2524 in create_import_structure_from_path
+  File "/home/s3021085/miniconda3/envs/mls-asr/lib/python3.11/site-packages/transformers/utils/import_utils.py", line 2810 in define_import_structure
+  File "/home/s3021085/miniconda3/envs/mls-asr/lib/python3.11/site-packages/transformers/__init__.py", line 770 in <module>
+  File "<frozen importlib._bootstrap>", line 241 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 940 in exec_module
+  File "<frozen importlib._bootstrap>", line 690 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1147 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1176 in _find_and_load
+  File "/home/s3021085/DIY/edin-mls-26-autumn/hw1-asr/glm_asr_cuda/model.py", line 217 in load_model
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/asr_worker.py", line 39 in main
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/asr_worker.py", line 89 in <module>
+Timeout (0:01:00)!
+Thread 0x0000775e60645600 (most recent call first):
+  File "/home/s3021085/DIY/edin-mls-26-autumn/hw1-asr/glm_asr_cuda/model.py", line 209 in read_safetensors
+  File "/home/s3021085/DIY/edin-mls-26-autumn/hw1-asr/glm_asr_cuda/model.py", line 223 in load_model
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/asr_worker.py", line 39 in main
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/asr_worker.py", line 89 in <module>
+DONE: loading model

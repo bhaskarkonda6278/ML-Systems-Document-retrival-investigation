@@ -1,0 +1,216 @@
+Timing round 1/7
+Timing round 2/7
+Timing round 3/7
+Timing round 4/7
+Timing round 5/7
+Timing round 6/7
+Timing round 7/7
+{
+  "split": "dev",
+  "queries": 125,
+  "k": 100,
+  "corpus_shape": [
+    24000,
+    384
+  ],
+  "baseline_quality": {
+    "Recall@5": 0.3794974358974359,
+    "Recall@10": 0.47459487179487175,
+    "Recall@20": 0.5795208791208791,
+    "Recall@100": 0.7244263736263735,
+    "MRR@10": 0.4597079365079365,
+    "NDCG@10": 0.39834243293601623
+  },
+  "repeats": 7,
+  "blas_threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "filepath": "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-f48b354e.so",
+      "version": "0.3.34.106.0",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "filepath": "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-5f890258.so",
+      "version": "0.3.31.dev",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 2,
+      "prefix": "libgomp",
+      "filepath": "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/lib/libgomp.so.1",
+      "version": null
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 2,
+      "prefix": "libgomp",
+      "filepath": "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/scikit_learn.libs/libgomp-e985bcbb.so.1.0.0",
+      "version": null
+    }
+  ],
+  "variants": [
+    {
+      "batch_size": 1,
+      "quality": {
+        "Recall@5": 0.3794974358974359,
+        "Recall@10": 0.47459487179487175,
+        "Recall@20": 0.5795208791208791,
+        "Recall@100": 0.7244263736263735,
+        "MRR@10": 0.4597079365079365,
+        "NDCG@10": 0.39834243293601623
+      },
+      "identical_rankings": 125,
+      "top100_overlap": 1.0,
+      "median_split_ms": 147.47678907588124,
+      "split_ms_repeats": [
+        147.47678907588124,
+        146.64314314723015,
+        146.81642805226147,
+        147.79331698082387,
+        149.12616601213813,
+        146.37277112342417,
+        150.67615103907883
+      ],
+      "amortized_ms_per_query": 1.17981431260705,
+      "queries_per_second": 847.5910059018422,
+      "batch_service_ms_p50": 1.1746787931770086,
+      "batch_service_ms_p95": 1.1991524370387197,
+      "traced_peak_extra_mib": 0.8934173583984375,
+      "score_buffer_mib": 0.091552734375
+    },
+    {
+      "batch_size": 4,
+      "quality": {
+        "Recall@5": 0.3794974358974359,
+        "Recall@10": 0.47459487179487175,
+        "Recall@20": 0.5795208791208791,
+        "Recall@100": 0.7244263736263735,
+        "MRR@10": 0.4597079365079365,
+        "NDCG@10": 0.39834243293601623
+      },
+      "identical_rankings": 119,
+      "top100_overlap": 0.99992,
+      "median_split_ms": 131.0643400065601,
+      "split_ms_repeats": [
+        134.6679860725999,
+        131.70362589880824,
+        130.55711681954563,
+        130.19467890262604,
+        130.76750910840929,
+        131.0643400065601,
+        134.52379894442856
+      ],
+      "amortized_ms_per_query": 1.0485147200524807,
+      "queries_per_second": 953.7300534511786,
+      "batch_service_ms_p50": 4.208140890114009,
+      "batch_service_ms_p95": 4.325121245346963,
+      "traced_peak_extra_mib": 1.9669952392578125,
+      "score_buffer_mib": 0.3662109375
+    },
+    {
+      "batch_size": 16,
+      "quality": {
+        "Recall@5": 0.3794974358974359,
+        "Recall@10": 0.47459487179487175,
+        "Recall@20": 0.5795208791208791,
+        "Recall@100": 0.7244263736263735,
+        "MRR@10": 0.4597079365079365,
+        "NDCG@10": 0.39834243293601623
+      },
+      "identical_rankings": 119,
+      "top100_overlap": 0.99992,
+      "median_split_ms": 50.80833192914724,
+      "split_ms_repeats": [
+        50.80833192914724,
+        50.753602059558034,
+        47.77342197485268,
+        51.809104857966304,
+        51.69754009693861,
+        49.24140009097755,
+        54.19058515690267
+      ],
+      "amortized_ms_per_query": 0.40646665543317795,
+      "queries_per_second": 2460.226408816448,
+      "batch_service_ms_p50": 6.155007053166628,
+      "batch_service_ms_p95": 8.373371267225593,
+      "traced_peak_extra_mib": 6.275032043457031,
+      "score_buffer_mib": 1.46484375
+    },
+    {
+      "batch_size": 64,
+      "quality": {
+        "Recall@5": 0.3794974358974359,
+        "Recall@10": 0.47459487179487175,
+        "Recall@20": 0.5795208791208791,
+        "Recall@100": 0.7244263736263735,
+        "MRR@10": 0.4597079365079365,
+        "NDCG@10": 0.39834243293601623
+      },
+      "identical_rankings": 119,
+      "top100_overlap": 0.99992,
+      "median_split_ms": 35.94203293323517,
+      "split_ms_repeats": [
+        36.576882004737854,
+        35.95365886576474,
+        33.62398501485586,
+        35.94203293323517,
+        37.04761108383536,
+        35.33451305702329,
+        33.900253009051085
+      ],
+      "amortized_ms_per_query": 0.28753626346588135,
+      "queries_per_second": 3477.822198655157,
+      "batch_service_ms_p50": 16.905227559618652,
+      "batch_service_ms_p95": 20.196826639585197,
+      "traced_peak_extra_mib": 23.537521362304688,
+      "score_buffer_mib": 5.859375
+    },
+    {
+      "batch_size": 128,
+      "quality": {
+        "Recall@5": 0.3794974358974359,
+        "Recall@10": 0.47459487179487175,
+        "Recall@20": 0.5795208791208791,
+        "Recall@100": 0.7244263736263735,
+        "MRR@10": 0.4597079365079365,
+        "NDCG@10": 0.39834243293601623
+      },
+      "identical_rankings": 119,
+      "top100_overlap": 0.99992,
+      "median_split_ms": 36.17574810050428,
+      "split_ms_repeats": [
+        36.39820287935436,
+        36.23433597385883,
+        35.82412609830499,
+        36.17574810050428,
+        38.27546187676489,
+        35.98888195119798,
+        36.13894712179899
+      ],
+      "amortized_ms_per_query": 0.28940598480403423,
+      "queries_per_second": 3455.3535604218105,
+      "batch_service_ms_p50": 36.17321094498038,
+      "batch_service_ms_p95": 37.71050916984677,
+      "traced_peak_extra_mib": 45.96597671508789,
+      "score_buffer_mib": 11.444091796875
+    }
+  ],
+  "limitations": [
+    "Offline batch-fill waiting is excluded",
+    "Encoding and ASR excluded from retrieval timing",
+    "Traced allocations exclude untracked BLAS workspaces",
+    "ELM answer generation/judging require a key"
+  ]
+}

@@ -1,0 +1,28 @@
+GPU: NVIDIA H200 MIG 1g.18gb (sm_90)
+Kernels: rope=cuda  reduce=cuda  gemm=cuda  attention=cuda  provided=cuda
+Library: /home/s3021085/edin-mls-26-autumn/hw1-asr/build/sm_90/libasr_kernels.so
+Loading the model (about 9 GB of float32 weights)...
+Loaded in 8.8 s
+Audio: 3.50 s, mel features (1, 128, 3000), prompt 59 tokens
+  run 1:   5770.4 ms  (13 tokens)
+  run 2:   5770.4 ms  (13 tokens)
+  run 3:   5769.6 ms  (13 tokens)
+
+GPU time per operation, one transcription (5773.6 ms in kernels):
+  operation    runs on    calls   total ms   share
+  linear       cuda        2757     4958.9   85.9%
+  attention    cuda         396      790.3   13.7%
+  rmsnorm      cuda         741        6.8    0.1%
+  silu_mul     cuda         364        6.2    0.1%
+  rope         cuda         396        5.0    0.1%
+  layernorm    cuda          65        4.0    0.1%
+  softmax      cuda          13        1.8    0.0%
+  embedding    cuda          13        0.4    0.0%
+  im2col       cuda           2        0.3    0.0%
+
+Time: 5770.1 ms per transcription (+/- 0.4 ms), 443.9 ms per token
+Peak GPU memory: 8.56 GiB
+Transcription: Concord returned to its place amidst the tents.
+Expected:      Concord returned to its place amidst the tents
+Accuracy: 100.0%
+Status: PASS

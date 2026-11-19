@@ -1,0 +1,19 @@
+{
+  "report_pdf": "/home/s3021085/edin-mls-26-autumn/report/latex_template/report.pdf",
+  "verified_files": {
+    "report/build_report.py": "d87e6e7f3cbdfef53668ff154b51ce06b71c7de9d43c433e2f931c9b3f2057e0",
+    "report/requirements.txt": "8ec350b87d4ca493215d1c97a5c42bceb0755657f26e3a827ed175ae9af52037",
+    "REPRODUCE.md": "ee5592cbdecb874e6198c52a5d6ba9d36b35e0d584e6c2e355fb35abdd5052ba",
+    "report/latex_template/report.tex": "60cea9ddb5fea85c3e758b482d22d51ed13db42bef80201751a035bb05c5f012",
+    "report/latex_template/body.tex": "552aab9a57e2b1b73daa9a17e179e9924e0f799b6abb64e5de2799c07fa9527a",
+    "report/latex_template/references.bib": "7cfc2d36438c760db02b86d5f8a5f5f54ce848b6859e1324c3a3c38997de12c3",
+    "report/latex_template/guide_answers.tex": "0a2be575c19fcd32805860dbfd88649118f1bed3da49f3ceb97376883f9e3d59",
+    "report/latex_template/generated_asr_results.tex": "6f9ed9288aecabbff862801d961c1b6f5568328774a04bdf43fa8e28136f8391",
+    "report/latex_template/generated_rag_results.tex": "c33c3fbece0426cac711db50f149ba1eecbfe1b88a1f1b01599b348d7f36684a",
+    "report/latex_template/report.bbl": "ae6b3d811f18b9ca4643aedb6f224034dc0219ed80fae75a8c4d69bae1d7685b",
+    "report/latex_template/report.pdf": "32e65f204d6e5a844a3a7f83ece474899b3141de8f81964890ec610815a33644",
+    "report/latex_template/figures/kernel_tuning.png": "425bd19a45ce4554eb6de53c57980d114444b65448a2f465c182108bb138c12e",
+    "results/report_format_check.json": "c6eb1df13a27d06acb19eb0147cb38f54702ba717f82b357bece0f7889af5222",
+    "results/validation_summary.json": "88e0df29a77755881b438738eefe64bad51deb6a97ff5d321258b31f9961a12b"
+  }
+}

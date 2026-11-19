@@ -1,0 +1,4131 @@
+{
+  "hostname": "saxa.inf.ed.ac.uk",
+  "gpu": "GPU 0: NVIDIA H200 (UUID: GPU-6096d4d6-542b-1e8d-ea2a-4c1eeeef9c83)\n  MIG 1g.18gb     Device  0: (UUID: MIG-ea9d23a9-0c46-589e-9ba2-49a3cc7135d4)",
+  "nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Fri_Feb_21_20:23:50_PST_2025\nCuda compilation tools, release 12.8, V12.8.93\nBuild cuda_12.8.r12.8/compiler.35583870_0",
+  "started_unix": 1792872941.1558597,
+  "repeats": 3,
+  "variants": [
+    {
+      "task": 1,
+      "parameter": "ROPE_THREADS",
+      "value": 256,
+      "default": 256,
+      "repeats": [
+        [
+          {
+            "case": "tiny (2 x 3 tokens, Hq=3, Hk=1)",
+            "status": "PASS",
+            "max_error": 1.03e-07,
+            "ms": 0.002,
+            "throughput": 0.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "odd sizes, partial rotation",
+            "status": "PASS",
+            "max_error": 1.02e-07,
+            "ms": 0.002,
+            "throughput": 7.9,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "audio encoder (partial, 32/64)",
+            "status": "PASS",
+            "max_error": 1.91e-07,
+            "ms": 0.053,
+            "throughput": 289.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, full)",
+            "status": "PASS",
+            "max_error": 1.73e-07,
+            "ms": 0.006,
+            "throughput": 211.0,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny (2 x 3 tokens, Hq=3, Hk=1)",
+            "status": "PASS",
+            "max_error": 1.03e-07,
+            "ms": 0.002,
+            "throughput": 0.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "odd sizes, partial rotation",
+            "status": "PASS",
+            "max_error": 1.02e-07,
+            "ms": 0.002,
+            "throughput": 8.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "audio encoder (partial, 32/64)",
+            "status": "PASS",
+            "max_error": 1.91e-07,
+            "ms": 0.053,
+            "throughput": 290.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, full)",
+            "status": "PASS",
+            "max_error": 1.73e-07,
+            "ms": 0.006,
+            "throughput": 217.8,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny (2 x 3 tokens, Hq=3, Hk=1)",
+            "status": "PASS",
+            "max_error": 1.03e-07,
+            "ms": 0.002,
+            "throughput": 0.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "odd sizes, partial rotation",
+            "status": "PASS",
+            "max_error": 1.02e-07,
+            "ms": 0.002,
+            "throughput": 8.3,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "audio encoder (partial, 32/64)",
+            "status": "PASS",
+            "max_error": 1.91e-07,
+            "ms": 0.053,
+            "throughput": 290.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, full)",
+            "status": "PASS",
+            "max_error": 1.73e-07,
+            "ms": 0.006,
+            "throughput": 211.6,
+            "throughput_unit": "GB/s"
+          }
+        ]
+      ]
+    },
+    {
+      "task": 1,
+      "parameter": "ROPE_THREADS",
+      "value": 32,
+      "default": 256,
+      "repeats": [
+        [
+          {
+            "case": "tiny (2 x 3 tokens, Hq=3, Hk=1)",
+            "status": "PASS",
+            "max_error": 1.03e-07,
+            "ms": 0.002,
+            "throughput": 0.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "odd sizes, partial rotation",
+            "status": "PASS",
+            "max_error": 1.02e-07,
+            "ms": 0.002,
+            "throughput": 7.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "audio encoder (partial, 32/64)",
+            "status": "PASS",
+            "max_error": 1.91e-07,
+            "ms": 0.076,
+            "throughput": 202.4,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, full)",
+            "status": "PASS",
+            "max_error": 1.73e-07,
+            "ms": 0.009,
+            "throughput": 148.7,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny (2 x 3 tokens, Hq=3, Hk=1)",
+            "status": "PASS",
+            "max_error": 1.03e-07,
+            "ms": 0.002,
+            "throughput": 0.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "odd sizes, partial rotation",
+            "status": "PASS",
+            "max_error": 1.02e-07,
+            "ms": 0.002,
+            "throughput": 7.9,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "audio encoder (partial, 32/64)",
+            "status": "PASS",
+            "max_error": 1.91e-07,
+            "ms": 0.076,
+            "throughput": 202.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, full)",
+            "status": "PASS",
+            "max_error": 1.73e-07,
+            "ms": 0.009,
+            "throughput": 147.7,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny (2 x 3 tokens, Hq=3, Hk=1)",
+            "status": "PASS",
+            "max_error": 1.03e-07,
+            "ms": 0.002,
+            "throughput": 0.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "odd sizes, partial rotation",
+            "status": "PASS",
+            "max_error": 1.02e-07,
+            "ms": 0.002,
+            "throughput": 8.2,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "audio encoder (partial, 32/64)",
+            "status": "PASS",
+            "max_error": 1.91e-07,
+            "ms": 0.076,
+            "throughput": 203.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, full)",
+            "status": "PASS",
+            "max_error": 1.73e-07,
+            "ms": 0.009,
+            "throughput": 148.9,
+            "throughput_unit": "GB/s"
+          }
+        ]
+      ]
+    },
+    {
+      "task": 1,
+      "parameter": "ROPE_THREADS",
+      "value": 64,
+      "default": 256,
+      "repeats": [
+        [
+          {
+            "case": "tiny (2 x 3 tokens, Hq=3, Hk=1)",
+            "status": "PASS",
+            "max_error": 1.03e-07,
+            "ms": 0.002,
+            "throughput": 0.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "odd sizes, partial rotation",
+            "status": "PASS",
+            "max_error": 1.02e-07,
+            "ms": 0.002,
+            "throughput": 8.3,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "audio encoder (partial, 32/64)",
+            "status": "PASS",
+            "max_error": 1.91e-07,
+            "ms": 0.053,
+            "throughput": 290.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, full)",
+            "status": "PASS",
+            "max_error": 1.73e-07,
+            "ms": 0.006,
+            "throughput": 217.1,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny (2 x 3 tokens, Hq=3, Hk=1)",
+            "status": "PASS",
+            "max_error": 1.03e-07,
+            "ms": 0.002,
+            "throughput": 0.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "odd sizes, partial rotation",
+            "status": "PASS",
+            "max_error": 1.02e-07,
+            "ms": 0.002,
+            "throughput": 8.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "audio encoder (partial, 32/64)",
+            "status": "PASS",
+            "max_error": 1.91e-07,
+            "ms": 0.053,
+            "throughput": 291.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, full)",
+            "status": "PASS",
+            "max_error": 1.73e-07,
+            "ms": 0.006,
+            "throughput": 216.1,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny (2 x 3 tokens, Hq=3, Hk=1)",
+            "status": "PASS",
+            "max_error": 1.03e-07,
+            "ms": 0.002,
+            "throughput": 0.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "odd sizes, partial rotation",
+            "status": "PASS",
+            "max_error": 1.02e-07,
+            "ms": 0.002,
+            "throughput": 8.2,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "audio encoder (partial, 32/64)",
+            "status": "PASS",
+            "max_error": 1.91e-07,
+            "ms": 0.053,
+            "throughput": 291.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, full)",
+            "status": "PASS",
+            "max_error": 1.73e-07,
+            "ms": 0.006,
+            "throughput": 211.1,
+            "throughput_unit": "GB/s"
+          }
+        ]
+      ]
+    },
+    {
+      "task": 1,
+      "parameter": "ROPE_THREADS",
+      "value": 128,
+      "default": 256,
+      "repeats": [
+        [
+          {
+            "case": "tiny (2 x 3 tokens, Hq=3, Hk=1)",
+            "status": "PASS",
+            "max_error": 1.03e-07,
+            "ms": 0.002,
+            "throughput": 0.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "odd sizes, partial rotation",
+            "status": "PASS",
+            "max_error": 1.02e-07,
+            "ms": 0.002,
+            "throughput": 8.2,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "audio encoder (partial, 32/64)",
+            "status": "PASS",
+            "max_error": 1.91e-07,
+            "ms": 0.053,
+            "throughput": 290.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, full)",
+            "status": "PASS",
+            "max_error": 1.73e-07,
+            "ms": 0.006,
+            "throughput": 212.6,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny (2 x 3 tokens, Hq=3, Hk=1)",
+            "status": "PASS",
+            "max_error": 1.03e-07,
+            "ms": 0.002,
+            "throughput": 0.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "odd sizes, partial rotation",
+            "status": "PASS",
+            "max_error": 1.02e-07,
+            "ms": 0.002,
+            "throughput": 7.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "audio encoder (partial, 32/64)",
+            "status": "PASS",
+            "max_error": 1.91e-07,
+            "ms": 0.053,
+            "throughput": 290.2,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, full)",
+            "status": "PASS",
+            "max_error": 1.73e-07,
+            "ms": 0.006,
+            "throughput": 215.6,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny (2 x 3 tokens, Hq=3, Hk=1)",
+            "status": "PASS",
+            "max_error": 1.03e-07,
+            "ms": 0.002,
+            "throughput": 0.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "odd sizes, partial rotation",
+            "status": "PASS",
+            "max_error": 1.02e-07,
+            "ms": 0.002,
+            "throughput": 7.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "audio encoder (partial, 32/64)",
+            "status": "PASS",
+            "max_error": 1.91e-07,
+            "ms": 0.053,
+            "throughput": 290.6,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, full)",
+            "status": "PASS",
+            "max_error": 1.73e-07,
+            "ms": 0.006,
+            "throughput": 217.7,
+            "throughput_unit": "GB/s"
+          }
+        ]
+      ]
+    },
+    {
+      "task": 1,
+      "parameter": "ROPE_THREADS",
+      "value": 512,
+      "default": 256,
+      "repeats": [
+        [
+          {
+            "case": "tiny (2 x 3 tokens, Hq=3, Hk=1)",
+            "status": "PASS",
+            "max_error": 1.03e-07,
+            "ms": 0.002,
+            "throughput": 0.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "odd sizes, partial rotation",
+            "status": "PASS",
+            "max_error": 1.02e-07,
+            "ms": 0.002,
+            "throughput": 7.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "audio encoder (partial, 32/64)",
+            "status": "PASS",
+            "max_error": 1.91e-07,
+            "ms": 0.054,
+            "throughput": 284.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, full)",
+            "status": "PASS",
+            "max_error": 1.73e-07,
+            "ms": 0.006,
+            "throughput": 215.4,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny (2 x 3 tokens, Hq=3, Hk=1)",
+            "status": "PASS",
+            "max_error": 1.03e-07,
+            "ms": 0.002,
+            "throughput": 0.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "odd sizes, partial rotation",
+            "status": "PASS",
+            "max_error": 1.02e-07,
+            "ms": 0.002,
+            "throughput": 7.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "audio encoder (partial, 32/64)",
+            "status": "PASS",
+            "max_error": 1.91e-07,
+            "ms": 0.054,
+            "throughput": 285.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, full)",
+            "status": "PASS",
+            "max_error": 1.73e-07,
+            "ms": 0.006,
+            "throughput": 217.5,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny (2 x 3 tokens, Hq=3, Hk=1)",
+            "status": "PASS",
+            "max_error": 1.03e-07,
+            "ms": 0.002,
+            "throughput": 0.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "odd sizes, partial rotation",
+            "status": "PASS",
+            "max_error": 1.02e-07,
+            "ms": 0.002,
+            "throughput": 7.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "audio encoder (partial, 32/64)",
+            "status": "PASS",
+            "max_error": 1.91e-07,
+            "ms": 0.054,
+            "throughput": 284.9,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, full)",
+            "status": "PASS",
+            "max_error": 1.73e-07,
+            "ms": 0.006,
+            "throughput": 210.9,
+            "throughput_unit": "GB/s"
+          }
+        ]
+      ]
+    },
+    {
+      "task": 1,
+      "parameter": "ROPE_THREADS",
+      "value": 1024,
+      "default": 256,
+      "repeats": [
+        [
+          {
+            "case": "tiny (2 x 3 tokens, Hq=3, Hk=1)",
+            "status": "PASS",
+            "max_error": 1.03e-07,
+            "ms": 0.002,
+            "throughput": 0.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "odd sizes, partial rotation",
+            "status": "PASS",
+            "max_error": 1.02e-07,
+            "ms": 0.002,
+            "throughput": 6.5,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "audio encoder (partial, 32/64)",
+            "status": "PASS",
+            "max_error": 1.91e-07,
+            "ms": 0.055,
+            "throughput": 279.5,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, full)",
+            "status": "PASS",
+            "max_error": 1.73e-07,
+            "ms": 0.006,
+            "throughput": 212.5,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny (2 x 3 tokens, Hq=3, Hk=1)",
+            "status": "PASS",
+            "max_error": 1.03e-07,
+            "ms": 0.002,
+            "throughput": 0.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "odd sizes, partial rotation",
+            "status": "PASS",
+            "max_error": 1.02e-07,
+            "ms": 0.002,
+            "throughput": 6.6,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "audio encoder (partial, 32/64)",
+            "status": "PASS",
+            "max_error": 1.91e-07,
+            "ms": 0.055,
+            "throughput": 278.6,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, full)",
+            "status": "PASS",
+            "max_error": 1.73e-07,
+            "ms": 0.006,
+            "throughput": 211.8,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny (2 x 3 tokens, Hq=3, Hk=1)",
+            "status": "PASS",
+            "max_error": 1.03e-07,
+            "ms": 0.002,
+            "throughput": 0.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "odd sizes, partial rotation",
+            "status": "PASS",
+            "max_error": 1.02e-07,
+            "ms": 0.002,
+            "throughput": 6.6,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "audio encoder (partial, 32/64)",
+            "status": "PASS",
+            "max_error": 1.91e-07,
+            "ms": 0.055,
+            "throughput": 279.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, full)",
+            "status": "PASS",
+            "max_error": 1.73e-07,
+            "ms": 0.006,
+            "throughput": 213.4,
+            "throughput_unit": "GB/s"
+          }
+        ]
+      ]
+    },
+    {
+      "task": 2,
+      "parameter": "REDUCE_THREADS",
+      "value": 256,
+      "default": 256,
+      "repeats": [
+        [
+          {
+            "case": "rmsnorm, one short row",
+            "status": "PASS",
+            "max_error": 8.27e-08,
+            "ms": 0.002,
+            "throughput": 0.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, odd cols",
+            "status": "PASS",
+            "max_error": 3.68e-07,
+            "ms": 0.003,
+            "throughput": 12.6,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, text decoder",
+            "status": "PASS",
+            "max_error": 4.35e-07,
+            "ms": 0.005,
+            "throughput": 213.5,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, odd cols (example)",
+            "status": "PASS",
+            "max_error": 3.91e-07,
+            "ms": 0.004,
+            "throughput": 11.3,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, audio encoder",
+            "status": "PASS",
+            "max_error": 5.42e-07,
+            "ms": 0.06,
+            "throughput": 256.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, one short row",
+            "status": "PASS",
+            "max_error": 1.11e-08,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, odd cols",
+            "status": "PASS",
+            "max_error": 1.04e-09,
+            "ms": 0.003,
+            "throughput": 7.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, large inputs (+-100)",
+            "status": "PASS",
+            "max_error": 2.67e-08,
+            "ms": 0.004,
+            "throughput": 4.4,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, all negative (-200..-150)",
+            "status": "PASS",
+            "max_error": 6.11e-09,
+            "ms": 0.002,
+            "throughput": 1.9,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, vocabulary row (59264)",
+            "status": "PASS",
+            "max_error": 8.13e-11,
+            "ms": 0.097,
+            "throughput": 4.9,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, 64 x 4096",
+            "status": "PASS",
+            "max_error": 7.95e-10,
+            "ms": 0.009,
+            "throughput": 240.5,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "rmsnorm, one short row",
+            "status": "PASS",
+            "max_error": 8.27e-08,
+            "ms": 0.002,
+            "throughput": 0.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, odd cols",
+            "status": "PASS",
+            "max_error": 3.68e-07,
+            "ms": 0.003,
+            "throughput": 12.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, text decoder",
+            "status": "PASS",
+            "max_error": 4.35e-07,
+            "ms": 0.005,
+            "throughput": 213.9,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, odd cols (example)",
+            "status": "PASS",
+            "max_error": 3.91e-07,
+            "ms": 0.004,
+            "throughput": 10.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, audio encoder",
+            "status": "PASS",
+            "max_error": 5.42e-07,
+            "ms": 0.06,
+            "throughput": 256.2,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, one short row",
+            "status": "PASS",
+            "max_error": 1.11e-08,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, odd cols",
+            "status": "PASS",
+            "max_error": 1.04e-09,
+            "ms": 0.003,
+            "throughput": 7.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, large inputs (+-100)",
+            "status": "PASS",
+            "max_error": 2.67e-08,
+            "ms": 0.004,
+            "throughput": 4.4,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, all negative (-200..-150)",
+            "status": "PASS",
+            "max_error": 6.11e-09,
+            "ms": 0.002,
+            "throughput": 1.9,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, vocabulary row (59264)",
+            "status": "PASS",
+            "max_error": 8.13e-11,
+            "ms": 0.097,
+            "throughput": 4.9,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, 64 x 4096",
+            "status": "PASS",
+            "max_error": 7.95e-10,
+            "ms": 0.009,
+            "throughput": 236.8,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "rmsnorm, one short row",
+            "status": "PASS",
+            "max_error": 8.27e-08,
+            "ms": 0.002,
+            "throughput": 0.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, odd cols",
+            "status": "PASS",
+            "max_error": 3.68e-07,
+            "ms": 0.003,
+            "throughput": 12.4,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, text decoder",
+            "status": "PASS",
+            "max_error": 4.35e-07,
+            "ms": 0.005,
+            "throughput": 218.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, odd cols (example)",
+            "status": "PASS",
+            "max_error": 3.91e-07,
+            "ms": 0.004,
+            "throughput": 11.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, audio encoder",
+            "status": "PASS",
+            "max_error": 5.42e-07,
+            "ms": 0.059,
+            "throughput": 259.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, one short row",
+            "status": "PASS",
+            "max_error": 1.11e-08,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, odd cols",
+            "status": "PASS",
+            "max_error": 1.04e-09,
+            "ms": 0.003,
+            "throughput": 7.4,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, large inputs (+-100)",
+            "status": "PASS",
+            "max_error": 2.67e-08,
+            "ms": 0.004,
+            "throughput": 4.4,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, all negative (-200..-150)",
+            "status": "PASS",
+            "max_error": 6.11e-09,
+            "ms": 0.003,
+            "throughput": 1.9,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, vocabulary row (59264)",
+            "status": "PASS",
+            "max_error": 8.13e-11,
+            "ms": 0.097,
+            "throughput": 4.9,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, 64 x 4096",
+            "status": "PASS",
+            "max_error": 7.95e-10,
+            "ms": 0.009,
+            "throughput": 239.6,
+            "throughput_unit": "GB/s"
+          }
+        ]
+      ]
+    },
+    {
+      "task": 2,
+      "parameter": "REDUCE_THREADS",
+      "value": 32,
+      "default": 256,
+      "repeats": [
+        [
+          {
+            "case": "rmsnorm, one short row",
+            "status": "PASS",
+            "max_error": 8.27e-08,
+            "ms": 0.002,
+            "throughput": 0.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, odd cols",
+            "status": "PASS",
+            "max_error": 3.68e-07,
+            "ms": 0.012,
+            "throughput": 3.3,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, text decoder",
+            "status": "PASS",
+            "max_error": 3.83e-07,
+            "ms": 0.023,
+            "throughput": 44.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, odd cols (example)",
+            "status": "PASS",
+            "max_error": 3.91e-07,
+            "ms": 0.014,
+            "throughput": 2.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, audio encoder",
+            "status": "PASS",
+            "max_error": 5.52e-07,
+            "ms": 0.092,
+            "throughput": 166.4,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, one short row",
+            "status": "PASS",
+            "max_error": 1.11e-08,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, odd cols",
+            "status": "PASS",
+            "max_error": 1.04e-09,
+            "ms": 0.011,
+            "throughput": 2.2,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, large inputs (+-100)",
+            "status": "PASS",
+            "max_error": 2.67e-08,
+            "ms": 0.012,
+            "throughput": 1.3,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, all negative (-200..-150)",
+            "status": "PASS",
+            "max_error": 6.11e-09,
+            "ms": 0.005,
+            "throughput": 1.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, vocabulary row (59264)",
+            "status": "PASS",
+            "max_error": 5.23e-10,
+            "ms": 0.772,
+            "throughput": 0.6,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, 64 x 4096",
+            "status": "PASS",
+            "max_error": 1.13e-09,
+            "ms": 0.039,
+            "throughput": 53.3,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "rmsnorm, one short row",
+            "status": "PASS",
+            "max_error": 8.27e-08,
+            "ms": 0.003,
+            "throughput": 0.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, odd cols",
+            "status": "PASS",
+            "max_error": 3.68e-07,
+            "ms": 0.012,
+            "throughput": 3.3,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, text decoder",
+            "status": "PASS",
+            "max_error": 3.83e-07,
+            "ms": 0.023,
+            "throughput": 45.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, odd cols (example)",
+            "status": "PASS",
+            "max_error": 3.91e-07,
+            "ms": 0.014,
+            "throughput": 2.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, audio encoder",
+            "status": "PASS",
+            "max_error": 5.52e-07,
+            "ms": 0.093,
+            "throughput": 166.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, one short row",
+            "status": "PASS",
+            "max_error": 1.11e-08,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, odd cols",
+            "status": "PASS",
+            "max_error": 1.04e-09,
+            "ms": 0.011,
+            "throughput": 2.2,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, large inputs (+-100)",
+            "status": "PASS",
+            "max_error": 2.67e-08,
+            "ms": 0.012,
+            "throughput": 1.3,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, all negative (-200..-150)",
+            "status": "PASS",
+            "max_error": 6.11e-09,
+            "ms": 0.005,
+            "throughput": 1.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, vocabulary row (59264)",
+            "status": "PASS",
+            "max_error": 5.23e-10,
+            "ms": 0.771,
+            "throughput": 0.6,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, 64 x 4096",
+            "status": "PASS",
+            "max_error": 1.13e-09,
+            "ms": 0.039,
+            "throughput": 53.3,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "rmsnorm, one short row",
+            "status": "PASS",
+            "max_error": 8.27e-08,
+            "ms": 0.003,
+            "throughput": 0.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, odd cols",
+            "status": "PASS",
+            "max_error": 3.68e-07,
+            "ms": 0.012,
+            "throughput": 3.2,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, text decoder",
+            "status": "PASS",
+            "max_error": 3.83e-07,
+            "ms": 0.023,
+            "throughput": 45.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, odd cols (example)",
+            "status": "PASS",
+            "max_error": 3.91e-07,
+            "ms": 0.014,
+            "throughput": 2.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, audio encoder",
+            "status": "PASS",
+            "max_error": 5.52e-07,
+            "ms": 0.093,
+            "throughput": 164.3,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, one short row",
+            "status": "PASS",
+            "max_error": 1.11e-08,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, odd cols",
+            "status": "PASS",
+            "max_error": 1.04e-09,
+            "ms": 0.011,
+            "throughput": 2.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, large inputs (+-100)",
+            "status": "PASS",
+            "max_error": 2.67e-08,
+            "ms": 0.012,
+            "throughput": 1.3,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, all negative (-200..-150)",
+            "status": "PASS",
+            "max_error": 6.11e-09,
+            "ms": 0.005,
+            "throughput": 1.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, vocabulary row (59264)",
+            "status": "PASS",
+            "max_error": 5.23e-10,
+            "ms": 0.771,
+            "throughput": 0.6,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, 64 x 4096",
+            "status": "PASS",
+            "max_error": 1.13e-09,
+            "ms": 0.039,
+            "throughput": 53.5,
+            "throughput_unit": "GB/s"
+          }
+        ]
+      ]
+    },
+    {
+      "task": 2,
+      "parameter": "REDUCE_THREADS",
+      "value": 64,
+      "default": 256,
+      "repeats": [
+        [
+          {
+            "case": "rmsnorm, one short row",
+            "status": "PASS",
+            "max_error": 8.27e-08,
+            "ms": 0.002,
+            "throughput": 0.2,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, odd cols",
+            "status": "PASS",
+            "max_error": 3.68e-07,
+            "ms": 0.007,
+            "throughput": 5.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, text decoder",
+            "status": "PASS",
+            "max_error": 4.18e-07,
+            "ms": 0.013,
+            "throughput": 81.2,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, odd cols (example)",
+            "status": "PASS",
+            "max_error": 3.91e-07,
+            "ms": 0.008,
+            "throughput": 4.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, audio encoder",
+            "status": "PASS",
+            "max_error": 5.42e-07,
+            "ms": 0.057,
+            "throughput": 270.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, one short row",
+            "status": "PASS",
+            "max_error": 1.11e-08,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, odd cols",
+            "status": "PASS",
+            "max_error": 1.55e-09,
+            "ms": 0.007,
+            "throughput": 3.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, large inputs (+-100)",
+            "status": "PASS",
+            "max_error": 2.67e-08,
+            "ms": 0.007,
+            "throughput": 2.3,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, all negative (-200..-150)",
+            "status": "PASS",
+            "max_error": 6.11e-09,
+            "ms": 0.003,
+            "throughput": 1.4,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, vocabulary row (59264)",
+            "status": "PASS",
+            "max_error": 2.8e-10,
+            "ms": 0.38,
+            "throughput": 1.2,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, 64 x 4096",
+            "status": "PASS",
+            "max_error": 1.12e-09,
+            "ms": 0.021,
+            "throughput": 99.7,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "rmsnorm, one short row",
+            "status": "PASS",
+            "max_error": 8.27e-08,
+            "ms": 0.002,
+            "throughput": 0.2,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, odd cols",
+            "status": "PASS",
+            "max_error": 3.68e-07,
+            "ms": 0.007,
+            "throughput": 5.6,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, text decoder",
+            "status": "PASS",
+            "max_error": 4.18e-07,
+            "ms": 0.013,
+            "throughput": 82.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, odd cols (example)",
+            "status": "PASS",
+            "max_error": 3.91e-07,
+            "ms": 0.008,
+            "throughput": 4.9,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, audio encoder",
+            "status": "PASS",
+            "max_error": 5.42e-07,
+            "ms": 0.057,
+            "throughput": 268.6,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, one short row",
+            "status": "PASS",
+            "max_error": 1.11e-08,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, odd cols",
+            "status": "PASS",
+            "max_error": 1.55e-09,
+            "ms": 0.007,
+            "throughput": 3.6,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, large inputs (+-100)",
+            "status": "PASS",
+            "max_error": 2.67e-08,
+            "ms": 0.007,
+            "throughput": 2.3,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, all negative (-200..-150)",
+            "status": "PASS",
+            "max_error": 6.11e-09,
+            "ms": 0.004,
+            "throughput": 1.4,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, vocabulary row (59264)",
+            "status": "PASS",
+            "max_error": 2.8e-10,
+            "ms": 0.38,
+            "throughput": 1.2,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, 64 x 4096",
+            "status": "PASS",
+            "max_error": 1.12e-09,
+            "ms": 0.021,
+            "throughput": 99.9,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "rmsnorm, one short row",
+            "status": "PASS",
+            "max_error": 8.27e-08,
+            "ms": 0.002,
+            "throughput": 0.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, odd cols",
+            "status": "PASS",
+            "max_error": 3.68e-07,
+            "ms": 0.007,
+            "throughput": 5.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, text decoder",
+            "status": "PASS",
+            "max_error": 4.18e-07,
+            "ms": 0.013,
+            "throughput": 82.2,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, odd cols (example)",
+            "status": "PASS",
+            "max_error": 3.91e-07,
+            "ms": 0.008,
+            "throughput": 4.9,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, audio encoder",
+            "status": "PASS",
+            "max_error": 5.42e-07,
+            "ms": 0.057,
+            "throughput": 268.9,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, one short row",
+            "status": "PASS",
+            "max_error": 1.11e-08,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, odd cols",
+            "status": "PASS",
+            "max_error": 1.55e-09,
+            "ms": 0.007,
+            "throughput": 3.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, large inputs (+-100)",
+            "status": "PASS",
+            "max_error": 2.67e-08,
+            "ms": 0.007,
+            "throughput": 2.3,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, all negative (-200..-150)",
+            "status": "PASS",
+            "max_error": 6.11e-09,
+            "ms": 0.003,
+            "throughput": 1.4,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, vocabulary row (59264)",
+            "status": "PASS",
+            "max_error": 2.8e-10,
+            "ms": 0.38,
+            "throughput": 1.2,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, 64 x 4096",
+            "status": "PASS",
+            "max_error": 1.12e-09,
+            "ms": 0.021,
+            "throughput": 99.4,
+            "throughput_unit": "GB/s"
+          }
+        ]
+      ]
+    },
+    {
+      "task": 2,
+      "parameter": "REDUCE_THREADS",
+      "value": 128,
+      "default": 256,
+      "repeats": [
+        [
+          {
+            "case": "rmsnorm, one short row",
+            "status": "PASS",
+            "max_error": 8.27e-08,
+            "ms": 0.002,
+            "throughput": 0.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, odd cols",
+            "status": "PASS",
+            "max_error": 3.51e-07,
+            "ms": 0.004,
+            "throughput": 9.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, text decoder",
+            "status": "PASS",
+            "max_error": 4.18e-07,
+            "ms": 0.007,
+            "throughput": 142.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, odd cols (example)",
+            "status": "PASS",
+            "max_error": 3.91e-07,
+            "ms": 0.005,
+            "throughput": 7.9,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, audio encoder",
+            "status": "PASS",
+            "max_error": 5.17e-07,
+            "ms": 0.056,
+            "throughput": 274.5,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, one short row",
+            "status": "PASS",
+            "max_error": 1.11e-08,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, odd cols",
+            "status": "PASS",
+            "max_error": 1.04e-09,
+            "ms": 0.004,
+            "throughput": 5.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, large inputs (+-100)",
+            "status": "PASS",
+            "max_error": 1.89e-08,
+            "ms": 0.005,
+            "throughput": 3.5,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, all negative (-200..-150)",
+            "status": "PASS",
+            "max_error": 6.11e-09,
+            "ms": 0.003,
+            "throughput": 1.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, vocabulary row (59264)",
+            "status": "PASS",
+            "max_error": 1.35e-10,
+            "ms": 0.192,
+            "throughput": 2.5,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, 64 x 4096",
+            "status": "PASS",
+            "max_error": 8.85e-10,
+            "ms": 0.012,
+            "throughput": 170.5,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "rmsnorm, one short row",
+            "status": "PASS",
+            "max_error": 8.27e-08,
+            "ms": 0.002,
+            "throughput": 0.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, odd cols",
+            "status": "PASS",
+            "max_error": 3.51e-07,
+            "ms": 0.004,
+            "throughput": 8.9,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, text decoder",
+            "status": "PASS",
+            "max_error": 4.18e-07,
+            "ms": 0.007,
+            "throughput": 142.6,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, odd cols (example)",
+            "status": "PASS",
+            "max_error": 3.91e-07,
+            "ms": 0.005,
+            "throughput": 8.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, audio encoder",
+            "status": "PASS",
+            "max_error": 5.17e-07,
+            "ms": 0.056,
+            "throughput": 274.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, one short row",
+            "status": "PASS",
+            "max_error": 1.11e-08,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, odd cols",
+            "status": "PASS",
+            "max_error": 1.04e-09,
+            "ms": 0.004,
+            "throughput": 5.6,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, large inputs (+-100)",
+            "status": "PASS",
+            "max_error": 1.89e-08,
+            "ms": 0.005,
+            "throughput": 3.4,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, all negative (-200..-150)",
+            "status": "PASS",
+            "max_error": 6.11e-09,
+            "ms": 0.003,
+            "throughput": 1.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, vocabulary row (59264)",
+            "status": "PASS",
+            "max_error": 1.35e-10,
+            "ms": 0.192,
+            "throughput": 2.5,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, 64 x 4096",
+            "status": "PASS",
+            "max_error": 8.85e-10,
+            "ms": 0.012,
+            "throughput": 171.3,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "rmsnorm, one short row",
+            "status": "PASS",
+            "max_error": 8.27e-08,
+            "ms": 0.002,
+            "throughput": 0.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, odd cols",
+            "status": "PASS",
+            "max_error": 3.51e-07,
+            "ms": 0.004,
+            "throughput": 9.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, text decoder",
+            "status": "PASS",
+            "max_error": 4.18e-07,
+            "ms": 0.007,
+            "throughput": 143.6,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, odd cols (example)",
+            "status": "PASS",
+            "max_error": 3.91e-07,
+            "ms": 0.005,
+            "throughput": 7.9,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, audio encoder",
+            "status": "PASS",
+            "max_error": 5.17e-07,
+            "ms": 0.056,
+            "throughput": 274.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, one short row",
+            "status": "PASS",
+            "max_error": 1.11e-08,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, odd cols",
+            "status": "PASS",
+            "max_error": 1.04e-09,
+            "ms": 0.004,
+            "throughput": 5.6,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, large inputs (+-100)",
+            "status": "PASS",
+            "max_error": 1.89e-08,
+            "ms": 0.005,
+            "throughput": 3.5,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, all negative (-200..-150)",
+            "status": "PASS",
+            "max_error": 6.11e-09,
+            "ms": 0.003,
+            "throughput": 1.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, vocabulary row (59264)",
+            "status": "PASS",
+            "max_error": 1.35e-10,
+            "ms": 0.192,
+            "throughput": 2.5,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, 64 x 4096",
+            "status": "PASS",
+            "max_error": 8.85e-10,
+            "ms": 0.012,
+            "throughput": 171.7,
+            "throughput_unit": "GB/s"
+          }
+        ]
+      ]
+    },
+    {
+      "task": 2,
+      "parameter": "REDUCE_THREADS",
+      "value": 512,
+      "default": 256,
+      "repeats": [
+        [
+          {
+            "case": "rmsnorm, one short row",
+            "status": "PASS",
+            "max_error": 8.27e-08,
+            "ms": 0.002,
+            "throughput": 0.2,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, odd cols",
+            "status": "PASS",
+            "max_error": 3.68e-07,
+            "ms": 0.003,
+            "throughput": 15.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, text decoder",
+            "status": "PASS",
+            "max_error": 4.18e-07,
+            "ms": 0.004,
+            "throughput": 268.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, odd cols (example)",
+            "status": "PASS",
+            "max_error": 3.91e-07,
+            "ms": 0.003,
+            "throughput": 13.4,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, audio encoder",
+            "status": "PASS",
+            "max_error": 5.17e-07,
+            "ms": 0.074,
+            "throughput": 206.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, one short row",
+            "status": "PASS",
+            "max_error": 1.11e-08,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, odd cols",
+            "status": "PASS",
+            "max_error": 1.14e-09,
+            "ms": 0.003,
+            "throughput": 8.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, large inputs (+-100)",
+            "status": "PASS",
+            "max_error": 1.95e-08,
+            "ms": 0.003,
+            "throughput": 5.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, all negative (-200..-150)",
+            "status": "PASS",
+            "max_error": 6.11e-09,
+            "ms": 0.002,
+            "throughput": 2.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, vocabulary row (59264)",
+            "status": "PASS",
+            "max_error": 8.13e-11,
+            "ms": 0.05,
+            "throughput": 9.5,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, 64 x 4096",
+            "status": "PASS",
+            "max_error": 7.95e-10,
+            "ms": 0.008,
+            "throughput": 252.6,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "rmsnorm, one short row",
+            "status": "PASS",
+            "max_error": 8.27e-08,
+            "ms": 0.002,
+            "throughput": 0.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, odd cols",
+            "status": "PASS",
+            "max_error": 3.68e-07,
+            "ms": 0.003,
+            "throughput": 14.9,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, text decoder",
+            "status": "PASS",
+            "max_error": 4.18e-07,
+            "ms": 0.004,
+            "throughput": 263.5,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, odd cols (example)",
+            "status": "PASS",
+            "max_error": 3.91e-07,
+            "ms": 0.003,
+            "throughput": 13.7,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, audio encoder",
+            "status": "PASS",
+            "max_error": 5.17e-07,
+            "ms": 0.074,
+            "throughput": 207.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, one short row",
+            "status": "PASS",
+            "max_error": 1.11e-08,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, odd cols",
+            "status": "PASS",
+            "max_error": 1.14e-09,
+            "ms": 0.003,
+            "throughput": 9.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, large inputs (+-100)",
+            "status": "PASS",
+            "max_error": 1.95e-08,
+            "ms": 0.003,
+            "throughput": 5.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, all negative (-200..-150)",
+            "status": "PASS",
+            "max_error": 6.11e-09,
+            "ms": 0.002,
+            "throughput": 2.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, vocabulary row (59264)",
+            "status": "PASS",
+            "max_error": 8.13e-11,
+            "ms": 0.05,
+            "throughput": 9.5,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, 64 x 4096",
+            "status": "PASS",
+            "max_error": 7.95e-10,
+            "ms": 0.008,
+            "throughput": 252.9,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "rmsnorm, one short row",
+            "status": "PASS",
+            "max_error": 8.27e-08,
+            "ms": 0.002,
+            "throughput": 0.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, odd cols",
+            "status": "PASS",
+            "max_error": 3.68e-07,
+            "ms": 0.003,
+            "throughput": 15.4,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, text decoder",
+            "status": "PASS",
+            "max_error": 4.18e-07,
+            "ms": 0.004,
+            "throughput": 284.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, odd cols (example)",
+            "status": "PASS",
+            "max_error": 3.91e-07,
+            "ms": 0.003,
+            "throughput": 13.3,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, audio encoder",
+            "status": "PASS",
+            "max_error": 5.17e-07,
+            "ms": 0.074,
+            "throughput": 206.8,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, one short row",
+            "status": "PASS",
+            "max_error": 1.11e-08,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, odd cols",
+            "status": "PASS",
+            "max_error": 1.14e-09,
+            "ms": 0.003,
+            "throughput": 8.9,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, large inputs (+-100)",
+            "status": "PASS",
+            "max_error": 1.95e-08,
+            "ms": 0.003,
+            "throughput": 5.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, all negative (-200..-150)",
+            "status": "PASS",
+            "max_error": 6.11e-09,
+            "ms": 0.002,
+            "throughput": 2.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, vocabulary row (59264)",
+            "status": "PASS",
+            "max_error": 8.13e-11,
+            "ms": 0.05,
+            "throughput": 9.5,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, 64 x 4096",
+            "status": "PASS",
+            "max_error": 7.95e-10,
+            "ms": 0.008,
+            "throughput": 251.8,
+            "throughput_unit": "GB/s"
+          }
+        ]
+      ]
+    },
+    {
+      "task": 2,
+      "parameter": "REDUCE_THREADS",
+      "value": 1024,
+      "default": 256,
+      "repeats": [
+        [
+          {
+            "case": "rmsnorm, one short row",
+            "status": "PASS",
+            "max_error": 8.27e-08,
+            "ms": 0.002,
+            "throughput": 0.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, odd cols",
+            "status": "PASS",
+            "max_error": 3.68e-07,
+            "ms": 0.003,
+            "throughput": 15.9,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, text decoder",
+            "status": "PASS",
+            "max_error": 3.95e-07,
+            "ms": 0.005,
+            "throughput": 220.6,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, odd cols (example)",
+            "status": "PASS",
+            "max_error": 3.91e-07,
+            "ms": 0.003,
+            "throughput": 14.4,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, audio encoder",
+            "status": "PASS",
+            "max_error": 5.62e-07,
+            "ms": 0.114,
+            "throughput": 135.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, one short row",
+            "status": "PASS",
+            "max_error": 1.11e-08,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, odd cols",
+            "status": "PASS",
+            "max_error": 1.04e-09,
+            "ms": 0.003,
+            "throughput": 9.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, large inputs (+-100)",
+            "status": "PASS",
+            "max_error": 1.95e-08,
+            "ms": 0.003,
+            "throughput": 5.5,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, all negative (-200..-150)",
+            "status": "PASS",
+            "max_error": 6.11e-09,
+            "ms": 0.003,
+            "throughput": 1.9,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, vocabulary row (59264)",
+            "status": "PASS",
+            "max_error": 4.02e-11,
+            "ms": 0.029,
+            "throughput": 16.2,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, 64 x 4096",
+            "status": "PASS",
+            "max_error": 7.95e-10,
+            "ms": 0.009,
+            "throughput": 221.1,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "rmsnorm, one short row",
+            "status": "PASS",
+            "max_error": 8.27e-08,
+            "ms": 0.002,
+            "throughput": 0.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, odd cols",
+            "status": "PASS",
+            "max_error": 3.68e-07,
+            "ms": 0.002,
+            "throughput": 16.3,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, text decoder",
+            "status": "PASS",
+            "max_error": 3.95e-07,
+            "ms": 0.005,
+            "throughput": 228.2,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, odd cols (example)",
+            "status": "PASS",
+            "max_error": 3.91e-07,
+            "ms": 0.003,
+            "throughput": 14.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, audio encoder",
+            "status": "PASS",
+            "max_error": 5.62e-07,
+            "ms": 0.114,
+            "throughput": 135.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, one short row",
+            "status": "PASS",
+            "max_error": 1.11e-08,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, odd cols",
+            "status": "PASS",
+            "max_error": 1.04e-09,
+            "ms": 0.003,
+            "throughput": 9.2,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, large inputs (+-100)",
+            "status": "PASS",
+            "max_error": 1.95e-08,
+            "ms": 0.003,
+            "throughput": 5.2,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, all negative (-200..-150)",
+            "status": "PASS",
+            "max_error": 6.11e-09,
+            "ms": 0.002,
+            "throughput": 2.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, vocabulary row (59264)",
+            "status": "PASS",
+            "max_error": 4.02e-11,
+            "ms": 0.029,
+            "throughput": 16.3,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, 64 x 4096",
+            "status": "PASS",
+            "max_error": 7.95e-10,
+            "ms": 0.009,
+            "throughput": 222.1,
+            "throughput_unit": "GB/s"
+          }
+        ],
+        [
+          {
+            "case": "rmsnorm, one short row",
+            "status": "PASS",
+            "max_error": 8.27e-08,
+            "ms": 0.002,
+            "throughput": 0.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, odd cols",
+            "status": "PASS",
+            "max_error": 3.68e-07,
+            "ms": 0.002,
+            "throughput": 16.4,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "rmsnorm, text decoder",
+            "status": "PASS",
+            "max_error": 3.95e-07,
+            "ms": 0.005,
+            "throughput": 227.6,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, odd cols (example)",
+            "status": "PASS",
+            "max_error": 3.91e-07,
+            "ms": 0.003,
+            "throughput": 13.6,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "layernorm, audio encoder",
+            "status": "PASS",
+            "max_error": 5.62e-07,
+            "ms": 0.114,
+            "throughput": 135.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, one short row",
+            "status": "PASS",
+            "max_error": 1.11e-08,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, odd cols",
+            "status": "PASS",
+            "max_error": 1.04e-09,
+            "ms": 0.003,
+            "throughput": 9.1,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, large inputs (+-100)",
+            "status": "PASS",
+            "max_error": 1.95e-08,
+            "ms": 0.003,
+            "throughput": 5.6,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, all negative (-200..-150)",
+            "status": "PASS",
+            "max_error": 6.11e-09,
+            "ms": 0.002,
+            "throughput": 2.0,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, vocabulary row (59264)",
+            "status": "PASS",
+            "max_error": 4.02e-11,
+            "ms": 0.029,
+            "throughput": 16.3,
+            "throughput_unit": "GB/s"
+          },
+          {
+            "case": "softmax, 64 x 4096",
+            "status": "PASS",
+            "max_error": 7.95e-10,
+            "ms": 0.009,
+            "throughput": 222.9,
+            "throughput_unit": "GB/s"
+          }
+        ]
+      ]
+    },
+    {
+      "task": 3,
+      "parameter": "TILE",
+      "value": 16,
+      "default": 16,
+      "repeats": [
+        [
+          {
+            "case": "tiny 3 x 5, K = 7",
+            "status": "PASS",
+            "max_error": 9.76e-09,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "odd sizes 37 x 100, K = 33, bias",
+            "status": "PASS",
+            "max_error": 1.55e-07,
+            "ms": 0.003,
+            "throughput": 82.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "odd sizes, bias + GELU",
+            "status": "PASS",
+            "max_error": 7.7e-07,
+            "ms": 0.005,
+            "throughput": 190.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder q_proj (64x2048x2048)",
+            "status": "PASS",
+            "max_error": 1.14e-05,
+            "ms": 0.61,
+            "throughput": 880.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder gate_proj (64x6144x2048)",
+            "status": "PASS",
+            "max_error": 0.0,
+            "ms": 1.766,
+            "throughput": 912.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder down_proj (64x2048x6144)",
+            "status": "PASS",
+            "max_error": 3.72e-05,
+            "ms": 1.827,
+            "throughput": 882.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "lm_head, last token (1x59264x2048)",
+            "status": "PASS",
+            "max_error": 1.24e-05,
+            "ms": 4.059,
+            "throughput": 60.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "encoder q_proj (1500x1280x1280)",
+            "status": "PASS",
+            "max_error": 1.01e-05,
+            "ms": 5.255,
+            "throughput": 935.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "encoder fc1 + GELU (1500x5120x1280)",
+            "status": "PASS",
+            "max_error": 6.92e-07,
+            "ms": 21.096,
+            "throughput": 932.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "conv2 via im2col (1500x1280x3840)",
+            "status": "PASS",
+            "max_error": 2.57e-05,
+            "ms": 16.018,
+            "throughput": 921.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny 3 x 5, K = 7",
+            "status": "PASS",
+            "max_error": 9.76e-09,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "odd sizes 37 x 100, K = 33, bias",
+            "status": "PASS",
+            "max_error": 1.55e-07,
+            "ms": 0.003,
+            "throughput": 82.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "odd sizes, bias + GELU",
+            "status": "PASS",
+            "max_error": 7.7e-07,
+            "ms": 0.005,
+            "throughput": 189.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder q_proj (64x2048x2048)",
+            "status": "PASS",
+            "max_error": 1.14e-05,
+            "ms": 0.61,
+            "throughput": 880.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder gate_proj (64x6144x2048)",
+            "status": "PASS",
+            "max_error": 0.0,
+            "ms": 1.766,
+            "throughput": 912.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder down_proj (64x2048x6144)",
+            "status": "PASS",
+            "max_error": 3.72e-05,
+            "ms": 1.827,
+            "throughput": 881.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "lm_head, last token (1x59264x2048)",
+            "status": "PASS",
+            "max_error": 1.24e-05,
+            "ms": 4.059,
+            "throughput": 60.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "encoder q_proj (1500x1280x1280)",
+            "status": "PASS",
+            "max_error": 1.01e-05,
+            "ms": 5.254,
+            "throughput": 935.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "encoder fc1 + GELU (1500x5120x1280)",
+            "status": "PASS",
+            "max_error": 6.92e-07,
+            "ms": 21.1,
+            "throughput": 932.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "conv2 via im2col (1500x1280x3840)",
+            "status": "PASS",
+            "max_error": 2.57e-05,
+            "ms": 16.017,
+            "throughput": 921.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny 3 x 5, K = 7",
+            "status": "PASS",
+            "max_error": 9.76e-09,
+            "ms": 0.003,
+            "throughput": 0.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "odd sizes 37 x 100, K = 33, bias",
+            "status": "PASS",
+            "max_error": 1.55e-07,
+            "ms": 0.003,
+            "throughput": 78.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "odd sizes, bias + GELU",
+            "status": "PASS",
+            "max_error": 7.7e-07,
+            "ms": 0.005,
+            "throughput": 187.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder q_proj (64x2048x2048)",
+            "status": "PASS",
+            "max_error": 1.14e-05,
+            "ms": 0.61,
+            "throughput": 880.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder gate_proj (64x6144x2048)",
+            "status": "PASS",
+            "max_error": 0.0,
+            "ms": 1.766,
+            "throughput": 912.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder down_proj (64x2048x6144)",
+            "status": "PASS",
+            "max_error": 3.72e-05,
+            "ms": 1.828,
+            "throughput": 881.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "lm_head, last token (1x59264x2048)",
+            "status": "PASS",
+            "max_error": 1.24e-05,
+            "ms": 4.059,
+            "throughput": 60.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "encoder q_proj (1500x1280x1280)",
+            "status": "PASS",
+            "max_error": 1.01e-05,
+            "ms": 5.254,
+            "throughput": 935.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "encoder fc1 + GELU (1500x5120x1280)",
+            "status": "PASS",
+            "max_error": 6.92e-07,
+            "ms": 21.094,
+            "throughput": 932.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "conv2 via im2col (1500x1280x3840)",
+            "status": "PASS",
+            "max_error": 2.57e-05,
+            "ms": 16.017,
+            "throughput": 921.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ]
+      ]
+    },
+    {
+      "task": 3,
+      "parameter": "TILE",
+      "value": 8,
+      "default": 16,
+      "repeats": [
+        [
+          {
+            "case": "tiny 3 x 5, K = 7",
+            "status": "PASS",
+            "max_error": 9.76e-09,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "odd sizes 37 x 100, K = 33, bias",
+            "status": "PASS",
+            "max_error": 1.55e-07,
+            "ms": 0.003,
+            "throughput": 76.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "odd sizes, bias + GELU",
+            "status": "PASS",
+            "max_error": 7.7e-07,
+            "ms": 0.006,
+            "throughput": 147.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder q_proj (64x2048x2048)",
+            "status": "PASS",
+            "max_error": 1.14e-05,
+            "ms": 0.919,
+            "throughput": 584.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder gate_proj (64x6144x2048)",
+            "status": "PASS",
+            "max_error": 0.0,
+            "ms": 2.697,
+            "throughput": 597.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder down_proj (64x2048x6144)",
+            "status": "PASS",
+            "max_error": 3.72e-05,
+            "ms": 2.744,
+            "throughput": 587.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "lm_head, last token (1x59264x2048)",
+            "status": "PASS",
+            "max_error": 1.24e-05,
+            "ms": 2.931,
+            "throughput": 83.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "encoder q_proj (1500x1280x1280)",
+            "status": "PASS",
+            "max_error": 1.01e-05,
+            "ms": 8.12,
+            "throughput": 605.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "encoder fc1 + GELU (1500x5120x1280)",
+            "status": "PASS",
+            "max_error": 6.92e-07,
+            "ms": 32.541,
+            "throughput": 604.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "conv2 via im2col (1500x1280x3840)",
+            "status": "PASS",
+            "max_error": 2.57e-05,
+            "ms": 24.535,
+            "throughput": 601.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny 3 x 5, K = 7",
+            "status": "PASS",
+            "max_error": 9.76e-09,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "odd sizes 37 x 100, K = 33, bias",
+            "status": "PASS",
+            "max_error": 1.55e-07,
+            "ms": 0.003,
+            "throughput": 78.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "odd sizes, bias + GELU",
+            "status": "PASS",
+            "max_error": 7.7e-07,
+            "ms": 0.006,
+            "throughput": 147.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder q_proj (64x2048x2048)",
+            "status": "PASS",
+            "max_error": 1.14e-05,
+            "ms": 0.92,
+            "throughput": 584.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder gate_proj (64x6144x2048)",
+            "status": "PASS",
+            "max_error": 0.0,
+            "ms": 2.697,
+            "throughput": 597.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder down_proj (64x2048x6144)",
+            "status": "PASS",
+            "max_error": 3.72e-05,
+            "ms": 2.744,
+            "throughput": 587.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "lm_head, last token (1x59264x2048)",
+            "status": "PASS",
+            "max_error": 1.24e-05,
+            "ms": 2.931,
+            "throughput": 83.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "encoder q_proj (1500x1280x1280)",
+            "status": "PASS",
+            "max_error": 1.01e-05,
+            "ms": 8.12,
+            "throughput": 605.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "encoder fc1 + GELU (1500x5120x1280)",
+            "status": "PASS",
+            "max_error": 6.92e-07,
+            "ms": 32.541,
+            "throughput": 604.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "conv2 via im2col (1500x1280x3840)",
+            "status": "PASS",
+            "max_error": 2.57e-05,
+            "ms": 24.534,
+            "throughput": 601.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny 3 x 5, K = 7",
+            "status": "PASS",
+            "max_error": 9.76e-09,
+            "ms": 0.002,
+            "throughput": 0.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "odd sizes 37 x 100, K = 33, bias",
+            "status": "PASS",
+            "max_error": 1.55e-07,
+            "ms": 0.003,
+            "throughput": 79.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "odd sizes, bias + GELU",
+            "status": "PASS",
+            "max_error": 7.7e-07,
+            "ms": 0.006,
+            "throughput": 145.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder q_proj (64x2048x2048)",
+            "status": "PASS",
+            "max_error": 1.14e-05,
+            "ms": 0.919,
+            "throughput": 584.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder gate_proj (64x6144x2048)",
+            "status": "PASS",
+            "max_error": 0.0,
+            "ms": 2.697,
+            "throughput": 597.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder down_proj (64x2048x6144)",
+            "status": "PASS",
+            "max_error": 3.72e-05,
+            "ms": 2.744,
+            "throughput": 587.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "lm_head, last token (1x59264x2048)",
+            "status": "PASS",
+            "max_error": 1.24e-05,
+            "ms": 2.931,
+            "throughput": 83.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "encoder q_proj (1500x1280x1280)",
+            "status": "PASS",
+            "max_error": 1.01e-05,
+            "ms": 8.12,
+            "throughput": 605.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "encoder fc1 + GELU (1500x5120x1280)",
+            "status": "PASS",
+            "max_error": 6.92e-07,
+            "ms": 32.541,
+            "throughput": 604.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "conv2 via im2col (1500x1280x3840)",
+            "status": "PASS",
+            "max_error": 2.57e-05,
+            "ms": 24.535,
+            "throughput": 601.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ]
+      ]
+    },
+    {
+      "task": 3,
+      "parameter": "TILE",
+      "value": 32,
+      "default": 16,
+      "repeats": [
+        [
+          {
+            "case": "tiny 3 x 5, K = 7",
+            "status": "PASS",
+            "max_error": 9.76e-09,
+            "ms": 0.003,
+            "throughput": 0.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "odd sizes 37 x 100, K = 33, bias",
+            "status": "PASS",
+            "max_error": 1.55e-07,
+            "ms": 0.004,
+            "throughput": 60.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "odd sizes, bias + GELU",
+            "status": "PASS",
+            "max_error": 7.7e-07,
+            "ms": 0.007,
+            "throughput": 123.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder q_proj (64x2048x2048)",
+            "status": "PASS",
+            "max_error": 1.14e-05,
+            "ms": 0.517,
+            "throughput": 1038.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder gate_proj (64x6144x2048)",
+            "status": "PASS",
+            "max_error": 0.0,
+            "ms": 1.508,
+            "throughput": 1068.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder down_proj (64x2048x6144)",
+            "status": "PASS",
+            "max_error": 3.72e-05,
+            "ms": 1.542,
+            "throughput": 1045.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "lm_head, last token (1x59264x2048)",
+            "status": "PASS",
+            "max_error": 1.24e-05,
+            "ms": 7.123,
+            "throughput": 34.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "encoder q_proj (1500x1280x1280)",
+            "status": "PASS",
+            "max_error": 1.01e-05,
+            "ms": 4.454,
+            "throughput": 1104.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "encoder fc1 + GELU (1500x5120x1280)",
+            "status": "PASS",
+            "max_error": 6.92e-07,
+            "ms": 18.352,
+            "throughput": 1071.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "conv2 via im2col (1500x1280x3840)",
+            "status": "PASS",
+            "max_error": 2.57e-05,
+            "ms": 13.742,
+            "throughput": 1073.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny 3 x 5, K = 7",
+            "status": "PASS",
+            "max_error": 9.76e-09,
+            "ms": 0.003,
+            "throughput": 0.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "odd sizes 37 x 100, K = 33, bias",
+            "status": "PASS",
+            "max_error": 1.55e-07,
+            "ms": 0.004,
+            "throughput": 60.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "odd sizes, bias + GELU",
+            "status": "PASS",
+            "max_error": 7.7e-07,
+            "ms": 0.007,
+            "throughput": 122.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder q_proj (64x2048x2048)",
+            "status": "PASS",
+            "max_error": 1.14e-05,
+            "ms": 0.517,
+            "throughput": 1039.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder gate_proj (64x6144x2048)",
+            "status": "PASS",
+            "max_error": 0.0,
+            "ms": 1.508,
+            "throughput": 1068.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder down_proj (64x2048x6144)",
+            "status": "PASS",
+            "max_error": 3.72e-05,
+            "ms": 1.542,
+            "throughput": 1045.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "lm_head, last token (1x59264x2048)",
+            "status": "PASS",
+            "max_error": 1.24e-05,
+            "ms": 7.123,
+            "throughput": 34.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "encoder q_proj (1500x1280x1280)",
+            "status": "PASS",
+            "max_error": 1.01e-05,
+            "ms": 4.454,
+            "throughput": 1104.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "encoder fc1 + GELU (1500x5120x1280)",
+            "status": "PASS",
+            "max_error": 6.92e-07,
+            "ms": 18.351,
+            "throughput": 1071.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "conv2 via im2col (1500x1280x3840)",
+            "status": "PASS",
+            "max_error": 2.57e-05,
+            "ms": 13.741,
+            "throughput": 1073.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny 3 x 5, K = 7",
+            "status": "PASS",
+            "max_error": 9.76e-09,
+            "ms": 0.003,
+            "throughput": 0.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "odd sizes 37 x 100, K = 33, bias",
+            "status": "PASS",
+            "max_error": 1.55e-07,
+            "ms": 0.004,
+            "throughput": 61.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "odd sizes, bias + GELU",
+            "status": "PASS",
+            "max_error": 7.7e-07,
+            "ms": 0.007,
+            "throughput": 122.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder q_proj (64x2048x2048)",
+            "status": "PASS",
+            "max_error": 1.14e-05,
+            "ms": 0.517,
+            "throughput": 1038.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder gate_proj (64x6144x2048)",
+            "status": "PASS",
+            "max_error": 0.0,
+            "ms": 1.508,
+            "throughput": 1068.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "decoder down_proj (64x2048x6144)",
+            "status": "PASS",
+            "max_error": 3.72e-05,
+            "ms": 1.542,
+            "throughput": 1045.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "lm_head, last token (1x59264x2048)",
+            "status": "PASS",
+            "max_error": 1.24e-05,
+            "ms": 7.122,
+            "throughput": 34.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "encoder q_proj (1500x1280x1280)",
+            "status": "PASS",
+            "max_error": 1.01e-05,
+            "ms": 4.454,
+            "throughput": 1103.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "encoder fc1 + GELU (1500x5120x1280)",
+            "status": "PASS",
+            "max_error": 6.92e-07,
+            "ms": 18.353,
+            "throughput": 1071.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "conv2 via im2col (1500x1280x3840)",
+            "status": "PASS",
+            "max_error": 2.57e-05,
+            "ms": 13.742,
+            "throughput": 1073.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ]
+      ]
+    },
+    {
+      "task": 4,
+      "parameter": "ATTN_WARPS",
+      "value": 4,
+      "default": 4,
+      "repeats": [
+        [
+          {
+            "case": "tiny, one tile (4 queries, 5 keys)",
+            "status": "PASS",
+            "max_error": 8.15e-08,
+            "ms": 0.004,
+            "throughput": 1.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "several tiles, peaky scores",
+            "status": "PASS",
+            "max_error": 4.97e-07,
+            "ms": 0.013,
+            "throughput": 18.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "GQA 4 heads / 2 kv heads",
+            "status": "PASS",
+            "max_error": 1.3e-07,
+            "ms": 0.008,
+            "throughput": 75.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, seq_q = seq_k",
+            "status": "PASS",
+            "max_error": 5.16e-07,
+            "ms": 0.029,
+            "throughput": 88.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, 5 new queries, 37 keys",
+            "status": "PASS",
+            "max_error": 1.78e-07,
+            "ms": 0.007,
+            "throughput": 26.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, one new query",
+            "status": "PASS",
+            "max_error": 3.39e-07,
+            "ms": 0.027,
+            "throughput": 22.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, causal)",
+            "status": "PASS",
+            "max_error": 5.21e-07,
+            "ms": 0.064,
+            "throughput": 263.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "audio encoder (20 heads, 1500)",
+            "status": "PASS",
+            "max_error": 2.68e-07,
+            "ms": 23.83,
+            "throughput": 483.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny, one tile (4 queries, 5 keys)",
+            "status": "PASS",
+            "max_error": 8.15e-08,
+            "ms": 0.004,
+            "throughput": 1.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "several tiles, peaky scores",
+            "status": "PASS",
+            "max_error": 4.97e-07,
+            "ms": 0.013,
+            "throughput": 18.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "GQA 4 heads / 2 kv heads",
+            "status": "PASS",
+            "max_error": 1.3e-07,
+            "ms": 0.008,
+            "throughput": 75.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, seq_q = seq_k",
+            "status": "PASS",
+            "max_error": 5.16e-07,
+            "ms": 0.028,
+            "throughput": 88.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, 5 new queries, 37 keys",
+            "status": "PASS",
+            "max_error": 1.78e-07,
+            "ms": 0.007,
+            "throughput": 26.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, one new query",
+            "status": "PASS",
+            "max_error": 3.39e-07,
+            "ms": 0.026,
+            "throughput": 22.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, causal)",
+            "status": "PASS",
+            "max_error": 5.21e-07,
+            "ms": 0.064,
+            "throughput": 264.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "audio encoder (20 heads, 1500)",
+            "status": "PASS",
+            "max_error": 2.68e-07,
+            "ms": 23.829,
+            "throughput": 483.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny, one tile (4 queries, 5 keys)",
+            "status": "PASS",
+            "max_error": 8.15e-08,
+            "ms": 0.004,
+            "throughput": 1.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "several tiles, peaky scores",
+            "status": "PASS",
+            "max_error": 4.97e-07,
+            "ms": 0.013,
+            "throughput": 18.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "GQA 4 heads / 2 kv heads",
+            "status": "PASS",
+            "max_error": 1.3e-07,
+            "ms": 0.008,
+            "throughput": 74.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, seq_q = seq_k",
+            "status": "PASS",
+            "max_error": 5.16e-07,
+            "ms": 0.028,
+            "throughput": 88.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, 5 new queries, 37 keys",
+            "status": "PASS",
+            "max_error": 1.78e-07,
+            "ms": 0.007,
+            "throughput": 26.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, one new query",
+            "status": "PASS",
+            "max_error": 3.39e-07,
+            "ms": 0.026,
+            "throughput": 22.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, causal)",
+            "status": "PASS",
+            "max_error": 5.21e-07,
+            "ms": 0.064,
+            "throughput": 263.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "audio encoder (20 heads, 1500)",
+            "status": "PASS",
+            "max_error": 2.68e-07,
+            "ms": 23.832,
+            "throughput": 483.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ]
+      ]
+    },
+    {
+      "task": 4,
+      "parameter": "ATTN_WARPS",
+      "value": 1,
+      "default": 4,
+      "repeats": [
+        [
+          {
+            "case": "tiny, one tile (4 queries, 5 keys)",
+            "status": "PASS",
+            "max_error": 8.15e-08,
+            "ms": 0.007,
+            "throughput": 0.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "several tiles, peaky scores",
+            "status": "PASS",
+            "max_error": 4.97e-07,
+            "ms": 0.033,
+            "throughput": 7.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "GQA 4 heads / 2 kv heads",
+            "status": "PASS",
+            "max_error": 1.3e-07,
+            "ms": 0.016,
+            "throughput": 36.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, seq_q = seq_k",
+            "status": "PASS",
+            "max_error": 5.16e-07,
+            "ms": 0.118,
+            "throughput": 21.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, 5 new queries, 37 keys",
+            "status": "PASS",
+            "max_error": 1.78e-07,
+            "ms": 0.016,
+            "throughput": 12.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, one new query",
+            "status": "PASS",
+            "max_error": 3.39e-07,
+            "ms": 0.085,
+            "throughput": 7.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, causal)",
+            "status": "PASS",
+            "max_error": 5.21e-07,
+            "ms": 0.56,
+            "throughput": 30.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "audio encoder (20 heads, 1500)",
+            "status": "PASS",
+            "max_error": 2.68e-07,
+            "ms": 130.343,
+            "throughput": 88.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny, one tile (4 queries, 5 keys)",
+            "status": "PASS",
+            "max_error": 8.15e-08,
+            "ms": 0.007,
+            "throughput": 0.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "several tiles, peaky scores",
+            "status": "PASS",
+            "max_error": 4.97e-07,
+            "ms": 0.033,
+            "throughput": 7.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "GQA 4 heads / 2 kv heads",
+            "status": "PASS",
+            "max_error": 1.3e-07,
+            "ms": 0.016,
+            "throughput": 36.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, seq_q = seq_k",
+            "status": "PASS",
+            "max_error": 5.16e-07,
+            "ms": 0.118,
+            "throughput": 21.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, 5 new queries, 37 keys",
+            "status": "PASS",
+            "max_error": 1.78e-07,
+            "ms": 0.016,
+            "throughput": 12.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, one new query",
+            "status": "PASS",
+            "max_error": 3.39e-07,
+            "ms": 0.085,
+            "throughput": 7.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, causal)",
+            "status": "PASS",
+            "max_error": 5.21e-07,
+            "ms": 0.561,
+            "throughput": 30.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "audio encoder (20 heads, 1500)",
+            "status": "PASS",
+            "max_error": 2.68e-07,
+            "ms": 130.374,
+            "throughput": 88.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny, one tile (4 queries, 5 keys)",
+            "status": "PASS",
+            "max_error": 8.15e-08,
+            "ms": 0.007,
+            "throughput": 0.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "several tiles, peaky scores",
+            "status": "PASS",
+            "max_error": 4.97e-07,
+            "ms": 0.033,
+            "throughput": 7.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "GQA 4 heads / 2 kv heads",
+            "status": "PASS",
+            "max_error": 1.3e-07,
+            "ms": 0.016,
+            "throughput": 36.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, seq_q = seq_k",
+            "status": "PASS",
+            "max_error": 5.16e-07,
+            "ms": 0.118,
+            "throughput": 21.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, 5 new queries, 37 keys",
+            "status": "PASS",
+            "max_error": 1.78e-07,
+            "ms": 0.016,
+            "throughput": 12.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, one new query",
+            "status": "PASS",
+            "max_error": 3.39e-07,
+            "ms": 0.085,
+            "throughput": 7.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, causal)",
+            "status": "PASS",
+            "max_error": 5.21e-07,
+            "ms": 0.561,
+            "throughput": 30.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "audio encoder (20 heads, 1500)",
+            "status": "PASS",
+            "max_error": 2.68e-07,
+            "ms": 130.314,
+            "throughput": 88.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ]
+      ]
+    },
+    {
+      "task": 4,
+      "parameter": "ATTN_WARPS",
+      "value": 2,
+      "default": 4,
+      "repeats": [
+        [
+          {
+            "case": "tiny, one tile (4 queries, 5 keys)",
+            "status": "PASS",
+            "max_error": 8.15e-08,
+            "ms": 0.006,
+            "throughput": 0.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "several tiles, peaky scores",
+            "status": "PASS",
+            "max_error": 4.97e-07,
+            "ms": 0.019,
+            "throughput": 12.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "GQA 4 heads / 2 kv heads",
+            "status": "PASS",
+            "max_error": 1.3e-07,
+            "ms": 0.011,
+            "throughput": 56.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, seq_q = seq_k",
+            "status": "PASS",
+            "max_error": 5.16e-07,
+            "ms": 0.048,
+            "throughput": 53.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, 5 new queries, 37 keys",
+            "status": "PASS",
+            "max_error": 1.78e-07,
+            "ms": 0.01,
+            "throughput": 19.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, one new query",
+            "status": "PASS",
+            "max_error": 3.39e-07,
+            "ms": 0.047,
+            "throughput": 12.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, causal)",
+            "status": "PASS",
+            "max_error": 5.21e-07,
+            "ms": 0.173,
+            "throughput": 97.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "audio encoder (20 heads, 1500)",
+            "status": "PASS",
+            "max_error": 2.68e-07,
+            "ms": 42.408,
+            "throughput": 272.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny, one tile (4 queries, 5 keys)",
+            "status": "PASS",
+            "max_error": 8.15e-08,
+            "ms": 0.005,
+            "throughput": 0.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "several tiles, peaky scores",
+            "status": "PASS",
+            "max_error": 4.97e-07,
+            "ms": 0.019,
+            "throughput": 12.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "GQA 4 heads / 2 kv heads",
+            "status": "PASS",
+            "max_error": 1.3e-07,
+            "ms": 0.011,
+            "throughput": 56.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, seq_q = seq_k",
+            "status": "PASS",
+            "max_error": 5.16e-07,
+            "ms": 0.048,
+            "throughput": 53.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, 5 new queries, 37 keys",
+            "status": "PASS",
+            "max_error": 1.78e-07,
+            "ms": 0.01,
+            "throughput": 19.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, one new query",
+            "status": "PASS",
+            "max_error": 3.39e-07,
+            "ms": 0.047,
+            "throughput": 13.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, causal)",
+            "status": "PASS",
+            "max_error": 5.21e-07,
+            "ms": 0.173,
+            "throughput": 97.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "audio encoder (20 heads, 1500)",
+            "status": "PASS",
+            "max_error": 2.68e-07,
+            "ms": 42.42,
+            "throughput": 272.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny, one tile (4 queries, 5 keys)",
+            "status": "PASS",
+            "max_error": 8.15e-08,
+            "ms": 0.005,
+            "throughput": 0.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "several tiles, peaky scores",
+            "status": "PASS",
+            "max_error": 4.97e-07,
+            "ms": 0.019,
+            "throughput": 12.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "GQA 4 heads / 2 kv heads",
+            "status": "PASS",
+            "max_error": 1.3e-07,
+            "ms": 0.011,
+            "throughput": 56.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, seq_q = seq_k",
+            "status": "PASS",
+            "max_error": 5.16e-07,
+            "ms": 0.048,
+            "throughput": 53.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, 5 new queries, 37 keys",
+            "status": "PASS",
+            "max_error": 1.78e-07,
+            "ms": 0.01,
+            "throughput": 18.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, one new query",
+            "status": "PASS",
+            "max_error": 3.39e-07,
+            "ms": 0.047,
+            "throughput": 12.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, causal)",
+            "status": "PASS",
+            "max_error": 5.21e-07,
+            "ms": 0.173,
+            "throughput": 97.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "audio encoder (20 heads, 1500)",
+            "status": "PASS",
+            "max_error": 2.68e-07,
+            "ms": 42.403,
+            "throughput": 272.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ]
+      ]
+    },
+    {
+      "task": 4,
+      "parameter": "ATTN_WARPS",
+      "value": 8,
+      "default": 4,
+      "repeats": [
+        [
+          {
+            "case": "tiny, one tile (4 queries, 5 keys)",
+            "status": "PASS",
+            "max_error": 8.15e-08,
+            "ms": 0.004,
+            "throughput": 1.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "several tiles, peaky scores",
+            "status": "PASS",
+            "max_error": 4.97e-07,
+            "ms": 0.012,
+            "throughput": 20.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "GQA 4 heads / 2 kv heads",
+            "status": "PASS",
+            "max_error": 1.3e-07,
+            "ms": 0.007,
+            "throughput": 81.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, seq_q = seq_k",
+            "status": "PASS",
+            "max_error": 5.16e-07,
+            "ms": 0.021,
+            "throughput": 120.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, 5 new queries, 37 keys",
+            "status": "PASS",
+            "max_error": 1.78e-07,
+            "ms": 0.006,
+            "throughput": 30.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, one new query",
+            "status": "PASS",
+            "max_error": 3.39e-07,
+            "ms": 0.018,
+            "throughput": 32.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, causal)",
+            "status": "PASS",
+            "max_error": 5.21e-07,
+            "ms": 0.046,
+            "throughput": 362.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "audio encoder (20 heads, 1500)",
+            "status": "PASS",
+            "max_error": 2.68e-07,
+            "ms": 19.355,
+            "throughput": 595.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny, one tile (4 queries, 5 keys)",
+            "status": "PASS",
+            "max_error": 8.15e-08,
+            "ms": 0.004,
+            "throughput": 1.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "several tiles, peaky scores",
+            "status": "PASS",
+            "max_error": 4.97e-07,
+            "ms": 0.012,
+            "throughput": 20.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "GQA 4 heads / 2 kv heads",
+            "status": "PASS",
+            "max_error": 1.3e-07,
+            "ms": 0.007,
+            "throughput": 82.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, seq_q = seq_k",
+            "status": "PASS",
+            "max_error": 5.16e-07,
+            "ms": 0.021,
+            "throughput": 120.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, 5 new queries, 37 keys",
+            "status": "PASS",
+            "max_error": 1.78e-07,
+            "ms": 0.006,
+            "throughput": 30.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, one new query",
+            "status": "PASS",
+            "max_error": 3.39e-07,
+            "ms": 0.018,
+            "throughput": 32.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, causal)",
+            "status": "PASS",
+            "max_error": 5.21e-07,
+            "ms": 0.046,
+            "throughput": 361.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "audio encoder (20 heads, 1500)",
+            "status": "PASS",
+            "max_error": 2.68e-07,
+            "ms": 19.357,
+            "throughput": 595.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny, one tile (4 queries, 5 keys)",
+            "status": "PASS",
+            "max_error": 8.15e-08,
+            "ms": 0.004,
+            "throughput": 1.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "several tiles, peaky scores",
+            "status": "PASS",
+            "max_error": 4.97e-07,
+            "ms": 0.012,
+            "throughput": 20.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "GQA 4 heads / 2 kv heads",
+            "status": "PASS",
+            "max_error": 1.3e-07,
+            "ms": 0.007,
+            "throughput": 82.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, seq_q = seq_k",
+            "status": "PASS",
+            "max_error": 5.16e-07,
+            "ms": 0.021,
+            "throughput": 120.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, 5 new queries, 37 keys",
+            "status": "PASS",
+            "max_error": 1.78e-07,
+            "ms": 0.006,
+            "throughput": 30.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, one new query",
+            "status": "PASS",
+            "max_error": 3.39e-07,
+            "ms": 0.018,
+            "throughput": 32.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, causal)",
+            "status": "PASS",
+            "max_error": 5.21e-07,
+            "ms": 0.046,
+            "throughput": 362.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "audio encoder (20 heads, 1500)",
+            "status": "PASS",
+            "max_error": 2.68e-07,
+            "ms": 19.358,
+            "throughput": 595.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ]
+      ]
+    },
+    {
+      "task": 4,
+      "parameter": "ATTN_WARPS",
+      "value": 16,
+      "default": 4,
+      "repeats": [
+        [
+          {
+            "case": "tiny, one tile (4 queries, 5 keys)",
+            "status": "PASS",
+            "max_error": 8.15e-08,
+            "ms": 0.005,
+            "throughput": 1.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "several tiles, peaky scores",
+            "status": "PASS",
+            "max_error": 4.97e-07,
+            "ms": 0.012,
+            "throughput": 18.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "GQA 4 heads / 2 kv heads",
+            "status": "PASS",
+            "max_error": 1.3e-07,
+            "ms": 0.007,
+            "throughput": 87.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, seq_q = seq_k",
+            "status": "PASS",
+            "max_error": 5.16e-07,
+            "ms": 0.017,
+            "throughput": 149.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, 5 new queries, 37 keys",
+            "status": "PASS",
+            "max_error": 1.78e-07,
+            "ms": 0.007,
+            "throughput": 27.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, one new query",
+            "status": "PASS",
+            "max_error": 3.39e-07,
+            "ms": 0.016,
+            "throughput": 36.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, causal)",
+            "status": "PASS",
+            "max_error": 5.21e-07,
+            "ms": 0.051,
+            "throughput": 331.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "audio encoder (20 heads, 1500)",
+            "status": "PASS",
+            "max_error": 2.68e-07,
+            "ms": 22.353,
+            "throughput": 515.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny, one tile (4 queries, 5 keys)",
+            "status": "PASS",
+            "max_error": 8.15e-08,
+            "ms": 0.005,
+            "throughput": 1.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "several tiles, peaky scores",
+            "status": "PASS",
+            "max_error": 4.97e-07,
+            "ms": 0.012,
+            "throughput": 18.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "GQA 4 heads / 2 kv heads",
+            "status": "PASS",
+            "max_error": 1.3e-07,
+            "ms": 0.007,
+            "throughput": 88.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, seq_q = seq_k",
+            "status": "PASS",
+            "max_error": 5.16e-07,
+            "ms": 0.017,
+            "throughput": 148.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, 5 new queries, 37 keys",
+            "status": "PASS",
+            "max_error": 1.78e-07,
+            "ms": 0.007,
+            "throughput": 27.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, one new query",
+            "status": "PASS",
+            "max_error": 3.39e-07,
+            "ms": 0.016,
+            "throughput": 36.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, causal)",
+            "status": "PASS",
+            "max_error": 5.21e-07,
+            "ms": 0.051,
+            "throughput": 331.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "audio encoder (20 heads, 1500)",
+            "status": "PASS",
+            "max_error": 2.68e-07,
+            "ms": 22.349,
+            "throughput": 515.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ],
+        [
+          {
+            "case": "tiny, one tile (4 queries, 5 keys)",
+            "status": "PASS",
+            "max_error": 8.15e-08,
+            "ms": 0.005,
+            "throughput": 1.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "several tiles, peaky scores",
+            "status": "PASS",
+            "max_error": 4.97e-07,
+            "ms": 0.012,
+            "throughput": 19.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "GQA 4 heads / 2 kv heads",
+            "status": "PASS",
+            "max_error": 1.3e-07,
+            "ms": 0.007,
+            "throughput": 89.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, seq_q = seq_k",
+            "status": "PASS",
+            "max_error": 5.16e-07,
+            "ms": 0.017,
+            "throughput": 148.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, 5 new queries, 37 keys",
+            "status": "PASS",
+            "max_error": 1.78e-07,
+            "ms": 0.007,
+            "throughput": 27.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "causal, one new query",
+            "status": "PASS",
+            "max_error": 3.39e-07,
+            "ms": 0.016,
+            "throughput": 35.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "text decoder (GQA 16/4, causal)",
+            "status": "PASS",
+            "max_error": 5.21e-07,
+            "ms": 0.051,
+            "throughput": 331.0,
+            "throughput_unit": "GFLOP/s"
+          },
+          {
+            "case": "audio encoder (20 heads, 1500)",
+            "status": "PASS",
+            "max_error": 2.68e-07,
+            "ms": 22.352,
+            "throughput": 515.0,
+            "throughput_unit": "GFLOP/s"
+          }
+        ]
+      ]
+    }
+  ],
+  "finished_unix": 1792873100.0607235,
+  "sanitizers": "All four small-case sanitizer runs passed"
+}

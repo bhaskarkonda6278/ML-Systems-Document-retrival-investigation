@@ -1,0 +1,216 @@
+Timing round 1/7
+Timing round 2/7
+Timing round 3/7
+Timing round 4/7
+Timing round 5/7
+Timing round 6/7
+Timing round 7/7
+{
+  "split": "practice",
+  "queries": 350,
+  "k": 100,
+  "corpus_shape": [
+    24000,
+    384
+  ],
+  "baseline_quality": {
+    "Recall@5": 0.4213372500515358,
+    "Recall@10": 0.47959389816532677,
+    "Recall@20": 0.5785236033807462,
+    "Recall@100": 0.7698559059987632,
+    "MRR@10": 0.4887460317460317,
+    "NDCG@10": 0.4204605115536775
+  },
+  "repeats": 7,
+  "blas_threadpools": [
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 2,
+      "prefix": "libgomp",
+      "filepath": "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/lib/libgomp.so.1",
+      "version": null
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "filepath": "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-f48b354e.so",
+      "version": "0.3.34.106.0",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 2,
+      "prefix": "libgomp",
+      "filepath": "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/scikit_learn.libs/libgomp-e985bcbb.so.1.0.0",
+      "version": null
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "filepath": "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-5f890258.so",
+      "version": "0.3.31.dev",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    }
+  ],
+  "variants": [
+    {
+      "batch_size": 1,
+      "quality": {
+        "Recall@5": 0.4213372500515358,
+        "Recall@10": 0.47959389816532677,
+        "Recall@20": 0.5785236033807462,
+        "Recall@100": 0.7698559059987632,
+        "MRR@10": 0.4887460317460317,
+        "NDCG@10": 0.4204605115536775
+      },
+      "identical_rankings": 350,
+      "top100_overlap": 1.0,
+      "median_split_ms": 407.4047040194273,
+      "split_ms_repeats": [
+        407.4047040194273,
+        407.70782507024705,
+        406.84602898545563,
+        408.2829018589109,
+        408.7671139277518,
+        407.1144671179354,
+        407.04559604637325
+      ],
+      "amortized_ms_per_query": 1.1640134400555067,
+      "queries_per_second": 859.0966097026461,
+      "batch_service_ms_p50": 1.159796491265297,
+      "batch_service_ms_p95": 1.1726637370884418,
+      "traced_peak_extra_mib": 1.8564529418945312,
+      "score_buffer_mib": 0.091552734375
+    },
+    {
+      "batch_size": 4,
+      "quality": {
+        "Recall@5": 0.4213372500515358,
+        "Recall@10": 0.47959389816532677,
+        "Recall@20": 0.5785236033807462,
+        "Recall@100": 0.7698559059987632,
+        "MRR@10": 0.4887460317460317,
+        "NDCG@10": 0.4204605115536775
+      },
+      "identical_rankings": 328,
+      "top100_overlap": 1.0,
+      "median_split_ms": 378.12661402858794,
+      "split_ms_repeats": [
+        380.25907310657203,
+        372.54322692751884,
+        376.60447997041047,
+        378.3534721005708,
+        374.1193520836532,
+        378.12661402858794,
+        378.93970496952534
+      ],
+      "amortized_ms_per_query": 1.080361754367394,
+      "queries_per_second": 925.6158837143861,
+      "batch_service_ms_p50": 4.292282974347472,
+      "batch_service_ms_p95": 4.346383968368173,
+      "traced_peak_extra_mib": 2.9138107299804688,
+      "score_buffer_mib": 0.3662109375
+    },
+    {
+      "batch_size": 16,
+      "quality": {
+        "Recall@5": 0.4213372500515358,
+        "Recall@10": 0.47959389816532677,
+        "Recall@20": 0.5785236033807462,
+        "Recall@100": 0.7698559059987632,
+        "MRR@10": 0.4887460317460317,
+        "NDCG@10": 0.4204605115536775
+      },
+      "identical_rankings": 328,
+      "top100_overlap": 1.0,
+      "median_split_ms": 133.66985693573952,
+      "split_ms_repeats": [
+        131.75625004805624,
+        133.66985693573952,
+        132.393168983981,
+        134.26452712155879,
+        134.13614500313997,
+        132.69439991563559,
+        134.81409684754908
+      ],
+      "amortized_ms_per_query": 0.38191387695925577,
+      "queries_per_second": 2618.3913712742215,
+      "batch_service_ms_p50": 5.9304614551365376,
+      "batch_service_ms_p95": 6.96034652646631,
+      "traced_peak_extra_mib": 7.222496032714844,
+      "score_buffer_mib": 1.46484375
+    },
+    {
+      "batch_size": 64,
+      "quality": {
+        "Recall@5": 0.4213372500515358,
+        "Recall@10": 0.47959389816532677,
+        "Recall@20": 0.5785236033807462,
+        "Recall@100": 0.7698559059987632,
+        "MRR@10": 0.4887460317460317,
+        "NDCG@10": 0.4204605115536775
+      },
+      "identical_rankings": 328,
+      "top100_overlap": 1.0,
+      "median_split_ms": 92.21955901011825,
+      "split_ms_repeats": [
+        89.7384718991816,
+        96.35034785605967,
+        92.50430692918599,
+        92.21955901011825,
+        97.3027020227164,
+        89.93709809146821,
+        90.92125599272549
+      ],
+      "amortized_ms_per_query": 0.2634844543146236,
+      "queries_per_second": 3795.2903240580267,
+      "batch_service_ms_p50": 15.979872550815344,
+      "batch_service_ms_p95": 17.429789947345853,
+      "traced_peak_extra_mib": 24.59984588623047,
+      "score_buffer_mib": 5.859375
+    },
+    {
+      "batch_size": 128,
+      "quality": {
+        "Recall@5": 0.4213372500515358,
+        "Recall@10": 0.47959389816532677,
+        "Recall@20": 0.5785236033807462,
+        "Recall@100": 0.7698559059987632,
+        "MRR@10": 0.4887460317460317,
+        "NDCG@10": 0.4204605115536775
+      },
+      "identical_rankings": 328,
+      "top100_overlap": 1.0,
+      "median_split_ms": 102.29933704249561,
+      "split_ms_repeats": [
+        101.01512493565679,
+        101.32306395098567,
+        101.32586094550788,
+        103.08368620462716,
+        105.28505500406027,
+        103.03772194311023,
+        102.29933704249561
+      ],
+      "amortized_ms_per_query": 0.292283820121416,
+      "queries_per_second": 3421.332044943834,
+      "batch_service_ms_p50": 34.58850993774831,
+      "batch_service_ms_p95": 38.81814889609814,
+      "traced_peak_extra_mib": 47.59025573730469,
+      "score_buffer_mib": 11.71875
+    }
+  ],
+  "limitations": [
+    "Offline batch-fill waiting is excluded",
+    "Encoding and ASR excluded from retrieval timing",
+    "Traced allocations exclude untracked BLAS workspaces",
+    "ELM answer generation/judging require a key"
+  ]
+}

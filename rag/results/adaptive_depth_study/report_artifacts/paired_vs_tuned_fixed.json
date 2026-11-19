@@ -1,0 +1,52 @@
+{
+  "fixed_5": {
+    "quality_difference": -0.0016666666666666663,
+    "ci95": [
+      -0.06,
+      0.05833333333333333
+    ],
+    "input_token_change_percent": -52.88010170817577,
+    "downstream_change_percent": 0.24179286046137616,
+    "fallback_queries": 0
+  },
+  "fixed_10": {
+    "quality_difference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "input_token_change_percent": 0.0,
+    "downstream_change_percent": 0.0,
+    "fallback_queries": 0
+  },
+  "adaptive": {
+    "quality_difference": -0.04,
+    "ci95": [
+      -0.12666666666666668,
+      0.04
+    ],
+    "input_token_change_percent": -26.728550006519747,
+    "downstream_change_percent": 1.2964258504106319,
+    "fallback_queries": 0
+  },
+  "gap_only": {
+    "quality_difference": -0.023333333333333334,
+    "ci95": [
+      -0.11833333333333335,
+      0.065
+    ],
+    "input_token_change_percent": -77.25909505802582,
+    "downstream_change_percent": -32.772919628161,
+    "fallback_queries": 0
+  },
+  "guarded": {
+    "quality_difference": -0.018333333333333337,
+    "ci95": [
+      -0.08833333333333333,
+      0.0433749999999994
+    ],
+    "input_token_change_percent": -38.137306037292994,
+    "downstream_change_percent": -17.236731969265694,
+    "fallback_queries": 27
+  }
+}

@@ -1,0 +1,10 @@
+========= COMPUTE-SANITIZER
+Small cases only, without timing.
+GPU: NVIDIA H200 MIG 1g.18gb (sm_90), 16 SMs, peak memory bandwidth about 563 GB/s
+
+tiny 3 x 5, K = 7                    PASS  max_err=9.76e-09
+odd sizes 37 x 100, K = 33, bias     PASS  max_err=1.55e-07
+odd sizes, bias + GELU               PASS  max_err=7.70e-07
+
+Task 3 (tiled GEMM): ALL PASS
+========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)

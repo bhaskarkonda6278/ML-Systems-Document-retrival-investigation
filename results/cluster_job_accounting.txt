@@ -1,0 +1,13 @@
+JobID|State|ExitCode|Elapsed|NodeList|AllocTRES
+3687775|CANCELLED by 3441735|0:0|00:12:06|saxa|cpu=2,energy=566538,gres/gpu=1,mem=16G,node=1
+3687775.batch|CANCELLED|0:15|00:12:07|saxa|cpu=2,gres/gpu=1,mem=16G,node=1
+3687775.0|COMPLETED|0:0|00:00:20|saxa|cpu=2,gres/gpu=1,mem=16G,node=1
+3687775.1|COMPLETED|0:0|00:02:40|saxa|cpu=2,gres/gpu=1,mem=16G,node=1
+3687784|COMPLETED|0:0|00:04:39|saxa|cpu=2,gres/gpu=1,mem=16G,node=1
+3687784.batch|COMPLETED|0:0|00:04:39|saxa|cpu=2,gres/gpu=1,mem=16G,node=1
+3687786|COMPLETED|0:0|00:25:44|saxa|cpu=2,energy=74382,gres/gpu=1,mem=16G,node=1
+3687786.batch|COMPLETED|0:0|00:25:44|saxa|cpu=2,gres/gpu=1,mem=16G,node=1
+3687786.0|COMPLETED|0:0|00:00:01|saxa|cpu=1,gres/gpu=1,mem=16G,node=1
+3687786.1|COMPLETED|0:0|00:00:00|saxa|cpu=1,gres/gpu=1,mem=16G,node=1
+
+Active jobs from this coursework run: none

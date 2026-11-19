@@ -1,0 +1,4 @@
+saxa.inf.ed.ac.uk
+GPU 0: NVIDIA H200 (UUID: GPU-6096d4d6-542b-1e8d-ea2a-4c1eeeef9c83)
+  MIG 1g.18gb     Device  0: (UUID: MIG-ea9d23a9-0c46-589e-9ba2-49a3cc7135d4)
+torch 2.10.0+cu128 transformers 5.0.0

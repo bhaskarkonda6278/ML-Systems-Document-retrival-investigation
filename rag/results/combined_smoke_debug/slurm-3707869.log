@@ -1,0 +1,5 @@
+saxa.inf.ed.ac.uk
+GPU 0: NVIDIA H200 (UUID: GPU-25cb7a7a-ecd5-0631-5f9d-f4fec9d38b9c)
+  MIG 3g.71gb     Device  0: (UUID: MIG-033534e4-2c01-566d-83a7-2305f2f03e86)
+ASR ready: {"ready": true, "gpu": "NVIDIA H200 MIG 3g.71gb", "torch": "2.10.0+cu128", "cuda": "12.8"}
+[2026-11-09T11:03:52.829] error: *** JOB 3707869 ON saxa CANCELLED AT 2026-11-09T11:03:52 DUE to SIGNAL Terminated ***

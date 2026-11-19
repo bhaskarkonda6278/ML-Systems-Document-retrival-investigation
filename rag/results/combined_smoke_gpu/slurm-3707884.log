@@ -1,0 +1,541 @@
+saxa.inf.ed.ac.uk
+GPU 0: NVIDIA H200 (UUID: GPU-25cb7a7a-ecd5-0631-5f9d-f4fec9d38b9c)
+  MIG 3g.71gb     Device  0: (UUID: MIG-96079820-224f-5ce6-bfdc-93a357cdfe8b)
+PHASE: starting ASR worker
+Timeout (0:01:30)!
+Thread 0x0000718a70d73080 (most recent call first):
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 61 in read
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 56 in __init__
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 184 in run
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 292 in <module>
+Timeout (0:01:30)!
+Thread 0x0000718a70d73080 (most recent call first):
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 61 in read
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 56 in __init__
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 184 in run
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 292 in <module>
+Timeout (0:01:30)!
+Thread 0x0000718a70d73080 (most recent call first):
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 61 in read
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 56 in __init__
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 184 in run
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 292 in <module>
+Timeout (0:01:30)!
+Thread 0x0000718a70d73080 (most recent call first):
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 61 in read
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 56 in __init__
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 184 in run
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 292 in <module>
+ASR ready: {"ready": true, "gpu": "NVIDIA H200 MIG 3g.71gb", "torch": "2.10.0+cu128", "cuda": "12.8"}
+PHASE: ASR warm-up
+PHASE: loading GPU query encoder
+Timeout (0:01:30)!
+Thread 0x0000718a70d73080 (most recent call first):
+  File "/usr/lib/python3.12/pathlib.py", line 842 in stat
+  File "/usr/lib/python3.12/pathlib.py", line 862 in exists
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 498 in <lambda>
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 498 in skip_missing_files
+  File "/usr/lib/python3.12/importlib/metadata/_functools.py", line 102 in wrapper
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 500 in files
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 959 in _top_level_inferred
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 947 in packages_distributions
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 51 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/utils/generic.py", line 39 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/utils/auto_docstring.py", line 33 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/utils/__init__.py", line 22 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1310 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/dependency_versions_check.py", line 16 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1415 in _handle_fromlist
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/__init__.py", line 30 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1310 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/backend/load.py", line 7 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/backend/__init__.py", line 3 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/__init__.py", line 10 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/src/encoder.py", line 9 in __init__
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 194 in run
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 292 in <module>
+Timeout (0:01:30)!
+Thread 0x0000718a70d73080 (most recent call first):
+  File "/usr/lib/python3.12/pathlib.py", line 842 in stat
+  File "/usr/lib/python3.12/pathlib.py", line 862 in exists
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 498 in <lambda>
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 498 in skip_missing_files
+  File "/usr/lib/python3.12/importlib/metadata/_functools.py", line 102 in wrapper
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 500 in files
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 959 in _top_level_inferred
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 947 in packages_distributions
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 51 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/utils/generic.py", line 39 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/utils/auto_docstring.py", line 33 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/utils/__init__.py", line 22 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1310 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/dependency_versions_check.py", line 16 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1415 in _handle_fromlist
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/__init__.py", line 30 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1310 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/backend/load.py", line 7 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/backend/__init__.py", line 3 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/__init__.py", line 10 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/src/encoder.py", line 9 in __init__
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 194 in run
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 292 in <module>
+Timeout (0:01:30)!
+Thread 0x0000718a70d73080 (most recent call first):
+  File "/usr/lib/python3.12/ctypes/__init__.py", line 379 in __init__
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/__init__.py", line 348 in _preload_cuda_lib
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/__init__.py", line 386 in _preload_cuda_deps
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/__init__.py", line 446 in _load_global_deps
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/__init__.py", line 495 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/generation/logits_process.py", line 21 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/generation/configuration_utils.py", line 62 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/configuration_utils.py", line 35 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/backend/load.py", line 7 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/backend/__init__.py", line 3 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/__init__.py", line 10 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/src/encoder.py", line 9 in __init__
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 194 in run
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 292 in <module>
+Timeout (0:01:30)!
+Thread 0x0000718a70d73080 (most recent call first):
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 1289 in create_module
+  File "<frozen importlib._bootstrap>", line 813 in module_from_spec
+  File "<frozen importlib._bootstrap>", line 921 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/tokenizers/__init__.py", line 89 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/integrations/gguf/gguf_tokenizer_mapping.py", line 31 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1387 in _gcd_import
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90 in import_module
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 2829 in _get_module
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 2600 in __getattr__
+  File "<frozen importlib._bootstrap>", line 1412 in _handle_fromlist
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/modeling_gguf_pytorch_utils.py", line 27 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/configuration_utils.py", line 37 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/backend/load.py", line 7 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/backend/__init__.py", line 3 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/__init__.py", line 10 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/src/encoder.py", line 9 in __init__
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 194 in run
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 292 in <module>
+Timeout (0:01:30)!
+Thread 0x0000718a70d73080 (most recent call first):
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 1289 in create_module
+  File "<frozen importlib._bootstrap>", line 813 in module_from_spec
+  File "<frozen importlib._bootstrap>", line 921 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/triton/knobs.py", line 15 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1415 in _handle_fromlist
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/triton/runtime/autotuner.py", line 11 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/triton/runtime/__init__.py", line 1 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/triton/__init__.py", line 8 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/utils/_triton.py", line 39 in has_triton_package
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/_dynamo/utils.py", line 2932 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/_dynamo/exc.py", line 72 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/_dynamo/symbolic_convert.py", line 54 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/_dynamo/convert_frame.py", line 62 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/_dynamo/aot_compile.py", line 17 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1415 in _handle_fromlist
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/_dynamo/__init__.py", line 13 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/compiler/__init__.py", line 352 in disable
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/generation/continuous_batching/cache.py", line 392 in PagedAttentionCache
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/generation/continuous_batching/cache.py", line 70 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/generation/continuous_batching/__init__.py", line 14 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/integrations/flash_attention.py", line 3 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/integrations/hub_kernels.py", line 40 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1387 in _gcd_import
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90 in import_module
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 2829 in _get_module
+  ...
+Timeout (0:01:30)!
+Thread 0x0000718a70d73080 (most recent call first):
+  File "/usr/lib/python3.12/pathlib.py", line 1065 in _scandir
+  File "/usr/lib/python3.12/pathlib.py", line 203 in _select_from
+  File "/usr/lib/python3.12/pathlib.py", line 236 in _select_from
+  File "/usr/lib/python3.12/pathlib.py", line 1111 in rglob
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/__init__.py", line 795 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 2856 in direct_transformers_import
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/processing_utils.py", line 96 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/image_processing_utils.py", line 34 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/models/auto/processing_auto.py", line 25 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1387 in _gcd_import
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90 in import_module
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 2829 in _get_module
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 2600 in __getattr__
+  File "<frozen importlib._bootstrap>", line 1412 in _handle_fromlist
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/base/modules/transformer.py", line 14 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/base/modules/__init__.py", line 8 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/base/model.py", line 45 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/base/__init__.py", line 4 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1310 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/__init__.py", line 15 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/src/encoder.py", line 9 in __init__
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 194 in run
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 292 in <module>
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:   1%|          | 2/199 [00:00<00:17, 11.47it/s]Loading weights:   2%|▏         | 4/199 [00:05<04:52,  1.50s/it]Loading weights:   3%|▎         | 5/199 [00:05<03:40,  1.14s/it]Loading weights:   4%|▎         | 7/199 [00:08<04:32,  1.42s/it]Loading weights:   5%|▍         | 9/199 [00:10<03:40,  1.16s/it]Loading weights:   6%|▌         | 11/199 [00:10<02:36,  1.20it/s]Loading weights:   9%|▊         | 17/199 [00:12<01:34,  1.92it/s]Loading weights:  10%|█         | 20/199 [00:13<01:10,  2.53it/s]Loading weights:  13%|█▎        | 25/199 [00:15<01:12,  2.41it/s]Loading weights:  34%|███▎      | 67/199 [00:15<00:09, 13.65it/s]Loading weights:  37%|███▋      | 74/199 [00:16<00:10, 12.26it/s]Loading weights:  44%|████▍     | 88/199 [00:16<00:06, 17.06it/s]Loading weights:  48%|████▊     | 95/199 [00:16<00:05, 19.63it/s]Loading weights:  53%|█████▎    | 106/199 [00:16<00:03, 24.90it/s]Loading weights:  57%|█████▋    | 113/199 [00:17<00:04, 19.56it/s]Loading weights:  60%|█████▉    | 119/199 [00:17<00:03, 22.54it/s]Loading weights:  66%|██████▋   | 132/199 [00:17<00:02, 27.79it/s]Loading weights:  69%|██████▉   | 137/199 [00:22<00:11,  5.60it/s]Loading weights:  71%|███████   | 141/199 [00:23<00:11,  4.95it/s]Loading weights:  72%|███████▏  | 144/199 [00:24<00:11,  4.80it/s]Loading weights: 100%|██████████| 199/199 [00:24<00:00,  8.21it/s]
+PHASE: query encoder ready
+Timeout (0:01:30)!
+Thread 0x00007189892f86c0 (most recent call first):
+  File "/usr/lib/python3.12/threading.py", line 359 in wait
+  File "/usr/lib/python3.12/threading.py", line 655 in wait
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/tqdm/_monitor.py", line 69 in run
+  File "/usr/lib/python3.12/threading.py", line 1073 in _bootstrap_inner
+  File "/usr/lib/python3.12/threading.py", line 1030 in _bootstrap
+
+Thread 0x0000718988af76c0 (most recent call first):
+  File "/usr/lib/python3.12/threading.py", line 359 in wait
+  File "/usr/lib/python3.12/threading.py", line 655 in wait
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/tqdm/_monitor.py", line 69 in run
+  File "/usr/lib/python3.12/threading.py", line 1073 in _bootstrap_inner
+  File "/usr/lib/python3.12/threading.py", line 1030 in _bootstrap
+
+Thread 0x0000718a70d73080 (most recent call first):
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/integrations/sdpa_attention.py", line 170 in sdpa_attention_forward
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 192 in forward
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794 in _call_impl
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783 in _wrapped_call_impl
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 314 in forward
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794 in _call_impl
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783 in _wrapped_call_impl
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 383 in forward
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794 in _call_impl
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783 in _wrapped_call_impl
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/modeling_layers.py", line 111 in __call__
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 436 in forward
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794 in _call_impl
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783 in _wrapped_call_impl
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 669 in forward
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/utils/output_capturing.py", line 287 in wrapper
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/utils/generic.py", line 1081 in wrapper
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/base/modules/transformer.py", line 1647 in forward
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794 in _call_impl
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783 in _wrapped_call_impl
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/base/model.py", line 600 in forward
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794 in _call_impl
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783 in _wrapped_call_impl
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/sentence_transformer/model.py", line 963 in _inference
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124 in decorate_context
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/sentence_transformer/model.py", line 895 in encode
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/util/decorators.py", line 46 in wrapper
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124 in decorate_context
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/src/encoder.py", line 22 in encode
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 198 in run
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 292 in <module>
+PHASE: preparing fixed evaluation questions
+Timeout (0:01:30)!
+Thread 0x00007189892f86c0 (most recent call first):
+  File "/usr/lib/python3.12/threading.py", line 359 in wait
+  File "/usr/lib/python3.12/threading.py", line 655 in wait
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/tqdm/_monitor.py", line 69 in run
+  File "/usr/lib/python3.12/threading.py", line 1073 in _bootstrap_inner
+  File "/usr/lib/python3.12/threading.py", line 1030 in _bootstrap
+
+Thread 0x0000718988af76c0 (most recent call first):
+  File "/usr/lib/python3.12/threading.py", line 359 in wait
+  File "/usr/lib/python3.12/threading.py", line 655 in wait
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/tqdm/_monitor.py", line 69 in run
+  File "/usr/lib/python3.12/threading.py", line 1073 in _bootstrap_inner
+  File "/usr/lib/python3.12/threading.py", line 1030 in _bootstrap
+
+Thread 0x0000718a70d73080 (most recent call first):
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 61 in read
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 72 in transcribe
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 204 in run
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 292 in <module>
+PHASE: initialization complete
+{"phase": "running", "completed": 1, "total": 8, "latest": "q_44a875cacb654901:1:C"}
+{"phase": "running", "completed": 2, "total": 8, "latest": "q_44a875cacb654901:1:B"}
+{"phase": "running", "completed": 3, "total": 8, "latest": "q_44a875cacb654901:1:A"}
+{"phase": "running", "completed": 4, "total": 8, "latest": "q_44a875cacb654901:1:B0"}
+{"phase": "running", "completed": 5, "total": 8, "latest": "q_12314f242e48a795:1:B0"}
+{"phase": "running", "completed": 6, "total": 8, "latest": "q_12314f242e48a795:1:B"}
+{"phase": "running", "completed": 7, "total": 8, "latest": "q_12314f242e48a795:1:C"}
+{"phase": "running", "completed": 8, "total": 8, "latest": "q_12314f242e48a795:1:A"}

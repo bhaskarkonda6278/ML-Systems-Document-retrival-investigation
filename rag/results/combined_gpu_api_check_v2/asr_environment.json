@@ -1,0 +1,6 @@
+{
+  "ready": true,
+  "gpu": "NVIDIA H200 MIG 3g.71gb",
+  "torch": "2.10.0+cu128",
+  "cuda": "12.8"
+}

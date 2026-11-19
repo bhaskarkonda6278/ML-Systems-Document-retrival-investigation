@@ -1,0 +1,116 @@
+saxa.inf.ed.ac.uk
+GPU 0: NVIDIA H200 (UUID: GPU-64bf44ed-edf3-c925-97e0-3474609252bb)
+  MIG 3g.71gb     Device  0: (UUID: MIG-d9c64ca6-814d-506b-b744-c0202cc45a09)
+PHASE: starting ASR worker
+Timeout (0:01:30)!
+Thread 0x0000784181166080 (most recent call first):
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 61 in read
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 56 in __init__
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 185 in run
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 293 in <module>
+Timeout (0:01:30)!
+Thread 0x0000784181166080 (most recent call first):
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 61 in read
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 56 in __init__
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 185 in run
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 293 in <module>
+Timeout (0:01:30)!
+Thread 0x0000784181166080 (most recent call first):
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 61 in read
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 56 in __init__
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 185 in run
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 293 in <module>
+Timeout (0:01:30)!
+Thread 0x0000784181166080 (most recent call first):
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 61 in read
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 56 in __init__
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 185 in run
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 293 in <module>
+ASR ready: {"ready": true, "gpu": "NVIDIA H200 MIG 3g.71gb", "torch": "2.10.0+cu128", "cuda": "12.8"}
+PHASE: ASR warm-up
+Timeout (0:01:30)!
+Thread 0x0000784181166080 (most recent call first):
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 61 in read
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 73 in transcribe
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 193 in run
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 293 in <module>
+PHASE: loading GPU query encoder
+Timeout (0:01:30)!
+Thread 0x0000784181166080 (most recent call first):
+  File "/usr/lib/python3.12/pathlib.py", line 842 in stat
+  File "/usr/lib/python3.12/pathlib.py", line 862 in exists
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 498 in <lambda>
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 498 in skip_missing_files
+  File "/usr/lib/python3.12/importlib/metadata/_functools.py", line 102 in wrapper
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 500 in files
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 959 in _top_level_inferred
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 947 in packages_distributions
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 51 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/utils/generic.py", line 39 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/utils/auto_docstring.py", line 33 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/utils/__init__.py", line 22 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1310 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/dependency_versions_check.py", line 16 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1415 in _handle_fromlist
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/transformers/__init__.py", line 30 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1310 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/backend/load.py", line 7 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/backend/__init__.py", line 3 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/sentence_transformers/__init__.py", line 10 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 995 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/src/encoder.py", line 9 in __init__
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 195 in run
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 293 in <module>
+Timeout (0:01:30)!
+Thread 0x0000784181166080 (most recent call first):
+  File "/usr/lib/python3.12/pathlib.py", line 30785 in __init__
+  File /var/spool/slurmd/job3708087/slurm_script: line 21: 621092 Segmentation fault      python -u rag/extensions/combined_study/run.py "$@"

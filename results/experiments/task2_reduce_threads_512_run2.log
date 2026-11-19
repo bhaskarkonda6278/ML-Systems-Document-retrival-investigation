@@ -1,0 +1,15 @@
+GPU: NVIDIA H200 MIG 1g.18gb (sm_90), 16 SMs, peak memory bandwidth about 563 GB/s
+
+rmsnorm, one short row               PASS  max_err=8.27e-08     0.002 ms      0.1 GB/s ( 0% of peak)
+rmsnorm, odd cols                    PASS  max_err=3.68e-07     0.003 ms     14.9 GB/s ( 3% of peak)
+rmsnorm, text decoder                PASS  max_err=4.18e-07     0.004 ms    263.5 GB/s (47% of peak)
+layernorm, odd cols (example)        PASS  max_err=3.91e-07     0.003 ms     13.7 GB/s ( 2% of peak)
+layernorm, audio encoder             PASS  max_err=5.17e-07     0.074 ms    207.0 GB/s (37% of peak)
+softmax, one short row               PASS  max_err=1.11e-08     0.002 ms      0.0 GB/s ( 0% of peak)
+softmax, odd cols                    PASS  max_err=1.14e-09     0.003 ms      9.0 GB/s ( 2% of peak)
+softmax, large inputs (+-100)        PASS  max_err=1.95e-08     0.003 ms      5.1 GB/s ( 1% of peak)
+softmax, all negative (-200..-150)   PASS  max_err=6.11e-09     0.002 ms      2.1 GB/s ( 0% of peak)
+softmax, vocabulary row (59264)      PASS  max_err=8.13e-11     0.050 ms      9.5 GB/s ( 2% of peak)
+softmax, 64 x 4096                   PASS  max_err=7.95e-10     0.008 ms    252.9 GB/s (45% of peak)
+
+Task 2 (reductions): ALL PASS

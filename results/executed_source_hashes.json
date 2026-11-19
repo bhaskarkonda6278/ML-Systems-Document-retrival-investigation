@@ -1,0 +1,12 @@
+{
+  "hw1-asr/csrc/task1_rope.cu": "4ffe0608f48aa2562dcadc7c01a1b83e0dc0ab8411a3a22c2483fbb3ba9f3aaa",
+  "hw1-asr/csrc/task2_reduce.cu": "ae24dc94bc582ba024de7bf77ad7be335547a6a3a0af188c3b31b65d747ea0df",
+  "hw1-asr/csrc/task2_reduce.cuh": "0feb9f8b1a222db31aa6426190738298b7236cd51274adace8a46a3504878ec9",
+  "hw1-asr/csrc/task3_gemm.cu": "75239c93ab528526abd0a19288563851d02e9bdfd39fcfd520dd6df166a6cf80",
+  "hw1-asr/csrc/task4_attention.cu": "2f8a6cb678680314660b56ddcfa6836b16e6bc7ea6cd5ae2d2326814288827f8",
+  "rag/extensions/batched_retriever.py": "14e543050f41fd1afa9cae20264cf0d935faa85067f36a71ad59565f5e847e1e",
+  "rag/extensions/benchmark_batching.py": "7adbe96cf1fd56abaceefd2dec88501f68cacb62b9315fdc2a4713d4c8fa87d4",
+  "rag/extensions/inspect_audio_retrieval.py": "c62afe085e6e8b71b6b8e43cdde640988f0bac4ca9bff9ff37eea9715f4be2f4",
+  "rag/extensions/test_batched_retriever.py": "45985b2dcca2c699356c318f78b252bd247327a435a8697add13926ef1c6d781",
+  "rag/extensions/complete_elm_evaluation.sh": "f1177c20571f331b14b59f0d741d64415a54e1e2d3cf521604b0a6892cd9e02f"
+}

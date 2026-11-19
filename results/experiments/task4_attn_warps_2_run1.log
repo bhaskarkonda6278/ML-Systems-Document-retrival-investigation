@@ -1,0 +1,19 @@
+nvcc -O3 -std=c++17 -lineinfo -diag-suppress 177 -arch=sm_90 -Xcompiler -fPIC -I/home/s3021085/edin-mls-26-autumn/results/experiments/src/task4_attn_warps_2 -c /home/s3021085/edin-mls-26-autumn/results/experiments/src/task4_attn_warps_2/task2_reduce.cu -o /home/s3021085/edin-mls-26-autumn/results/experiments/build/task4_attn_warps_2/obj/task2_reduce.o
+nvcc -O3 -std=c++17 -lineinfo -diag-suppress 177 -arch=sm_90 -Xcompiler -fPIC -I/home/s3021085/edin-mls-26-autumn/results/experiments/src/task4_attn_warps_2 -c /home/s3021085/edin-mls-26-autumn/results/experiments/src/task4_attn_warps_2/task1_rope.cu -o /home/s3021085/edin-mls-26-autumn/results/experiments/build/task4_attn_warps_2/obj/task1_rope.o
+nvcc -O3 -std=c++17 -lineinfo -diag-suppress 177 -arch=sm_90 -Xcompiler -fPIC -I/home/s3021085/edin-mls-26-autumn/results/experiments/src/task4_attn_warps_2 -c /home/s3021085/edin-mls-26-autumn/results/experiments/src/task4_attn_warps_2/task3_gemm.cu -o /home/s3021085/edin-mls-26-autumn/results/experiments/build/task4_attn_warps_2/obj/task3_gemm.o
+nvcc -O3 -std=c++17 -lineinfo -diag-suppress 177 -arch=sm_90 -Xcompiler -fPIC -I/home/s3021085/edin-mls-26-autumn/results/experiments/src/task4_attn_warps_2 -c /home/s3021085/edin-mls-26-autumn/results/experiments/src/task4_attn_warps_2/task4_attention.cu -o /home/s3021085/edin-mls-26-autumn/results/experiments/build/task4_attn_warps_2/obj/task4_attention.o
+nvcc -O3 -std=c++17 -lineinfo -diag-suppress 177 -arch=sm_90 -Xcompiler -fPIC -I/home/s3021085/edin-mls-26-autumn/results/experiments/src/task4_attn_warps_2 -c /home/s3021085/edin-mls-26-autumn/results/experiments/src/task4_attn_warps_2/provided.cu -o /home/s3021085/edin-mls-26-autumn/results/experiments/build/task4_attn_warps_2/obj/provided.o
+nvcc -O3 -std=c++17 -lineinfo -diag-suppress 177 -arch=sm_90 -Xcompiler -fPIC -I/home/s3021085/edin-mls-26-autumn/results/experiments/src/task4_attn_warps_2 tests/test_task4_attention.cu /home/s3021085/edin-mls-26-autumn/results/experiments/build/task4_attn_warps_2/obj/task1_rope.o /home/s3021085/edin-mls-26-autumn/results/experiments/build/task4_attn_warps_2/obj/task2_reduce.o /home/s3021085/edin-mls-26-autumn/results/experiments/build/task4_attn_warps_2/obj/task3_gemm.o /home/s3021085/edin-mls-26-autumn/results/experiments/build/task4_attn_warps_2/obj/task4_attention.o /home/s3021085/edin-mls-26-autumn/results/experiments/build/task4_attn_warps_2/obj/provided.o -o /home/s3021085/edin-mls-26-autumn/results/experiments/build/task4_attn_warps_2/test_task4_attention -lcublas -Xlinker -rpath -Xlinker /opt/cuda-12.8.0/lib64
+/home/s3021085/edin-mls-26-autumn/results/experiments/build/task4_attn_warps_2/test_task4_attention
+GPU: NVIDIA H200 MIG 1g.18gb (sm_90), 16 SMs, peak memory bandwidth about 563 GB/s
+
+tiny, one tile (4 queries, 5 keys)   PASS  max_err=8.15e-08     0.006 ms        0 GFLOP/s
+several tiles, peaky scores          PASS  max_err=4.97e-07     0.019 ms       12 GFLOP/s
+GQA 4 heads / 2 kv heads             PASS  max_err=1.30e-07     0.011 ms       56 GFLOP/s
+causal, seq_q = seq_k                PASS  max_err=5.16e-07     0.048 ms       53 GFLOP/s
+causal, 5 new queries, 37 keys       PASS  max_err=1.78e-07     0.010 ms       19 GFLOP/s
+causal, one new query                PASS  max_err=3.39e-07     0.047 ms       12 GFLOP/s
+text decoder (GQA 16/4, causal)      PASS  max_err=5.21e-07     0.173 ms       97 GFLOP/s
+audio encoder (20 heads, 1500)       PASS  max_err=2.68e-07    42.408 ms      272 GFLOP/s
+
+Task 4 (attention): ALL PASS

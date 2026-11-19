@@ -1,0 +1,9 @@
+{
+  "no_api_job": "3707872",
+  "api_smoke_job": "3707876",
+  "full_job": "3707877",
+  "full_queries": 125,
+  "repeats": 3,
+  "configurations": 4,
+  "full_trials": 1500
+}

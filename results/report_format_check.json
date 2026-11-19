@@ -1,0 +1,95 @@
+{
+  "file": "course\\report\\latex_template\\report.pdf",
+  "status": "PASS",
+  "issues": [],
+  "warnings": [],
+  "metrics": {
+    "pages_total": 7,
+    "per_page": [
+      {
+        "page": 1,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "candidate_body_lines": 32,
+        "left_q10_pt": 107.99999237060547,
+        "right_q95_pt": 504.003401184082,
+        "ruler_tokens": 54
+      },
+      {
+        "page": 2,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "candidate_body_lines": 23,
+        "left_q10_pt": 108.0,
+        "right_q95_pt": 504.00335693359375,
+        "ruler_tokens": 54
+      },
+      {
+        "page": 3,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "candidate_body_lines": 35,
+        "left_q10_pt": 108.0,
+        "right_q95_pt": 504.0033935546875,
+        "ruler_tokens": 54
+      },
+      {
+        "page": 4,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "candidate_body_lines": 38,
+        "left_q10_pt": 108.0,
+        "right_q95_pt": 504.00339202880855,
+        "ruler_tokens": 54
+      },
+      {
+        "page": 5,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "candidate_body_lines": 44,
+        "left_q10_pt": 107.99996948242188,
+        "right_q95_pt": 504.00335693359375,
+        "ruler_tokens": 54
+      },
+      {
+        "page": 6,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "candidate_body_lines": 40,
+        "left_q10_pt": 107.99998474121094,
+        "right_q95_pt": 504.00338592529295,
+        "ruler_tokens": 54
+      },
+      {
+        "page": 7,
+        "width_pt": 612.0,
+        "height_pt": 792.0,
+        "candidate_body_lines": 7,
+        "left_q10_pt": 108.0,
+        "right_q95_pt": 504.0033264160156,
+        "ruler_tokens": 54
+      }
+    ],
+    "dominant_body_font_size_pt": 10.0,
+    "body_font_histogram_char_weighted": {
+      "17.2": 8,
+      "13.8": 27,
+      "10.0": 18185,
+      "7.0": 16,
+      "8.0": 34
+    },
+    "header_pages_detected": 7,
+    "review_ruler_tokens_detected": 378,
+    "references_boundary": {
+      "reliable": true,
+      "references_page": 4,
+      "references_y_pt": 608.7171020507812,
+      "references_starts_new_page": false,
+      "main_body_pages": 4,
+      "substantive_lines_before_references": 53,
+      "images_before_references": 0
+    },
+    "estimated_main_body_pages": 4,
+    "configured_main_body_page_limit": 6
+  }
+}

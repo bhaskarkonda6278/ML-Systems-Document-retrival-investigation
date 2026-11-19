@@ -1,0 +1,34 @@
+saxa.inf.ed.ac.uk
+GPU 0: NVIDIA H200 (UUID: GPU-64bf44ed-edf3-c925-97e0-3474609252bb)
+  MIG 3g.71gb     Device  0: (UUID: MIG-d9c64ca6-814d-506b-b744-c0202cc45a09)
+PHASE: starting ASR worker
+Timeout (0:01:30)!
+Thread 0x00007e7e4f2f1080 (most recent call first):
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 61 in read
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 56 in __init__
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 184 in run
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 292 in <module>
+Timeout (0:01:30)!
+Thread 0x00007e7e4f2f1080 (most recent call first):
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 61 in read
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 56 in __init__
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 184 in run
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 292 in <module>
+Timeout (0:01:30)!
+Thread 0x00007e7e4f2f1080 (most recent call first):
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 61 in read
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 56 in __init__
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 184 in run
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 292 in <module>
+Traceback (most recent call last):
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 292, in <module>
+    run(args)
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 184, in run
+    worker = Worker(out)
+             ^^^^^^^^^^^
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 56, in __init__
+    self.info = self.read()
+                ^^^^^^^^^^^
+  File "/home/s3021085/DIY/edin-mls-26-autumn/rag/extensions/combined_study/run.py", line 63, in read
+    raise RuntimeError('ASR worker exited; inspect asr_worker.log')
+RuntimeError: ASR worker exited; inspect asr_worker.log

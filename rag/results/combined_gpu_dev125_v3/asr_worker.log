@@ -1,0 +1,8 @@
+START: importing torch
+DONE: importing torch
+START: checking CUDA
+DONE: checking CUDA
+START: checking model cache
+DONE: checking model cache
+START: loading model
+DONE: loading model

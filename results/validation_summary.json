@@ -1,0 +1,29 @@
+{
+  "status": "PASS for completed technical work; ELM generation/judging and group details pending",
+  "cuda_configurations": 20,
+  "repeats_per_configuration": 3,
+  "small_case_sanitizers": 4,
+  "retrieval": {
+    "practice": {
+      "queries": 350,
+      "best_batch": 64,
+      "speedup": 4.417768946116162,
+      "quality_changes": 0
+    },
+    "dev": {
+      "queries": 125,
+      "best_batch": 64,
+      "speedup": 4.103184406675873,
+      "quality_changes": 0
+    }
+  },
+  "source_hashes_match_cluster": true,
+  "provided_model_tests_style_unchanged": true,
+  "sample_asr_backends_agree": true,
+  "report_format": "PASS",
+  "report_main_pages": 4,
+  "report_total_pages": 7,
+  "report_all_pages_visually_inspected": true,
+  "report_sha256": "32e65f204d6e5a844a3a7f83ece474899b3141de8f81964890ec610815a33644",
+  "active_coursework_jobs": 0
+}

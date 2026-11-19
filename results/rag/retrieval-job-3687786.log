@@ -1,0 +1,1024 @@
+saxa.inf.ed.ac.uk
+GPU 0: NVIDIA H200 (UUID: GPU-6096d4d6-542b-1e8d-ea2a-4c1eeeef9c83)
+  MIG 1g.18gb     Device  0: (UUID: MIG-ea9d23a9-0c46-589e-9ba2-49a3cc7135d4)
+make: Entering directory '/home/s3021085/edin-mls-26-autumn/hw1-asr'
+make: Nothing to be done for 'lib'.
+make: Leaving directory '/home/s3021085/edin-mls-26-autumn/hw1-asr'
+test_pcm_conversion_and_format (test_asr_adapter.AdapterTests.test_pcm_conversion_and_format) ... ok
+test_persistent_worker_preprocessing_and_decoding (test_asr_adapter.AdapterTests.test_persistent_worker_preprocessing_and_decoding) ... loading log on stdout
+generation log on stdout
+generation log on stdout
+ok
+test_unavailable_source_reports_configuration (test_asr_adapter.AdapterTests.test_unavailable_source_reports_configuration) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.456s
+
+OK
+test_empty_batch_and_k_clamping (test_batched_retriever.BatchRetrievalTests.test_empty_batch_and_k_clamping) ... ok
+test_invalid_queries_are_rejected (test_batched_retriever.BatchRetrievalTests.test_invalid_queries_are_rejected) ... ok
+test_scaled_queries_rank_independently_without_mutation (test_batched_retriever.BatchRetrievalTests.test_scaled_queries_rank_independently_without_mutation) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.066s
+
+OK
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:   3%|▎         | 6/199 [00:00<00:03, 49.03it/s]Loading weights:  10%|▉         | 19/199 [00:02<00:24,  7.50it/s]Loading weights:  13%|█▎        | 26/199 [00:03<00:24,  7.12it/s]Loading weights:  14%|█▍        | 28/199 [00:04<00:28,  5.90it/s]Loading weights:  23%|██▎       | 45/199 [00:04<00:13, 11.82it/s]Loading weights:  31%|███       | 62/199 [00:05<00:07, 17.44it/s]Loading weights:  42%|████▏     | 83/199 [00:05<00:04, 27.63it/s]Loading weights:  50%|████▉     | 99/199 [00:05<00:02, 37.86it/s]Loading weights:  64%|██████▍   | 128/199 [00:05<00:01, 61.61it/s]Loading weights:  71%|███████   | 141/199 [00:06<00:01, 36.57it/s]Loading weights: 100%|██████████| 199/199 [00:06<00:00, 30.86it/s]
+This model was loaded in torch.float16 on CPU. Depending on your CPU, inference may be significantly slower than with torch.float32. Consider comparing inference speeds by loading with `model_kwargs={"dtype": torch.float32}`.
+{
+  "query_id": "q_7e9a0f2716c017d2",
+  "cuda_groups": "none",
+  "transcript": "Understanding sales tax implications when purchasing items in a retail store.",
+  "asr_ms_excluding_model_load": 1854.2922930791974,
+  "retrieval": {
+    "record_ids": [
+      "r_53736721cc137da0",
+      "r_e5b65dad238e9ce2",
+      "r_08e4c7b8ff7f8a35",
+      "r_d3d616d42b2a83b4",
+      "r_0f6650dd9e3bc5cb"
+    ],
+    "scores": [
+      0.8767204880714417,
+      0.875569760799408,
+      0.8748974800109863,
+      0.8725460767745972,
+      0.8701394200325012
+    ],
+    "latency_ms": 2.4787948932498693
+  },
+  "contexts": [
+    "\"Actually, calculating taxes isn't that difficult. You will pay a percentage of your gross sales to state and local sales tax, and as a single-owner LLC your profits (after sales taxes) should pass through to your individual tax tax return (according to this IRS article. They are not cumulative since they have different bases (gross sales versus net profit). That said, when determining if your future business is profitable, you need to ask \"\"what aspects of the business can I control\"\"? Can you control how much each item sells for? Increasing your prices will increase your gross margins, which should be higher than your fixed and variable costs. If your margins do not exceed your costs, then you will note be profitable. Note that as a vendor you are at a slight disadvantage to a retailer, since tax has to be baked in to your prices. A retailer can advertise the pre-tax price, and pass-through sales tax at the point of sale. However, people expect to pay more at a vending machine, so the disadvantage is very small (you aren't directly competing with retailers anyways).\"",
+    "You're not paying taxes three times but you are paying three different taxes (or more). Sales tax is a business expense, just like costs of goods sold or interest on a loan. Then, depending on how you structure the business, the net income of the business just hits you personally and you pay income taxes. You can work with a tax person to lend some efficiency to this on a long term basis, but it's not like you pay all the taxes against your gross receipts. Whether or not you can make this profitable is a whole different issue.",
+    "I'll address one part of your question: There are other taxes that companies pay as well, such as income tax, but don't charge to the customer as a fee. So, why are gross receipts taxes charged to the customer? Things like income tax can't be passed on to the consumer in a direct way, because there's no fixed relationship between the amount of the tax and the price of an individual product. Income tax is paid on taxable income, which will incorporate deductions for the costs the company incurred to do business. So the final amount of corporate income tax can depend on things unrelated to the price of goods sold, like whether the business decided to repave their parking lot. Gross receipts taxes, by definition, are charged on the total amount of money taken in, so every dollar you spend on an item at the store will be subject to the gross receipts tax, and hence will cost the business 7 cents (or X% where X is the tax rate). This means there is a direct link between the price you pay for an individual item and the tax they pay on that transaction. The same is true for sales taxes, which are also often added at the time of sale. Of course, businesses could roll all of these into the posted price as well. The reason they don't is to get their foot in the door and make the price seem lower: you're more likely to buy something if you see it for the low, low, one-time-only price of $99.99, act now, save big, and then find out you owe an extra $7 at the register than if you saw $107 on the price tag.",
+    "States have made sales tax more confusing by expanding some categories and shrinking or eliminating other categories. In days of old there were taxes on items, and specific taxes on other small categories such as fuel and cigarets . In many states there were taxes implemented state wide, and in other cases they only applied to a specific city or region. As time went on taxes could be raised to bring in more money for the state or local government, but these tax increase were seen as unfair to the poor. So now the states are modifying and tweaking the tax rates. Some items are tax free, some have a low tax, and some are at the full tax rate. This can get confusing because the type of store can also play a factor. A bag a chips from a grocery store can be treated differently than a bag of chips from a hotdog stand. Some states have also added special taxes on snack foods. In general, purchases they want to encourage (staples from the grocery store) are tax free or low tax, items they don't want to encourage (snacks) are fully taxed. You can also be sure that they will treat luxury items as fully taxed. A new frontier of taxation are ones designed to tax people who don't live there. They have added taxes on restaurants and hotels. Since they are paid by tourists, the people most likely to pay them don't have a voice in setting the rate. States are now wanting to tax services as a way to make up shortfalls in taxing. Don't expect consistency from state to state, or year to year. Oh by the way that penny tax was for something that cost 17 cents or less, unless that item had a lower tax rate. The receipt should clearly identify the taxable items, and their tax level.",
+    "I owned a restaurant for over 5 years. Sales tax was only collected on POST discount price, though every state that collects sales tax may have different laws regarding collection. For example, when a customer used a gift certificate, that did NOT reduce the amount that tax was collected on. Why? Because the restaurant at some point or another collected the full amount of the bill."
+  ],
+  "prompt_characters": 5478,
+  "generation_status": "Not run: awaiting the user's ELM API key"
+}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 11101.80it/s]
+This model was loaded in torch.float16 on CPU. Depending on your CPU, inference may be significantly slower than with torch.float32. Consider comparing inference speeds by loading with `model_kwargs={"dtype": torch.float32}`.
+{
+  "query_id": "q_7e9a0f2716c017d2",
+  "cuda_groups": "all",
+  "transcript": "Understanding sales tax implications when purchasing items in a retail store.",
+  "asr_ms_excluding_model_load": 7110.836629988626,
+  "retrieval": {
+    "record_ids": [
+      "r_53736721cc137da0",
+      "r_e5b65dad238e9ce2",
+      "r_08e4c7b8ff7f8a35",
+      "r_d3d616d42b2a83b4",
+      "r_0f6650dd9e3bc5cb"
+    ],
+    "scores": [
+      0.8767204880714417,
+      0.875569760799408,
+      0.8748974800109863,
+      0.8725460767745972,
+      0.8701394200325012
+    ],
+    "latency_ms": 1.774278935045004
+  },
+  "contexts": [
+    "\"Actually, calculating taxes isn't that difficult. You will pay a percentage of your gross sales to state and local sales tax, and as a single-owner LLC your profits (after sales taxes) should pass through to your individual tax tax return (according to this IRS article. They are not cumulative since they have different bases (gross sales versus net profit). That said, when determining if your future business is profitable, you need to ask \"\"what aspects of the business can I control\"\"? Can you control how much each item sells for? Increasing your prices will increase your gross margins, which should be higher than your fixed and variable costs. If your margins do not exceed your costs, then you will note be profitable. Note that as a vendor you are at a slight disadvantage to a retailer, since tax has to be baked in to your prices. A retailer can advertise the pre-tax price, and pass-through sales tax at the point of sale. However, people expect to pay more at a vending machine, so the disadvantage is very small (you aren't directly competing with retailers anyways).\"",
+    "You're not paying taxes three times but you are paying three different taxes (or more). Sales tax is a business expense, just like costs of goods sold or interest on a loan. Then, depending on how you structure the business, the net income of the business just hits you personally and you pay income taxes. You can work with a tax person to lend some efficiency to this on a long term basis, but it's not like you pay all the taxes against your gross receipts. Whether or not you can make this profitable is a whole different issue.",
+    "I'll address one part of your question: There are other taxes that companies pay as well, such as income tax, but don't charge to the customer as a fee. So, why are gross receipts taxes charged to the customer? Things like income tax can't be passed on to the consumer in a direct way, because there's no fixed relationship between the amount of the tax and the price of an individual product. Income tax is paid on taxable income, which will incorporate deductions for the costs the company incurred to do business. So the final amount of corporate income tax can depend on things unrelated to the price of goods sold, like whether the business decided to repave their parking lot. Gross receipts taxes, by definition, are charged on the total amount of money taken in, so every dollar you spend on an item at the store will be subject to the gross receipts tax, and hence will cost the business 7 cents (or X% where X is the tax rate). This means there is a direct link between the price you pay for an individual item and the tax they pay on that transaction. The same is true for sales taxes, which are also often added at the time of sale. Of course, businesses could roll all of these into the posted price as well. The reason they don't is to get their foot in the door and make the price seem lower: you're more likely to buy something if you see it for the low, low, one-time-only price of $99.99, act now, save big, and then find out you owe an extra $7 at the register than if you saw $107 on the price tag.",
+    "States have made sales tax more confusing by expanding some categories and shrinking or eliminating other categories. In days of old there were taxes on items, and specific taxes on other small categories such as fuel and cigarets . In many states there were taxes implemented state wide, and in other cases they only applied to a specific city or region. As time went on taxes could be raised to bring in more money for the state or local government, but these tax increase were seen as unfair to the poor. So now the states are modifying and tweaking the tax rates. Some items are tax free, some have a low tax, and some are at the full tax rate. This can get confusing because the type of store can also play a factor. A bag a chips from a grocery store can be treated differently than a bag of chips from a hotdog stand. Some states have also added special taxes on snack foods. In general, purchases they want to encourage (staples from the grocery store) are tax free or low tax, items they don't want to encourage (snacks) are fully taxed. You can also be sure that they will treat luxury items as fully taxed. A new frontier of taxation are ones designed to tax people who don't live there. They have added taxes on restaurants and hotels. Since they are paid by tourists, the people most likely to pay them don't have a voice in setting the rate. States are now wanting to tax services as a way to make up shortfalls in taxing. Don't expect consistency from state to state, or year to year. Oh by the way that penny tax was for something that cost 17 cents or less, unless that item had a lower tax rate. The receipt should clearly identify the taxable items, and their tax level.",
+    "I owned a restaurant for over 5 years. Sales tax was only collected on POST discount price, though every state that collects sales tax may have different laws regarding collection. For example, when a customer used a gift certificate, that did NOT reduce the amount that tax was collected on. Why? Because the restaurant at some point or another collected the full amount of the bill."
+  ],
+  "prompt_characters": 5478,
+  "generation_status": "Not run: awaiting the user's ELM API key"
+}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 14286.12it/s]
+This model was loaded in torch.float16 on CPU. Depending on your CPU, inference may be significantly slower than with torch.float32. Consider comparing inference speeds by loading with `model_kwargs={"dtype": torch.float32}`.
+[  1/350] q_7e9a0f2716c017d2 R@10=0.500
+[  2/350] q_ea0be00eda6ea088 R@10=1.000
+[  3/350] q_9cd791a970ab648f R@10=0.000
+[  4/350] q_20e98c45013f6cc6 R@10=1.000
+[  5/350] q_e3f1cef46917a2a5 R@10=0.333
+[  6/350] q_fb7201191b7c1c3f R@10=0.000
+[  7/350] q_985b83cdba7c6114 R@10=1.000
+[  8/350] q_cc3a5798107d54ab R@10=1.000
+[  9/350] q_11e91c6525c562e4 R@10=0.000
+[ 10/350] q_310adf9926fe489e R@10=1.000
+[ 11/350] q_a02dccd42055bf0e R@10=1.000
+[ 12/350] q_d1397ae30111620c R@10=0.500
+[ 13/350] q_0c244d4030fd08ec R@10=0.000
+[ 14/350] q_14e2672fdc01cc05 R@10=0.333
+[ 15/350] q_92cf5957e0e552dc R@10=0.333
+[ 16/350] q_820ebb1208f655e4 R@10=0.000
+[ 17/350] q_21c248ae5ae43fbc R@10=1.000
+[ 18/350] q_558c8ea82bc79173 R@10=1.000
+[ 19/350] q_d442a6395dbca951 R@10=0.500
+[ 20/350] q_b1ab6d6caf82c83a R@10=0.818
+[ 21/350] q_76d781fbb9581792 R@10=0.500
+[ 22/350] q_5648e23ddbe76e13 R@10=0.500
+[ 23/350] q_aacc140e1f97ca02 R@10=0.500
+[ 24/350] q_8507512c8e8a10bc R@10=0.000
+[ 25/350] q_a0e967a158e41ce3 R@10=1.000
+[ 26/350] q_d76c858510d1e999 R@10=0.000
+[ 27/350] q_c3dad6ee3fe9e058 R@10=0.000
+[ 28/350] q_d89d5b54549a7833 R@10=0.250
+[ 29/350] q_148262b1f4e5ab84 R@10=1.000
+[ 30/350] q_4e29b0ce6fa96d1a R@10=0.000
+[ 31/350] q_e16177bbeb991130 R@10=0.000
+[ 32/350] q_88c0c4a51d15d0da R@10=1.000
+[ 33/350] q_c5a5320bcfd3a373 R@10=0.000
+[ 34/350] q_a23082a7392db78b R@10=0.500
+[ 35/350] q_ce31da5f134bfcd0 R@10=0.333
+[ 36/350] q_90c19079b88bb39e R@10=1.000
+[ 37/350] q_559c331ea2fc48b4 R@10=1.000
+[ 38/350] q_f78418e691979c64 R@10=0.500
+[ 39/350] q_6382e94af1377ac6 R@10=1.000
+[ 40/350] q_371c6ca10bf1bf5e R@10=1.000
+[ 41/350] q_9d78dff597245697 R@10=0.000
+[ 42/350] q_6eb08803469fb277 R@10=1.000
+[ 43/350] q_d294dc730629d3e7 R@10=0.500
+[ 44/350] q_8c8fe18657146200 R@10=0.333
+[ 45/350] q_b95a2fb03ec523fd R@10=0.500
+[ 46/350] q_a1c537466b04aa26 R@10=0.000
+[ 47/350] q_890a6df9ce937b08 R@10=1.000
+[ 48/350] q_66759566d8fb4c66 R@10=0.000
+[ 49/350] q_9a684db4ff009865 R@10=0.000
+[ 50/350] q_bdc51fa8cb3eee72 R@10=0.000
+[ 51/350] q_6bad44e0fc7965d0 R@10=1.000
+[ 52/350] q_8b27cfeb228ef5b0 R@10=1.000
+[ 53/350] q_0a12138b81eb7e2a R@10=0.000
+[ 54/350] q_acb9552be66a185e R@10=0.000
+[ 55/350] q_718de34f908aedf1 R@10=0.000
+[ 56/350] q_60172faac220e3ba R@10=0.000
+[ 57/350] q_ea9717a5c736c528 R@10=1.000
+[ 58/350] q_15481dc07d08e3b7 R@10=0.333
+[ 59/350] q_039f48f42921b2be R@10=1.000
+[ 60/350] q_cf94bf63c3f36630 R@10=0.000
+[ 61/350] q_8387fe9ada6a55b7 R@10=1.000
+[ 62/350] q_d40345916def841c R@10=0.000
+[ 63/350] q_d314ed9f3f36b9f2 R@10=0.500
+[ 64/350] q_6732a76e35123b29 R@10=1.000
+[ 65/350] q_cf481783581f77d9 R@10=0.000
+[ 66/350] q_e728deb6245b53ba R@10=1.000
+[ 67/350] q_03d88d0c11bdacb8 R@10=1.000
+[ 68/350] q_297fc9f62e2f517a R@10=0.000
+[ 69/350] q_f50a3bcbea7a89e6 R@10=1.000
+[ 70/350] q_5f8dd3b4ec87cfef R@10=1.000
+[ 71/350] q_97b7fb6bab5241df R@10=1.000
+[ 72/350] q_bc4ef8e0d0976c17 R@10=0.667
+[ 73/350] q_cce3b075ec20d9c6 R@10=0.500
+[ 74/350] q_3d72885589c2f21d R@10=0.500
+[ 75/350] q_a043ce7777c23289 R@10=0.400
+[ 76/350] q_3d50f31d4e5c576c R@10=0.000
+[ 77/350] q_e902ad12c1e3e04f R@10=1.000
+[ 78/350] q_24db50b697cd65b9 R@10=0.000
+[ 79/350] q_90caf2950d97119c R@10=0.500
+[ 80/350] q_eb4aa1f4a40817d3 R@10=0.000
+[ 81/350] q_dd94af61414916d5 R@10=0.000
+[ 82/350] q_90bbdbd2ad85463a R@10=0.667
+[ 83/350] q_1eba59077cc2f095 R@10=1.000
+[ 84/350] q_2e2cafa7d98b7fd1 R@10=0.000
+[ 85/350] q_010a85d579ea45cc R@10=0.000
+[ 86/350] q_8e0fce53518e232d R@10=1.000
+[ 87/350] q_2a6ed3a4289e5103 R@10=0.500
+[ 88/350] q_f7804f0551b36345 R@10=1.000
+[ 89/350] q_0b01164a6a65d8e4 R@10=1.000
+[ 90/350] q_622e19d609fee5ed R@10=1.000
+[ 91/350] q_37811f39f0fef26f R@10=1.000
+[ 92/350] q_0b007d68bef85089 R@10=0.200
+[ 93/350] q_9197507679f76095 R@10=0.778
+[ 94/350] q_59d1d9b59e446af3 R@10=0.500
+[ 95/350] q_c503ecc96204f22b R@10=1.000
+[ 96/350] q_9b58ccedb7663d90 R@10=0.000
+[ 97/350] q_35b1e73c2c88325f R@10=0.000
+[ 98/350] q_cde8053b3855199a R@10=1.000
+[ 99/350] q_38ba80ea1b938c92 R@10=1.000
+[100/350] q_e52f91c8bb7e3b48 R@10=0.000
+[101/350] q_056329c39022b5fc R@10=1.000
+[102/350] q_43fdb8fef4967914 R@10=0.667
+[103/350] q_faee806541dc29db R@10=1.000
+[104/350] q_a604979585e7d49a R@10=0.000
+[105/350] q_77151f7c50feeb52 R@10=1.000
+[106/350] q_200700e2da4acc83 R@10=0.000
+[107/350] q_4817b4b13eced1bd R@10=0.000
+[108/350] q_4270f963cea39cd8 R@10=0.500
+[109/350] q_44a875cacb654901 R@10=0.750
+[110/350] q_b437d23b82f748de R@10=1.000
+[111/350] q_ca2cc750798ca908 R@10=0.571
+[112/350] q_1b6bf5f5133b407a R@10=1.000
+[113/350] q_12314f242e48a795 R@10=1.000
+[114/350] q_ebafc37f1466538e R@10=0.600
+[115/350] q_e106138c27937d86 R@10=0.000
+[116/350] q_3af57c4218940c63 R@10=1.000
+[117/350] q_3b6491e9b8dc5609 R@10=1.000
+[118/350] q_fe9075c461bc0335 R@10=0.667
+[119/350] q_ba50bb0917e07b03 R@10=0.000
+[120/350] q_a99614c7600e3435 R@10=1.000
+[121/350] q_0adefa9e9bf2ad33 R@10=0.000
+[122/350] q_45a0e4d05c32a90a R@10=0.600
+[123/350] q_02d854f02dd4ce72 R@10=0.667
+[124/350] q_e1e4862d40e0c7fb R@10=0.667
+[125/350] q_9ce80054ee75c38a R@10=0.750
+[126/350] q_127367f6b97a8759 R@10=0.000
+[127/350] q_ab925d6f0f80a37a R@10=0.500
+[128/350] q_097f349a793ff892 R@10=0.667
+[129/350] q_32f3c54de6e72487 R@10=0.000
+[130/350] q_9a727cccc9518748 R@10=1.000
+[131/350] q_3f3dc81908978575 R@10=0.250
+[132/350] q_e534c1c168fb16c3 R@10=0.333
+[133/350] q_c17d57435832cfb2 R@10=0.333
+[134/350] q_8f81a59b842b2036 R@10=0.000
+[135/350] q_2a83d6e841859340 R@10=0.333
+[136/350] q_bc1c349d33c5f4b0 R@10=1.000
+[137/350] q_d2fee7ed3126e108 R@10=0.750
+[138/350] q_824fb2b1bea7710f R@10=1.000
+[139/350] q_ca14458c72687732 R@10=0.500
+[140/350] q_33e70afa6a74be26 R@10=0.500
+[141/350] q_12690cb3244e5b2c R@10=0.500
+[142/350] q_e4dff7382f40aa11 R@10=1.000
+[143/350] q_37ba7a452809cb5c R@10=0.000
+[144/350] q_fbb947185cc5bdb6 R@10=1.000
+[145/350] q_fe65d2382802a1ce R@10=1.000
+[146/350] q_fb68a4b3a6f8d3fa R@10=0.667
+[147/350] q_a2a3f2a47d430ef0 R@10=0.000
+[148/350] q_8e62e9e0a068e90e R@10=0.333
+[149/350] q_5e910fde009eaf22 R@10=0.250
+[150/350] q_fe04f75c6db480fe R@10=0.500
+[151/350] q_60eaee4e6226cc0f R@10=0.000
+[152/350] q_9e67696a94d11253 R@10=1.000
+[153/350] q_0cae3974f2316662 R@10=1.000
+[154/350] q_6bfa630bfb64f784 R@10=0.000
+[155/350] q_c760dc8ec74b5215 R@10=0.333
+[156/350] q_2b64609dbf4dd979 R@10=1.000
+[157/350] q_b7bd4791c356567a R@10=0.000
+[158/350] q_3e209b089c3bbce8 R@10=0.500
+[159/350] q_7aeb5565ecabc70e R@10=0.250
+[160/350] q_942ae877a8173ab1 R@10=0.000
+[161/350] q_d99809dbf06adda9 R@10=0.000
+[162/350] q_1a94b1e8e037c8da R@10=1.000
+[163/350] q_cdd3486ec9d24037 R@10=0.000
+[164/350] q_9a8ab3b44e069868 R@10=0.667
+[165/350] q_586e11c383215c6b R@10=1.000
+[166/350] q_f7b2f82b48342282 R@10=0.500
+[167/350] q_a458b2b0b65f17df R@10=0.500
+[168/350] q_a85a7c7c939350a9 R@10=0.000
+[169/350] q_57f26dadc32a5ef3 R@10=1.000
+[170/350] q_339b9b2f4d59a6f8 R@10=0.000
+[171/350] q_3441588ec9334471 R@10=0.000
+[172/350] q_3128e3949170573d R@10=0.000
+[173/350] q_cef689c374316c83 R@10=0.500
+[174/350] q_7192e4eae3c5f9c8 R@10=0.500
+[175/350] q_fc315c850f8afe7c R@10=0.500
+[176/350] q_5c08937aef5196c2 R@10=0.400
+[177/350] q_376ca1b1bd129478 R@10=1.000
+[178/350] q_8ef57dbb7e83f8d2 R@10=0.000
+[179/350] q_c951155828c3f05e R@10=0.000
+[180/350] q_f76c520706cfe2c3 R@10=0.000
+[181/350] q_66bb08d4774227f7 R@10=1.000
+[182/350] q_6131855e6da3567e R@10=0.000
+[183/350] q_84a4a70ec6193f4c R@10=0.667
+[184/350] q_b525ba12cee0b666 R@10=0.500
+[185/350] q_4c5498d4e52274ea R@10=1.000
+[186/350] q_cbb4c2670652d081 R@10=1.000
+[187/350] q_7c99beb7b5d38204 R@10=1.000
+[188/350] q_4f8d4c0ade334c67 R@10=0.500
+[189/350] q_77403f5d45418ead R@10=1.000
+[190/350] q_fd19ebb1b76c6383 R@10=0.500
+[191/350] q_9b412e3aace7245f R@10=0.000
+[192/350] q_58bd621a6e9641ef R@10=0.000
+[193/350] q_c4de28d0251de8a4 R@10=0.400
+[194/350] q_85da6e74da0df100 R@10=0.000
+[195/350] q_3ed4511c7d357fbb R@10=1.000
+[196/350] q_4644c697f79443c5 R@10=0.000
+[197/350] q_65e52727cacd73bb R@10=0.750
+[198/350] q_b65d764056d732ed R@10=0.000
+[199/350] q_7c289ed3e665e517 R@10=0.333
+[200/350] q_affbfa30f11c152c R@10=0.000
+[201/350] q_097d0bdeed34e8e9 R@10=1.000
+[202/350] q_d5a785d3f5d65e5e R@10=0.250
+[203/350] q_2987aa361da29f11 R@10=0.000
+[204/350] q_2f8b71540044aa3f R@10=1.000
+[205/350] q_e86dfaec0aa23a50 R@10=0.400
+[206/350] q_f22e839d8a692799 R@10=1.000
+[207/350] q_919b2fdd69153c06 R@10=0.000
+[208/350] q_7cafeb3b3a6a690a R@10=0.000
+[209/350] q_823116693ab14a7c R@10=1.000
+[210/350] q_365103453d0e9a96 R@10=0.667
+[211/350] q_a7038ef1935d97b1 R@10=0.000
+[212/350] q_23396524ffa342fe R@10=1.000
+[213/350] q_b0e24c9ff7cbeee4 R@10=1.000
+[214/350] q_3bd06eaf675d1a65 R@10=0.000
+[215/350] q_bf24a25726094fc5 R@10=0.000
+[216/350] q_528e698db2500a86 R@10=0.000
+[217/350] q_3d6f80f4325f9ba6 R@10=0.500
+[218/350] q_dd2226adc58b4d3b R@10=0.000
+[219/350] q_f619da3dcf9a6dcc R@10=0.250
+[220/350] q_36535c9bc945a65c R@10=0.667
+[221/350] q_91616b8d02af5502 R@10=1.000
+[222/350] q_5f4e13b90c898275 R@10=0.333
+[223/350] q_50bfbbdb9b77c4a4 R@10=0.000
+[224/350] q_16b8e7d1c4b10958 R@10=1.000
+[225/350] q_c0fa5cc49db7b268 R@10=0.000
+[226/350] q_d65be22f6caa6e64 R@10=0.000
+[227/350] q_920e1dd64c57a825 R@10=1.000
+[228/350] q_a24ee4bcca4c9843 R@10=0.200
+[229/350] q_f0038e460ab51e4a R@10=0.000
+[230/350] q_b7e2ae9fe8570d1e R@10=0.000
+[231/350] q_7e76951cd9ad079f R@10=1.000
+[232/350] q_01e4a6bd93b1c759 R@10=0.000
+[233/350] q_4d9e1193116d2658 R@10=0.000
+[234/350] q_670e17ac4bbc3f81 R@10=0.000
+[235/350] q_60a0ba6b0ed8b713 R@10=1.000
+[236/350] q_0533f8f647f9c24d R@10=0.000
+[237/350] q_7fb7c14235f8ec06 R@10=0.000
+[238/350] q_6979feacba7fcfd1 R@10=1.000
+[239/350] q_e77b8b1626dbdebf R@10=0.000
+[240/350] q_561c2b9a20f6f82b R@10=0.667
+[241/350] q_6a8ec9fb4e2ddd91 R@10=0.667
+[242/350] q_921fec2b0951a359 R@10=1.000
+[243/350] q_f1031c4e7a72aed8 R@10=0.500
+[244/350] q_c97fdd86b64ec366 R@10=1.000
+[245/350] q_c66b7f98a774dae5 R@10=0.000
+[246/350] q_3e6c648684d79f73 R@10=1.000
+[247/350] q_7672a131ca92592d R@10=0.750
+[248/350] q_8706e2925ba6d565 R@10=0.000
+[249/350] q_1bffc3d815eb1df8 R@10=0.500
+[250/350] q_eddc8ad5ab953288 R@10=1.000
+[251/350] q_a24a9a7b2fc06285 R@10=1.000
+[252/350] q_d3f4ed72fe8b3b33 R@10=0.000
+[253/350] q_44810c4ca51793e3 R@10=0.000
+[254/350] q_f160ac7df86b0ef7 R@10=1.000
+[255/350] q_9d2be7612e174517 R@10=0.000
+[256/350] q_39ad6425ba5f2e93 R@10=1.000
+[257/350] q_51249bc0b4536c16 R@10=0.333
+[258/350] q_1024d33a7dfa33ef R@10=0.000
+[259/350] q_48a527713d402f81 R@10=0.500
+[260/350] q_4b55e9052526c457 R@10=0.000
+[261/350] q_9c751549734e280f R@10=0.000
+[262/350] q_0d212ca33fe7fe0c R@10=0.500
+[263/350] q_fc5ad3bdb541371d R@10=1.000
+[264/350] q_824a23136d65393d R@10=0.667
+[265/350] q_63b443228bb51742 R@10=0.333
+[266/350] q_67f6494f8d899ffc R@10=0.667
+[267/350] q_aa44e49ca5a259a3 R@10=0.000
+[268/350] q_591325342f8c340f R@10=0.000
+[269/350] q_61646063d78682df R@10=0.333
+[270/350] q_13475191bf36216d R@10=0.000
+[271/350] q_2caacea67b4eaf25 R@10=0.333
+[272/350] q_ba886894ffa520df R@10=1.000
+[273/350] q_df8879a16a2eae1d R@10=0.833
+[274/350] q_f504acc625fc515d R@10=1.000
+[275/350] q_695b5d5f009b1f69 R@10=1.000
+[276/350] q_4b792097882dbd7c R@10=1.000
+[277/350] q_b84477f46ecd8337 R@10=0.000
+[278/350] q_18cb73150e63757e R@10=0.500
+[279/350] q_6d64f1b179ffd0e8 R@10=0.000
+[280/350] q_45ce8f0db1865a56 R@10=0.000
+[281/350] q_e54d48e29dc7e275 R@10=0.000
+[282/350] q_88c9c3d0dc33ae8f R@10=0.600
+[283/350] q_e037ca04af4611d2 R@10=1.000
+[284/350] q_3dd947bc526a7484 R@10=0.000
+[285/350] q_d731d462e7e6acae R@10=0.333
+[286/350] q_5c7a6aa0fce00bc4 R@10=1.000
+[287/350] q_0330d32636d2c079 R@10=0.250
+[288/350] q_69063f07ffde4b76 R@10=0.500
+[289/350] q_70c4325165afd6d2 R@10=0.000
+[290/350] q_19981b47886bc0c5 R@10=0.667
+[291/350] q_9b719659242f245e R@10=0.143
+[292/350] q_e69d2e19c31b100e R@10=0.500
+[293/350] q_ce474d8f8d548797 R@10=0.000
+[294/350] q_b53f50daf9b9a5c8 R@10=0.500
+[295/350] q_2803366d84526278 R@10=1.000
+[296/350] q_37cec45b2fa17af5 R@10=0.000
+[297/350] q_827198cb1c66eda1 R@10=1.000
+[298/350] q_a346997622ff7b7e R@10=1.000
+[299/350] q_e302092a98b3897a R@10=0.000
+[300/350] q_6f16eb6280a1f38c R@10=0.000
+[301/350] q_131b280bfe7aefaa R@10=0.500
+[302/350] q_8de6d5607824f3c0 R@10=0.000
+[303/350] q_32480a484879c3ec R@10=1.000
+[304/350] q_5c6cc85474d6b250 R@10=1.000
+[305/350] q_10416018358019e8 R@10=0.500
+[306/350] q_241622bf679c25cf R@10=0.667
+[307/350] q_232a3b2661acfab3 R@10=1.000
+[308/350] q_4690c60fb8571807 R@10=1.000
+[309/350] q_92ad14e551a4c7f9 R@10=1.000
+[310/350] q_dfac62677b2611d5 R@10=0.500
+[311/350] q_fe4bcc5190838a6a R@10=1.000
+[312/350] q_071078c6a43f6ed1 R@10=0.000
+[313/350] q_6997a8a0f6ca5528 R@10=0.000
+[314/350] q_d1368e8f9dbdd97a R@10=0.500
+[315/350] q_9c3b1086df278d77 R@10=0.500
+[316/350] q_7c6e9a8528d60ed2 R@10=0.000
+[317/350] q_714e41f07d2287d8 R@10=0.333
+[318/350] q_d94472e49285e11a R@10=1.000
+[319/350] q_9344409e8ac4b840 R@10=0.000
+[320/350] q_5e49c6512dd65e96 R@10=0.000
+[321/350] q_888759d4b14e5e7a R@10=0.714
+[322/350] q_010c23add61561c4 R@10=0.000
+[323/350] q_19e8cd6e2c4986da R@10=0.000
+[324/350] q_9f13c976705bf3ce R@10=1.000
+[325/350] q_0db1e91eccc290bc R@10=0.200
+[326/350] q_41e3c12e4d573cb5 R@10=0.000
+[327/350] q_41dfb7010d4be191 R@10=0.000
+[328/350] q_14b66b253473e62b R@10=0.500
+[329/350] q_a1aaecf1772cdda5 R@10=0.000
+[330/350] q_b7390fb1b4a9ad79 R@10=1.000
+[331/350] q_8356061eec1fcfcf R@10=0.333
+[332/350] q_910d69550784f7c8 R@10=0.000
+[333/350] q_2fec35b596a08a1e R@10=0.500
+[334/350] q_9c0910b97854bf74 R@10=0.000
+[335/350] q_94f4a49d68b9c3f4 R@10=0.000
+[336/350] q_4f35ff42762cbd0d R@10=1.000
+[337/350] q_765969c12f69dc84 R@10=1.000
+[338/350] q_9bba2ad2f9e2bf34 R@10=0.000
+[339/350] q_097e324123569e77 R@10=0.000
+[340/350] q_441d4eaaf425ff98 R@10=1.000
+[341/350] q_1f5a186aa165fec1 R@10=0.250
+[342/350] q_665abd36c20603a3 R@10=0.000
+[343/350] q_86548cb995ca1db0 R@10=0.250
+[344/350] q_70395695d015396f R@10=0.500
+[345/350] q_13ba17f5e4f2a8e7 R@10=1.000
+[346/350] q_ab429f91701a2f8c R@10=1.000
+[347/350] q_b6de6e070e3a9e41 R@10=0.333
+[348/350] q_d4262913a25d0296 R@10=1.000
+[349/350] q_6a4028af5f8385c2 R@10=1.000
+[350/350] q_e80964804efb3106 R@10=0.000
+
+Aggregate:
+  Recall@5   0.421337
+  Recall@10  0.479594
+  Recall@20  0.578524
+  Recall@100 0.769856
+  MRR@10     0.488746
+  NDCG@10    0.420461
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 24892.38it/s]
+This model was loaded in torch.float16 on CPU. Depending on your CPU, inference may be significantly slower than with torch.float32. Consider comparing inference speeds by loading with `model_kwargs={"dtype": torch.float32}`.
+[  1/125] q_dc0daa63c6ad372c R@10=0.200
+[  2/125] q_33fd7baba78a1358 R@10=0.333
+[  3/125] q_01e721befe9d0dd7 R@10=1.000
+[  4/125] q_ec2bf0997b0ab34b R@10=1.000
+[  5/125] q_b1e20f08cf71cb73 R@10=0.000
+[  6/125] q_3576d20498b24f50 R@10=1.000
+[  7/125] q_766585499ae34d13 R@10=0.286
+[  8/125] q_2354f69a335b77ad R@10=0.000
+[  9/125] q_cd9e1110345de425 R@10=0.000
+[ 10/125] q_619ce121155f4933 R@10=0.000
+[ 11/125] q_24c587b74c5b7c95 R@10=0.500
+[ 12/125] q_f1e3538e7cd880f9 R@10=0.000
+[ 13/125] q_83436a5f06f10cb0 R@10=0.000
+[ 14/125] q_d96b734b2bc02b5a R@10=0.000
+[ 15/125] q_de2197727d6ce8d1 R@10=0.500
+[ 16/125] q_759750b5fb0e1764 R@10=0.000
+[ 17/125] q_7f3179f293749f08 R@10=1.000
+[ 18/125] q_4649a82e62e04522 R@10=1.000
+[ 19/125] q_827ed2ddd2313785 R@10=0.308
+[ 20/125] q_77e405127e09b49c R@10=0.800
+[ 21/125] q_13756c6685e346cd R@10=1.000
+[ 22/125] q_a96f931788ebffff R@10=0.667
+[ 23/125] q_90103c660d810557 R@10=0.000
+[ 24/125] q_0c66e84e096f93f7 R@10=0.000
+[ 25/125] q_b8de4034a157d0db R@10=1.000
+[ 26/125] q_fe7a2a5d67cc1106 R@10=0.000
+[ 27/125] q_77e5efc4effec4e2 R@10=1.000
+[ 28/125] q_9bbd995c2b2ddb55 R@10=1.000
+[ 29/125] q_bfa8e9fbe926b099 R@10=0.500
+[ 30/125] q_f88e1fabff07591d R@10=0.000
+[ 31/125] q_119cb1d92c34f085 R@10=0.750
+[ 32/125] q_33095b63b15b0fa1 R@10=1.000
+[ 33/125] q_62f55195e3b0ecac R@10=0.667
+[ 34/125] q_58ca7b6f4d40fecd R@10=0.500
+[ 35/125] q_bbf5affa094195bb R@10=0.500
+[ 36/125] q_14946dca186a869c R@10=0.000
+[ 37/125] q_ad2c7401776ba3d6 R@10=0.750
+[ 38/125] q_63fb06cc67c1a7ef R@10=0.000
+[ 39/125] q_d5d6544524797db6 R@10=1.000
+[ 40/125] q_4a6395d025f2f577 R@10=0.500
+[ 41/125] q_129093181d03c478 R@10=0.571
+[ 42/125] q_27e2ee362cd632ed R@10=0.000
+[ 43/125] q_c6b07e1ece323ce6 R@10=0.000
+[ 44/125] q_b5557d1eb90f52f2 R@10=0.000
+[ 45/125] q_3df64fbcb882bbee R@10=0.667
+[ 46/125] q_82d3831f4cecfa2f R@10=0.333
+[ 47/125] q_bba95a0c50bb2b65 R@10=0.500
+[ 48/125] q_575e9577d577257b R@10=0.400
+[ 49/125] q_236bb02e0972054e R@10=1.000
+[ 50/125] q_53c401f8583ef532 R@10=0.750
+[ 51/125] q_cb61d17cb90968de R@10=0.000
+[ 52/125] q_eda9e6976c4135b0 R@10=1.000
+[ 53/125] q_754d65c473d57184 R@10=0.000
+[ 54/125] q_a8ea5a4d5297476b R@10=0.000
+[ 55/125] q_d551e7d90e93f173 R@10=0.333
+[ 56/125] q_118787619d2fa03e R@10=0.000
+[ 57/125] q_e12507fff4f941cd R@10=1.000
+[ 58/125] q_66b53aca3ab4ed3a R@10=0.333
+[ 59/125] q_690ac29257262a58 R@10=0.000
+[ 60/125] q_dfb0f82726831c78 R@10=1.000
+[ 61/125] q_94efba4b07bc12eb R@10=1.000
+[ 62/125] q_9c6796cffb5cb7ed R@10=1.000
+[ 63/125] q_7c75f7cf3f7b7223 R@10=0.000
+[ 64/125] q_1b8414b3d92627d3 R@10=1.000
+[ 65/125] q_a756969099a5c91a R@10=0.000
+[ 66/125] q_3c305034a907bff9 R@10=0.500
+[ 67/125] q_88e135fa82ca9d35 R@10=1.000
+[ 68/125] q_b81e42cba4ba2821 R@10=1.000
+[ 69/125] q_5fd3ef2ef4264738 R@10=0.000
+[ 70/125] q_9b0131c74d426d1e R@10=0.000
+[ 71/125] q_b681cc4c4cd62d5b R@10=0.667
+[ 72/125] q_8dad01d9871b283e R@10=0.000
+[ 73/125] q_5311e750469a7f46 R@10=0.500
+[ 74/125] q_6718aeb9b04f1962 R@10=0.000
+[ 75/125] q_6bf9e6e1a56d73c5 R@10=0.667
+[ 76/125] q_9fff7ae6921ad2c6 R@10=0.750
+[ 77/125] q_c81a4c29167773fb R@10=0.200
+[ 78/125] q_836f963858e39c52 R@10=0.000
+[ 79/125] q_de7f874a20167a15 R@10=0.000
+[ 80/125] q_653a4ba74af80def R@10=1.000
+[ 81/125] q_64a524fc04d7d380 R@10=0.500
+[ 82/125] q_9ff0a37eb3d4374e R@10=1.000
+[ 83/125] q_91fc9afe8e04c782 R@10=1.000
+[ 84/125] q_670cc29fa2307321 R@10=1.000
+[ 85/125] q_52dbd70237677e73 R@10=0.333
+[ 86/125] q_c54bc81ecb781544 R@10=1.000
+[ 87/125] q_a104e341f2ad636f R@10=0.000
+[ 88/125] q_1a1bd6b10555ed7a R@10=1.000
+[ 89/125] q_5a3a6bbe546dc2f4 R@10=1.000
+[ 90/125] q_37ada55cf3de72c5 R@10=0.000
+[ 91/125] q_c6417d8dbf54e605 R@10=0.714
+[ 92/125] q_a613c397a93a05eb R@10=1.000
+[ 93/125] q_809c499337b553ec R@10=0.667
+[ 94/125] q_bce6195293268add R@10=1.000
+[ 95/125] q_93443d5a05cd57c0 R@10=0.000
+[ 96/125] q_0ab841636984af0c R@10=0.000
+[ 97/125] q_4e26a72bfdd314a3 R@10=0.200
+[ 98/125] q_660c923c1fe765b3 R@10=0.667
+[ 99/125] q_f049c5a1fea3fb9c R@10=0.000
+[100/125] q_e2d93ba37d41a2fd R@10=0.250
+[101/125] q_3b315cdea7a19bd1 R@10=0.429
+[102/125] q_a540dbc5b8799670 R@10=1.000
+[103/125] q_19fb5b8950b04606 R@10=0.000
+[104/125] q_348823efa903d6ce R@10=0.500
+[105/125] q_52dfde60d835ce82 R@10=1.000
+[106/125] q_5f1d7b60eb3c063a R@10=0.667
+[107/125] q_1e8dfc3d32a6c0e6 R@10=0.000
+[108/125] q_c00595a73e659a13 R@10=0.000
+[109/125] q_623ca02323bdcf42 R@10=1.000
+[110/125] q_b752910e1a6c0e70 R@10=0.667
+[111/125] q_929d9f9a0e015d65 R@10=0.667
+[112/125] q_116884719561bf18 R@10=0.000
+[113/125] q_6f43afaa5e92dbbb R@10=0.500
+[114/125] q_900c4b5340b303c0 R@10=0.800
+[115/125] q_b3ba420b3fd4247e R@10=1.000
+[116/125] q_54feaf0a76462c56 R@10=0.000
+[117/125] q_f289da5dc985a411 R@10=0.000
+[118/125] q_47b7c2ad5748600b R@10=0.000
+[119/125] q_e75812046abc116d R@10=0.333
+[120/125] q_da0fce3abc878e40 R@10=0.500
+[121/125] q_6f8b73b746019a15 R@10=1.000
+[122/125] q_372a96cf7c169250 R@10=1.000
+[123/125] q_e3e73f9ccdca5810 R@10=0.500
+[124/125] q_4fdf59e3fbfa2a1a R@10=0.000
+[125/125] q_d33bf150239366a3 R@10=0.500
+
+Aggregate:
+  Recall@5   0.379497
+  Recall@10  0.474595
+  Recall@20  0.579521
+  Recall@100 0.724426
+  MRR@10     0.459708
+  NDCG@10    0.398342
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 15038.76it/s]
+This model was loaded in torch.float16 on CPU. Depending on your CPU, inference may be significantly slower than with torch.float32. Consider comparing inference speeds by loading with `model_kwargs={"dtype": torch.float32}`.
+Timing round 1/7
+Timing round 2/7
+Timing round 3/7
+Timing round 4/7
+Timing round 5/7
+Timing round 6/7
+Timing round 7/7
+{
+  "split": "practice",
+  "queries": 350,
+  "k": 100,
+  "corpus_shape": [
+    24000,
+    384
+  ],
+  "baseline_quality": {
+    "Recall@5": 0.4213372500515358,
+    "Recall@10": 0.47959389816532677,
+    "Recall@20": 0.5785236033807462,
+    "Recall@100": 0.7698559059987632,
+    "MRR@10": 0.4887460317460317,
+    "NDCG@10": 0.4204605115536775
+  },
+  "repeats": 7,
+  "blas_threadpools": [
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 2,
+      "prefix": "libgomp",
+      "filepath": "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/lib/libgomp.so.1",
+      "version": null
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "filepath": "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-f48b354e.so",
+      "version": "0.3.34.106.0",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 2,
+      "prefix": "libgomp",
+      "filepath": "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/scikit_learn.libs/libgomp-e985bcbb.so.1.0.0",
+      "version": null
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "filepath": "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-5f890258.so",
+      "version": "0.3.31.dev",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    }
+  ],
+  "variants": [
+    {
+      "batch_size": 1,
+      "quality": {
+        "Recall@5": 0.4213372500515358,
+        "Recall@10": 0.47959389816532677,
+        "Recall@20": 0.5785236033807462,
+        "Recall@100": 0.7698559059987632,
+        "MRR@10": 0.4887460317460317,
+        "NDCG@10": 0.4204605115536775
+      },
+      "identical_rankings": 350,
+      "top100_overlap": 1.0,
+      "median_split_ms": 407.4047040194273,
+      "split_ms_repeats": [
+        407.4047040194273,
+        407.70782507024705,
+        406.84602898545563,
+        408.2829018589109,
+        408.7671139277518,
+        407.1144671179354,
+        407.04559604637325
+      ],
+      "amortized_ms_per_query": 1.1640134400555067,
+      "queries_per_second": 859.0966097026461,
+      "batch_service_ms_p50": 1.159796491265297,
+      "batch_service_ms_p95": 1.1726637370884418,
+      "traced_peak_extra_mib": 1.8564529418945312,
+      "score_buffer_mib": 0.091552734375
+    },
+    {
+      "batch_size": 4,
+      "quality": {
+        "Recall@5": 0.4213372500515358,
+        "Recall@10": 0.47959389816532677,
+        "Recall@20": 0.5785236033807462,
+        "Recall@100": 0.7698559059987632,
+        "MRR@10": 0.4887460317460317,
+        "NDCG@10": 0.4204605115536775
+      },
+      "identical_rankings": 328,
+      "top100_overlap": 1.0,
+      "median_split_ms": 378.12661402858794,
+      "split_ms_repeats": [
+        380.25907310657203,
+        372.54322692751884,
+        376.60447997041047,
+        378.3534721005708,
+        374.1193520836532,
+        378.12661402858794,
+        378.93970496952534
+      ],
+      "amortized_ms_per_query": 1.080361754367394,
+      "queries_per_second": 925.6158837143861,
+      "batch_service_ms_p50": 4.292282974347472,
+      "batch_service_ms_p95": 4.346383968368173,
+      "traced_peak_extra_mib": 2.9138107299804688,
+      "score_buffer_mib": 0.3662109375
+    },
+    {
+      "batch_size": 16,
+      "quality": {
+        "Recall@5": 0.4213372500515358,
+        "Recall@10": 0.47959389816532677,
+        "Recall@20": 0.5785236033807462,
+        "Recall@100": 0.7698559059987632,
+        "MRR@10": 0.4887460317460317,
+        "NDCG@10": 0.4204605115536775
+      },
+      "identical_rankings": 328,
+      "top100_overlap": 1.0,
+      "median_split_ms": 133.66985693573952,
+      "split_ms_repeats": [
+        131.75625004805624,
+        133.66985693573952,
+        132.393168983981,
+        134.26452712155879,
+        134.13614500313997,
+        132.69439991563559,
+        134.81409684754908
+      ],
+      "amortized_ms_per_query": 0.38191387695925577,
+      "queries_per_second": 2618.3913712742215,
+      "batch_service_ms_p50": 5.9304614551365376,
+      "batch_service_ms_p95": 6.96034652646631,
+      "traced_peak_extra_mib": 7.222496032714844,
+      "score_buffer_mib": 1.46484375
+    },
+    {
+      "batch_size": 64,
+      "quality": {
+        "Recall@5": 0.4213372500515358,
+        "Recall@10": 0.47959389816532677,
+        "Recall@20": 0.5785236033807462,
+        "Recall@100": 0.7698559059987632,
+        "MRR@10": 0.4887460317460317,
+        "NDCG@10": 0.4204605115536775
+      },
+      "identical_rankings": 328,
+      "top100_overlap": 1.0,
+      "median_split_ms": 92.21955901011825,
+      "split_ms_repeats": [
+        89.7384718991816,
+        96.35034785605967,
+        92.50430692918599,
+        92.21955901011825,
+        97.3027020227164,
+        89.93709809146821,
+        90.92125599272549
+      ],
+      "amortized_ms_per_query": 0.2634844543146236,
+      "queries_per_second": 3795.2903240580267,
+      "batch_service_ms_p50": 15.979872550815344,
+      "batch_service_ms_p95": 17.429789947345853,
+      "traced_peak_extra_mib": 24.59984588623047,
+      "score_buffer_mib": 5.859375
+    },
+    {
+      "batch_size": 128,
+      "quality": {
+        "Recall@5": 0.4213372500515358,
+        "Recall@10": 0.47959389816532677,
+        "Recall@20": 0.5785236033807462,
+        "Recall@100": 0.7698559059987632,
+        "MRR@10": 0.4887460317460317,
+        "NDCG@10": 0.4204605115536775
+      },
+      "identical_rankings": 328,
+      "top100_overlap": 1.0,
+      "median_split_ms": 102.29933704249561,
+      "split_ms_repeats": [
+        101.01512493565679,
+        101.32306395098567,
+        101.32586094550788,
+        103.08368620462716,
+        105.28505500406027,
+        103.03772194311023,
+        102.29933704249561
+      ],
+      "amortized_ms_per_query": 0.292283820121416,
+      "queries_per_second": 3421.332044943834,
+      "batch_service_ms_p50": 34.58850993774831,
+      "batch_service_ms_p95": 38.81814889609814,
+      "traced_peak_extra_mib": 47.59025573730469,
+      "score_buffer_mib": 11.71875
+    }
+  ],
+  "limitations": [
+    "Offline batch-fill waiting is excluded",
+    "Encoding and ASR excluded from retrieval timing",
+    "Traced allocations exclude untracked BLAS workspaces",
+    "ELM answer generation/judging require a key"
+  ]
+}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 14279.76it/s]
+This model was loaded in torch.float16 on CPU. Depending on your CPU, inference may be significantly slower than with torch.float32. Consider comparing inference speeds by loading with `model_kwargs={"dtype": torch.float32}`.
+Timing round 1/7
+Timing round 2/7
+Timing round 3/7
+Timing round 4/7
+Timing round 5/7
+Timing round 6/7
+Timing round 7/7
+{
+  "split": "dev",
+  "queries": 125,
+  "k": 100,
+  "corpus_shape": [
+    24000,
+    384
+  ],
+  "baseline_quality": {
+    "Recall@5": 0.3794974358974359,
+    "Recall@10": 0.47459487179487175,
+    "Recall@20": 0.5795208791208791,
+    "Recall@100": 0.7244263736263735,
+    "MRR@10": 0.4597079365079365,
+    "NDCG@10": 0.39834243293601623
+  },
+  "repeats": 7,
+  "blas_threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "filepath": "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-f48b354e.so",
+      "version": "0.3.34.106.0",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "filepath": "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-5f890258.so",
+      "version": "0.3.31.dev",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 2,
+      "prefix": "libgomp",
+      "filepath": "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/torch/lib/libgomp.so.1",
+      "version": null
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 2,
+      "prefix": "libgomp",
+      "filepath": "/home/s3021085/mls-rag-env/lib/python3.12/site-packages/scikit_learn.libs/libgomp-e985bcbb.so.1.0.0",
+      "version": null
+    }
+  ],
+  "variants": [
+    {
+      "batch_size": 1,
+      "quality": {
+        "Recall@5": 0.3794974358974359,
+        "Recall@10": 0.47459487179487175,
+        "Recall@20": 0.5795208791208791,
+        "Recall@100": 0.7244263736263735,
+        "MRR@10": 0.4597079365079365,
+        "NDCG@10": 0.39834243293601623
+      },
+      "identical_rankings": 125,
+      "top100_overlap": 1.0,
+      "median_split_ms": 147.47678907588124,
+      "split_ms_repeats": [
+        147.47678907588124,
+        146.64314314723015,
+        146.81642805226147,
+        147.79331698082387,
+        149.12616601213813,
+        146.37277112342417,
+        150.67615103907883
+      ],
+      "amortized_ms_per_query": 1.17981431260705,
+      "queries_per_second": 847.5910059018422,
+      "batch_service_ms_p50": 1.1746787931770086,
+      "batch_service_ms_p95": 1.1991524370387197,
+      "traced_peak_extra_mib": 0.8934173583984375,
+      "score_buffer_mib": 0.091552734375
+    },
+    {
+      "batch_size": 4,
+      "quality": {
+        "Recall@5": 0.3794974358974359,
+        "Recall@10": 0.47459487179487175,
+        "Recall@20": 0.5795208791208791,
+        "Recall@100": 0.7244263736263735,
+        "MRR@10": 0.4597079365079365,
+        "NDCG@10": 0.39834243293601623
+      },
+      "identical_rankings": 119,
+      "top100_overlap": 0.99992,
+      "median_split_ms": 131.0643400065601,
+      "split_ms_repeats": [
+        134.6679860725999,
+        131.70362589880824,
+        130.55711681954563,
+        130.19467890262604,
+        130.76750910840929,
+        131.0643400065601,
+        134.52379894442856
+      ],
+      "amortized_ms_per_query": 1.0485147200524807,
+      "queries_per_second": 953.7300534511786,
+      "batch_service_ms_p50": 4.208140890114009,
+      "batch_service_ms_p95": 4.325121245346963,
+      "traced_peak_extra_mib": 1.9669952392578125,
+      "score_buffer_mib": 0.3662109375
+    },
+    {
+      "batch_size": 16,
+      "quality": {
+        "Recall@5": 0.3794974358974359,
+        "Recall@10": 0.47459487179487175,
+        "Recall@20": 0.5795208791208791,
+        "Recall@100": 0.7244263736263735,
+        "MRR@10": 0.4597079365079365,
+        "NDCG@10": 0.39834243293601623
+      },
+      "identical_rankings": 119,
+      "top100_overlap": 0.99992,
+      "median_split_ms": 50.80833192914724,
+      "split_ms_repeats": [
+        50.80833192914724,
+        50.753602059558034,
+        47.77342197485268,
+        51.809104857966304,
+        51.69754009693861,
+        49.24140009097755,
+        54.19058515690267
+      ],
+      "amortized_ms_per_query": 0.40646665543317795,
+      "queries_per_second": 2460.226408816448,
+      "batch_service_ms_p50": 6.155007053166628,
+      "batch_service_ms_p95": 8.373371267225593,
+      "traced_peak_extra_mib": 6.275032043457031,
+      "score_buffer_mib": 1.46484375
+    },
+    {
+      "batch_size": 64,
+      "quality": {
+        "Recall@5": 0.3794974358974359,
+        "Recall@10": 0.47459487179487175,
+        "Recall@20": 0.5795208791208791,
+        "Recall@100": 0.7244263736263735,
+        "MRR@10": 0.4597079365079365,
+        "NDCG@10": 0.39834243293601623
+      },
+      "identical_rankings": 119,
+      "top100_overlap": 0.99992,
+      "median_split_ms": 35.94203293323517,
+      "split_ms_repeats": [
+        36.576882004737854,
+        35.95365886576474,
+        33.62398501485586,
+        35.94203293323517,
+        37.04761108383536,
+        35.33451305702329,
+        33.900253009051085
+      ],
+      "amortized_ms_per_query": 0.28753626346588135,
+      "queries_per_second": 3477.822198655157,
+      "batch_service_ms_p50": 16.905227559618652,
+      "batch_service_ms_p95": 20.196826639585197,
+      "traced_peak_extra_mib": 23.537521362304688,
+      "score_buffer_mib": 5.859375
+    },
+    {
+      "batch_size": 128,
+      "quality": {
+        "Recall@5": 0.3794974358974359,
+        "Recall@10": 0.47459487179487175,
+        "Recall@20": 0.5795208791208791,
+        "Recall@100": 0.7244263736263735,
+        "MRR@10": 0.4597079365079365,
+        "NDCG@10": 0.39834243293601623
+      },
+      "identical_rankings": 119,
+      "top100_overlap": 0.99992,
+      "median_split_ms": 36.17574810050428,
+      "split_ms_repeats": [
+        36.39820287935436,
+        36.23433597385883,
+        35.82412609830499,
+        36.17574810050428,
+        38.27546187676489,
+        35.98888195119798,
+        36.13894712179899
+      ],
+      "amortized_ms_per_query": 0.28940598480403423,
+      "queries_per_second": 3455.3535604218105,
+      "batch_service_ms_p50": 36.17321094498038,
+      "batch_service_ms_p95": 37.71050916984677,
+      "traced_peak_extra_mib": 45.96597671508789,
+      "score_buffer_mib": 11.444091796875
+    }
+  ],
+  "limitations": [
+    "Offline batch-fill waiting is excluded",
+    "Encoding and ASR excluded from retrieval timing",
+    "Traced allocations exclude untracked BLAS workspaces",
+    "ELM answer generation/judging require a key"
+  ]
+}

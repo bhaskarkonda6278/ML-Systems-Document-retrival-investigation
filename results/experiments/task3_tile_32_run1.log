@@ -1,0 +1,31 @@
+nvcc -O3 -std=c++17 -lineinfo -diag-suppress 177 -arch=sm_90 -Xcompiler -fPIC -I/home/s3021085/edin-mls-26-autumn/results/experiments/src/task3_tile_32 -c /home/s3021085/edin-mls-26-autumn/results/experiments/src/task3_tile_32/task2_reduce.cu -o /home/s3021085/edin-mls-26-autumn/results/experiments/build/task3_tile_32/obj/task2_reduce.o
+nvcc -O3 -std=c++17 -lineinfo -diag-suppress 177 -arch=sm_90 -Xcompiler -fPIC -I/home/s3021085/edin-mls-26-autumn/results/experiments/src/task3_tile_32 -c /home/s3021085/edin-mls-26-autumn/results/experiments/src/task3_tile_32/task1_rope.cu -o /home/s3021085/edin-mls-26-autumn/results/experiments/build/task3_tile_32/obj/task1_rope.o
+nvcc -O3 -std=c++17 -lineinfo -diag-suppress 177 -arch=sm_90 -Xcompiler -fPIC -I/home/s3021085/edin-mls-26-autumn/results/experiments/src/task3_tile_32 -c /home/s3021085/edin-mls-26-autumn/results/experiments/src/task3_tile_32/task3_gemm.cu -o /home/s3021085/edin-mls-26-autumn/results/experiments/build/task3_tile_32/obj/task3_gemm.o
+nvcc -O3 -std=c++17 -lineinfo -diag-suppress 177 -arch=sm_90 -Xcompiler -fPIC -I/home/s3021085/edin-mls-26-autumn/results/experiments/src/task3_tile_32 -c /home/s3021085/edin-mls-26-autumn/results/experiments/src/task3_tile_32/task4_attention.cu -o /home/s3021085/edin-mls-26-autumn/results/experiments/build/task3_tile_32/obj/task4_attention.o
+nvcc -O3 -std=c++17 -lineinfo -diag-suppress 177 -arch=sm_90 -Xcompiler -fPIC -I/home/s3021085/edin-mls-26-autumn/results/experiments/src/task3_tile_32 -c /home/s3021085/edin-mls-26-autumn/results/experiments/src/task3_tile_32/provided.cu -o /home/s3021085/edin-mls-26-autumn/results/experiments/build/task3_tile_32/obj/provided.o
+nvcc -O3 -std=c++17 -lineinfo -diag-suppress 177 -arch=sm_90 -Xcompiler -fPIC -I/home/s3021085/edin-mls-26-autumn/results/experiments/src/task3_tile_32 tests/test_task3_gemm.cu /home/s3021085/edin-mls-26-autumn/results/experiments/build/task3_tile_32/obj/task1_rope.o /home/s3021085/edin-mls-26-autumn/results/experiments/build/task3_tile_32/obj/task2_reduce.o /home/s3021085/edin-mls-26-autumn/results/experiments/build/task3_tile_32/obj/task3_gemm.o /home/s3021085/edin-mls-26-autumn/results/experiments/build/task3_tile_32/obj/task4_attention.o /home/s3021085/edin-mls-26-autumn/results/experiments/build/task3_tile_32/obj/provided.o -o /home/s3021085/edin-mls-26-autumn/results/experiments/build/task3_tile_32/test_task3_gemm -lcublas -Xlinker -rpath -Xlinker /opt/cuda-12.8.0/lib64
+/home/s3021085/edin-mls-26-autumn/results/experiments/build/task3_tile_32/test_task3_gemm
+GPU: NVIDIA H200 MIG 1g.18gb (sm_90), 16 SMs, peak memory bandwidth about 563 GB/s
+
+tiny 3 x 5, K = 7                    PASS  max_err=9.76e-09     0.003 ms        0 GFLOP/s
+    for comparison: naive      0 GFLOP/s, cuBLAS      0 GFLOP/s (CPU reference)
+odd sizes 37 x 100, K = 33, bias     PASS  max_err=1.55e-07     0.004 ms       60 GFLOP/s
+    for comparison: naive     70 GFLOP/s, cuBLAS     43 GFLOP/s (CPU reference)
+odd sizes, bias + GELU               PASS  max_err=7.70e-07     0.007 ms      123 GFLOP/s
+    for comparison: naive    123 GFLOP/s, cuBLAS    157 GFLOP/s (CPU reference)
+decoder q_proj (64x2048x2048)        PASS  max_err=1.14e-05     0.517 ms     1038 GFLOP/s
+    for comparison: naive    111 GFLOP/s, cuBLAS   4270 GFLOP/s (cuBLAS reference)
+decoder gate_proj (64x6144x2048)     PASS  max_err=0.00e+00     1.508 ms     1068 GFLOP/s
+    for comparison: naive    111 GFLOP/s, cuBLAS   4141 GFLOP/s (cuBLAS reference)
+decoder down_proj (64x2048x6144)     PASS  max_err=3.72e-05     1.542 ms     1045 GFLOP/s
+    for comparison: naive    109 GFLOP/s, cuBLAS   5156 GFLOP/s (cuBLAS reference)
+lm_head, last token (1x59264x2048)   PASS  max_err=1.24e-05     7.123 ms       34 GFLOP/s
+    for comparison: naive     58 GFLOP/s, cuBLAS    261 GFLOP/s (cuBLAS reference)
+encoder q_proj (1500x1280x1280)      PASS  max_err=1.01e-05     4.454 ms     1104 GFLOP/s
+    for comparison: naive    111 GFLOP/s, cuBLAS   4993 GFLOP/s (cuBLAS reference)
+encoder fc1 + GELU (1500x5120x1280)  PASS  max_err=6.92e-07    18.352 ms     1071 GFLOP/s
+    for comparison: naive    110 GFLOP/s, cuBLAS   6187 GFLOP/s (cuBLAS reference)
+conv2 via im2col (1500x1280x3840)    PASS  max_err=2.57e-05    13.742 ms     1073 GFLOP/s
+    for comparison: naive    110 GFLOP/s, cuBLAS   5865 GFLOP/s (cuBLAS reference)
+
+Task 3 (tiled GEMM): ALL PASS

@@ -1,0 +1,27 @@
+GPU: NVIDIA H200 MIG 1g.18gb (sm_90)
+Kernels: rope=torch  reduce=torch  gemm=torch  attention=torch  provided=torch
+Loading the model (about 9 GB of float32 weights)...
+Loaded in 64.5 s
+Audio: 3.50 s, mel features (1, 128, 3000), prompt 59 tokens
+  run 1:   1331.0 ms  (13 tokens)
+  run 2:   1331.5 ms  (13 tokens)
+  run 3:   1330.9 ms  (13 tokens)
+
+GPU time per operation, one transcription (1336.2 ms in kernels):
+  operation    runs on    calls   total ms   share
+  linear       torch       2757     1114.3   83.4%
+  attention    torch        396      161.1   12.1%
+  rope         torch        396       32.5    2.4%
+  rmsnorm      torch        741       18.2    1.4%
+  silu_mul     torch        364        5.7    0.4%
+  layernorm    torch         65        3.5    0.3%
+  embedding    torch         13        0.3    0.0%
+  im2col       torch          2        0.3    0.0%
+  softmax      torch         13        0.3    0.0%
+
+Time: 1331.2 ms per transcription (+/- 0.3 ms), 102.4 ms per token
+Peak GPU memory: 8.90 GiB
+Transcription: Concord returned to its place amidst the tents.
+Expected:      Concord returned to its place amidst the tents
+Accuracy: 100.0%
+Status: PASS
