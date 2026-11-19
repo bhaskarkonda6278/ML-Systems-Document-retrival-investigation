@@ -1,0 +1,160 @@
+[
+  {
+    "file": "rag/data/rag_corpus/corpus.jsonl",
+    "fields": [
+      "record_id",
+      "text"
+    ]
+  },
+  {
+    "file": "rag/data/rag_corpus/embeddings/corpus_enc_a_ids.json"
+  },
+  {
+    "file": "rag/data/rag_corpus/embeddings/corpus_enc_b_ids.json"
+  },
+  {
+    "file": "rag/data/rag_corpus/student_audio_manifest.jsonl",
+    "fields": [
+      "query_id",
+      "split",
+      "sample_rate",
+      "channels",
+      "sample_width_bits",
+      "duration_seconds",
+      "sha256",
+      "audio_file"
+    ]
+  },
+  {
+    "file": "results/executed_source_hashes.json",
+    "fields": [
+      "hw1-asr/csrc/task1_rope.cu",
+      "hw1-asr/csrc/task2_reduce.cu",
+      "hw1-asr/csrc/task2_reduce.cuh",
+      "hw1-asr/csrc/task3_gemm.cu",
+      "hw1-asr/csrc/task4_attention.cu",
+      "rag/extensions/batched_retriever.py",
+      "rag/extensions/benchmark_batching.py",
+      "rag/extensions/inspect_audio_retrieval.py",
+      "rag/extensions/test_batched_retriever.py",
+      "rag/extensions/complete_elm_evaluation.sh"
+    ]
+  },
+  {
+    "file": "results/experiments/experiments.json",
+    "fields": [
+      "hostname",
+      "gpu",
+      "nvcc",
+      "started_unix",
+      "repeats",
+      "variants",
+      "finished_unix",
+      "sanitizers"
+    ]
+  },
+  {
+    "file": "results/protected_files_remote_verified.json",
+    "fields": [
+      "path",
+      "normalized_sha256",
+      "unchanged"
+    ]
+  },
+  {
+    "file": "results/rag/batching_dev/query_ids.json"
+  },
+  {
+    "file": "results/rag/batching_dev/summary.json",
+    "fields": [
+      "split",
+      "queries",
+      "k",
+      "corpus_shape",
+      "baseline_quality",
+      "repeats",
+      "blas_threadpools",
+      "variants",
+      "limitations"
+    ]
+  },
+  {
+    "file": "results/rag/batching_practice/query_ids.json"
+  },
+  {
+    "file": "results/rag/batching_practice/summary.json",
+    "fields": [
+      "split",
+      "queries",
+      "k",
+      "corpus_shape",
+      "baseline_quality",
+      "repeats",
+      "blas_threadpools",
+      "variants",
+      "limitations"
+    ]
+  },
+  {
+    "file": "results/rag/sample_custom_cuda.json",
+    "fields": [
+      "query_id",
+      "cuda_groups",
+      "transcript",
+      "asr_ms_excluding_model_load",
+      "retrieval",
+      "contexts",
+      "prompt_characters",
+      "generation_status"
+    ]
+  },
+  {
+    "file": "results/rag/sample_reference.json",
+    "fields": [
+      "query_id",
+      "cuda_groups",
+      "transcript",
+      "asr_ms_excluding_model_load",
+      "retrieval",
+      "contexts",
+      "prompt_characters",
+      "generation_status"
+    ]
+  },
+  {
+    "file": "results/report_cluster_sync.json",
+    "fields": [
+      "report_pdf",
+      "verified_files"
+    ]
+  },
+  {
+    "file": "results/report_format_check.json",
+    "fields": [
+      "file",
+      "status",
+      "issues",
+      "warnings",
+      "metrics"
+    ]
+  },
+  {
+    "file": "results/validation_summary.json",
+    "fields": [
+      "status",
+      "cuda_configurations",
+      "repeats_per_configuration",
+      "small_case_sanitizers",
+      "retrieval",
+      "source_hashes_match_cluster",
+      "provided_model_tests_style_unchanged",
+      "sample_asr_backends_agree",
+      "report_format",
+      "report_main_pages",
+      "report_total_pages",
+      "report_all_pages_visually_inspected",
+      "report_sha256",
+      "active_coursework_jobs"
+    ]
+  }
+]

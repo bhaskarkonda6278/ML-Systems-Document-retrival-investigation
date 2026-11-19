@@ -1,0 +1,7 @@
+{
+  "failure": {
+    "stage": "initialise",
+    "type": "RuntimeError",
+    "http_status": null
+  }
+}

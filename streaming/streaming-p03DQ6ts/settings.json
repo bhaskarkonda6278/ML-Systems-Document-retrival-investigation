@@ -1,0 +1,13 @@
+{
+  "host": "saxa.inf.ed.ac.uk",
+  "slurm_job_id": "3735311",
+  "seed": 3735060,
+  "repetitions": 3,
+  "maximum_questions": 2,
+  "model": "utter-project/EuroLLM-22B-Instruct-2512",
+  "temperature": 0.1,
+  "endpoint_host": "elm.edina.ac.uk",
+  "sdk_max_retries": 2,
+  "generator_sha256": "e0563a295b1c011f7cd35e550255e298a5eb27cce098164a8445f45f6ea737ea",
+  "timing_boundary": "SDK request start to content arrival or completion"
+}

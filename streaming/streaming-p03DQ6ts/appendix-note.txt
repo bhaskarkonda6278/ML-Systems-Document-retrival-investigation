@@ -1,0 +1,1 @@
+One successful ELM smoke test confirmed streaming support. The client received the first streamed text at 92 ms and the complete streamed answer at 191 ms. The non-streaming answer arrived at 267 ms. An earlier authentication attempt returned HTTP 401. These timings exclude ASR, retrieval and display. The paired comparison at k=3 and k=5 did not run.
